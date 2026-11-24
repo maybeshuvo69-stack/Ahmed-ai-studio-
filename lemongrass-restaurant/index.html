@@ -5,54 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Concept demo website for Lemongrass Restaurant, Agrabad, Chattogram — sample by Ahmed AI Studio. Not a client project and not affiliated with Lemongrass Restaurant.">
   <title>Lemongrass Restaurant — Agrabad, Chattogram | Concept Demo by Ahmed AI Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- CONCEPT DEMO banner -->
   <div class="demo-banner" role="note">
+    <span class="demo-dot" aria-hidden="true"></span>
     CONCEPT DEMO — sample by Ahmed AI Studio, not a client project, not affiliated with Lemongrass Restaurant
   </div>
 
-  <header class="site-header">
+  <header class="site-header" id="siteHeader">
     <div class="container header-inner">
       <a class="brand" href="#top">
-        <span class="brand-mark" aria-hidden="true">LG</span>
+        <span class="brand-mark" aria-hidden="true">L<span class="brand-leaf">g</span></span>
         <span class="brand-text">
-          <strong>Lemongrass Restaurant</strong>
-          <small>Agrabad, Chattogram</small>
+          <strong>Lemongrass</strong>
+          <small>Restaurant · Agrabad, Chattogram</small>
         </span>
       </a>
-      <nav class="main-nav" aria-label="Main navigation">
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
         <a href="#menu">Menu</a>
         <a href="#order">Order Online</a>
         <a href="#book">Book a Table</a>
         <a href="#visit">Visit Us</a>
       </nav>
-      <a class="btn btn-primary header-cta" href="#order">Order Now</a>
+      <div class="header-actions">
+        <a class="cart-link" href="#order" aria-label="View your order">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count" id="cartCount" hidden>0</span>
+        </a>
+        <a class="btn btn-primary header-cta" href="#order">Order Now</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <main id="top">
     <!-- HERO -->
     <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Agrabad, Chattogram</p>
+          <p class="eyebrow"><span class="eyebrow-line"></span>Agrabad, Chattogram</p>
           <h1>Fresh, flavourful food in the heart of Agrabad.</h1>
           <p class="lead">Browse the menu, place an order for delivery or pickup, or book a table — all in one place. This is a concept demo showing how a restaurant website can work.</p>
           <div class="cta-row">
-            <a class="btn btn-primary" href="#menu">View Menu</a>
-            <a class="btn btn-secondary" href="#order">Order Online</a>
-            <a class="btn btn-ghost" href="#book">Book a Table</a>
+            <a class="btn btn-primary" href="#menu">View Menu
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost-light" href="#order">Order Online</a>
+            <a class="btn btn-ghost-light" href="#book">Book a Table</a>
           </div>
-          <p class="hero-note">No payment is taken on this demo page. Orders placed here are samples only and are not sent to the restaurant.</p>
+          <div class="hero-stats">
+            <div class="hero-stat"><strong>20</strong><span>sample dishes</span></div>
+            <div class="hero-stat"><strong>94K</strong><span>followers on Facebook*</span></div>
+            <div class="hero-stat"><strong>Delivery</strong><span>&amp; pickup</span></div>
+          </div>
+          <p class="hero-note">No payment is taken on this demo page. Orders placed here are samples only and are not sent to the restaurant. *Follower figure as observed in public sources, 24 Nov 2026.</p>
         </div>
         <div class="hero-art" aria-hidden="true">
+          <figure class="hero-photo hero-photo-main">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" alt="" loading="eager">
+            <figcaption>Sample photo — not the restaurant's own food photography.</figcaption>
+          </figure>
+          <figure class="hero-photo hero-photo-small">
+            <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=500&q=80" alt="" loading="lazy">
+          </figure>
           <div class="hero-card">
-            <div class="hero-shape shape-1"></div>
-            <div class="hero-shape shape-2"></div>
-            <div class="hero-shape shape-3"></div>
-            <p class="hero-card-title">Today's sample picks</p>
+            <p class="hero-card-label">Today's sample picks</p>
             <ul class="hero-list">
               <li><span>Chicken Biryani</span><strong>৳ 320*</strong></li>
               <li><span>Thai Green Curry</span><strong>৳ 450*</strong></li>
@@ -64,23 +89,27 @@
       </div>
     </section>
 
-    <!-- TRUST / HOW IT WORKS -->
+    <!-- HOW IT WORKS -->
     <section class="strip">
       <div class="container strip-grid">
-        <div><strong>1. Browse</strong><span>Search the menu by dish or category.</span></div>
-        <div><strong>2. Order</strong><span>Choose delivery or pickup, no payment online.</span></div>
-        <div><strong>3. Enjoy</strong><span>Collect your order or get it delivered.</span></div>
+        <div class="strip-item"><span class="strip-num">01</span><div><strong>Browse</strong><span>Search the menu by dish or category.</span></div></div>
+        <div class="strip-item"><span class="strip-num">02</span><div><strong>Order</strong><span>Choose delivery or pickup, no payment online.</span></div></div>
+        <div class="strip-item"><span class="strip-num">03</span><div><strong>Enjoy</strong><span>Collect your order or get it delivered.</span></div></div>
       </div>
     </section>
 
     <!-- MENU -->
     <section id="menu" class="section">
       <div class="container">
-        <h2>Menu</h2>
-        <p class="section-intro">Search the catalogue below. These are <strong>generic sample dishes with placeholder prices in BDT</strong> to show how an online menu could look. <strong>They are not Lemongrass Restaurant's real menu or real prices.</strong> For the restaurant's actual menu, please check its Facebook Page.</p>
+        <div class="section-head reveal">
+          <p class="eyebrow">Our Menu</p>
+          <h2>What would you like today?</h2>
+          <p class="section-intro">Search the catalogue below. These are <strong>generic sample dishes with placeholder prices in BDT</strong> to show how an online menu could look. <strong>They are not Lemongrass Restaurant's real menu or real prices.</strong> For the restaurant's actual menu, please check its Facebook Page. Photos are free sample photos, not the restaurant's own dishes.</p>
+        </div>
 
-        <div class="menu-controls">
+        <div class="menu-controls reveal">
           <label class="search-box">
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
             <span class="visually-hidden">Search menu</span>
             <input type="search" id="menuSearch" placeholder="Search dishes, e.g. biryani, curry, noodles" autocomplete="off">
           </label>
@@ -105,8 +134,9 @@
     <!-- ORDER -->
     <section id="order" class="section section-alt">
       <div class="container order-layout">
-        <div>
-          <h2>Order Online</h2>
+        <div class="reveal">
+          <p class="eyebrow">Order Online</p>
+          <h2>Build your order</h2>
           <p class="section-intro">Build your order below. This is a <strong>demo form only</strong> — no order is sent to the restaurant and no payment is taken.</p>
 
           <form id="orderForm" novalidate>
@@ -121,8 +151,8 @@
 
             <fieldset>
               <legend>How would you like your order?</legend>
-              <label class="radio"><input type="radio" name="fulfilment" value="Delivery" checked> Delivery</label>
-              <label class="radio"><input type="radio" name="fulfilment" value="Pickup"> Pickup from Agrabad</label>
+              <label class="radio-pill"><input type="radio" name="fulfilment" value="Delivery" checked><span>Delivery</span></label>
+              <label class="radio-pill"><input type="radio" name="fulfilment" value="Pickup"><span>Pickup from Agrabad</span></label>
             </fieldset>
 
             <label for="orderAddress">Delivery address <span class="optional">(delivery only)</span>
@@ -139,7 +169,7 @@
           </form>
         </div>
 
-        <aside class="order-summary" aria-label="Your order summary">
+        <aside class="order-summary reveal" aria-label="Your order summary">
           <h3>Your Order</h3>
           <p class="summary-empty" id="summaryEmpty">No dishes added yet. Use “Add” on a menu item.</p>
           <ul class="summary-list" id="summaryList"></ul>
@@ -162,7 +192,8 @@
 
     <!-- TABLE BOOKING -->
     <section id="book" class="section">
-      <div class="container narrow">
+      <div class="container narrow reveal">
+        <p class="eyebrow">Reservations</p>
         <h2>Book a Table</h2>
         <p class="section-intro">Send a table enquiry. This is a <strong>demo form only</strong> — it does not book a table with the restaurant.</p>
         <form id="bookForm" novalidate>
@@ -221,7 +252,8 @@
     <!-- VISIT -->
     <section id="visit" class="section section-alt">
       <div class="container visit-layout">
-        <div>
+        <div class="reveal">
+          <p class="eyebrow">Find Us</p>
           <h2>Visit Us</h2>
           <p><strong>Lemongrass Restaurant</strong><br>Agrabad, Chattogram, Bangladesh</p>
           <p>No street address or phone number is shown here, because none was verified for this demo. For the restaurant's real address, phone number and opening hours, please check its official Facebook Page.</p>
@@ -230,7 +262,7 @@
             <a class="btn btn-secondary" href="#menu">Browse the Sample Menu</a>
           </div>
         </div>
-        <div class="visit-card" aria-label="Contact summary">
+        <div class="visit-card reveal" aria-label="Contact summary">
           <h3>Contact</h3>
           <dl>
             <dt>Location</dt>
@@ -250,12 +282,22 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p class="demo-banner footer-banner">CONCEPT DEMO — sample by Ahmed AI Studio, not a client project, not affiliated with Lemongrass Restaurant</p>
-      <p><strong>Lemongrass Restaurant</strong> — Agrabad, Chattogram. Sample menu, sample prices and sample forms only.</p>
-      <p>Facebook: <a href="https://www.facebook.com/lemongrass.restaurant.ctg/" target="_blank" rel="noopener">facebook.com/lemongrass.restaurant.ctg</a></p>
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Lemongrass Restaurant</p>
+          <p>Agrabad, Chattogram. Sample menu, sample prices and sample forms only.</p>
+        </div>
+        <div>
+          <p class="footer-brand">Explore</p>
+          <p><a href="#menu">Menu</a> · <a href="#order">Order Online</a> · <a href="#book">Book a Table</a></p>
+          <p>Facebook: <a href="https://www.facebook.com/lemongrass.restaurant.ctg/" target="_blank" rel="noopener">facebook.com/lemongrass.restaurant.ctg</a></p>
+        </div>
+      </div>
       <p class="footer-credit">Concept demo built by <strong>Ahmed AI Studio</strong>, Bangladesh — websites, AI chatbots and business automation for small businesses.</p>
     </div>
   </footer>
 
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
   <script src="script.js"></script>
 </body>
 </html>

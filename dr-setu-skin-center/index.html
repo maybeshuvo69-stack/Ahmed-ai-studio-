@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Concept demo website for Dr. Setu's Skin &amp; Aesthetic Center, Dhanmondi, Dhaka — services, appointment requests and FAQs. Sample by Ahmed AI Studio, not a client project.">
   <title>Dr. Setu's Skin &amp; Aesthetic Center — Dhanmondi, Dhaka | Concept Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,13 +16,15 @@
     <p><strong>CONCEPT DEMO</strong> — sample by Ahmed AI Studio, not a client project, not affiliated with Dr. Setu's Skin &amp; Aesthetic Center</p>
   </div>
 
-  <header class="site-header">
+  <header class="site-header" id="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Dr. Setu's Skin and Aesthetic Center — home">
-        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 21c-4.5-2.5-8-5.8-8-10a4.6 4.6 0 0 1 8-3 4.6 4.6 0 0 1 8 3c0 4.2-3.5 7.5-8 10z"/><path d="M12 7.5c.8 1.6 2 2.8 2 4.3a2 2 0 1 1-4 0c0-1.5 1.2-2.7 2-4.3z"/></svg>
+        </span>
         <span class="brand-text">
-          <span class="brand-name">Dr. Setu's Skin &amp; Aesthetic Center</span>
-          <span class="brand-sub">Dhanmondi, Dhaka</span>
+          <span class="brand-name">Dr. Setu&rsquo;s Skin &amp; Aesthetic Center</span>
+          <span class="brand-sub">Dhanmondi &middot; Dhaka</span>
         </span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
@@ -40,12 +45,12 @@
     <!-- Hero -->
     <section class="hero">
       <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow">Skin &amp; aesthetic care &middot; Dhanmondi, Dhaka</p>
-          <h1>Care for your skin, with time to listen.</h1>
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Skin &amp; aesthetic care &middot; Dhanmondi, Dhaka</p>
+          <h1>Care for your skin, <em>with time to listen.</em></h1>
           <p class="lead">Dr. Setu's Skin &amp; Aesthetic Center in Dhanmondi, Dhaka, offers skin and aesthetic consultations and treatments. Request an appointment online — no payment needed to send a request.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#booking">Request an appointment</a>
+            <a class="btn btn-primary" href="#booking">Request an appointment <span aria-hidden="true">&rarr;</span></a>
             <a class="btn btn-secondary" href="#services">View services</a>
           </div>
           <ul class="hero-notes">
@@ -54,17 +59,30 @@
             <li><strong>Followed by around 200,000 people on Facebook</strong> (as observed in public posts, 24 Nov 2026).</li>
           </ul>
         </div>
-        <div class="hero-art" aria-hidden="true">
+        <div class="hero-art reveal" aria-hidden="true">
           <div class="hero-card">
-            <div class="hero-circle hero-circle-1"></div>
-            <div class="hero-circle hero-circle-2"></div>
-            <div class="hero-circle hero-circle-3"></div>
-            <p class="hero-card-title">Your skin,<br>your routine.</p>
-            <p class="hero-card-text">Consultation &middot; Care plan &middot; Follow-up</p>
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+            <div class="hero-ring hero-ring-1"></div>
+            <div class="hero-ring hero-ring-2"></div>
+            <div class="hero-card-top">
+              <span class="hero-card-eyebrow">Your skin, your routine</span>
+              <p class="hero-card-title">Consultation<br>Care plan<br>Follow-up</p>
+            </div>
+            <div class="hero-card-bottom">
+              <div class="hero-stat"><strong>01</strong><span>Consultation</span></div>
+              <div class="hero-stat"><strong>02</strong><span>Care plan</span></div>
+              <div class="hero-stat"><strong>03</strong><span>Follow-up</span></div>
+            </div>
             <p class="hero-card-chip">Dhanmondi &middot; Dhaka</p>
+          </div>
+          <div class="hero-float">
+            <span class="hero-float-dot" aria-hidden="true"></span>
+            <div><strong>Appointments by request</strong><span>Clinic confirms directly</span></div>
           </div>
         </div>
       </div>
+      <div class="hero-scroll" aria-hidden="true"><span></span>Scroll</div>
     </section>
 
     <!-- Trust / at-a-glance strip -->
@@ -79,81 +97,97 @@
     <!-- Services -->
     <section class="section" id="services">
       <div class="container">
-        <p class="eyebrow">What we offer</p>
-        <h2>Services</h2>
-        <p class="section-intro">A general overview of the kinds of skin and aesthetic care offered. The clinic can confirm which service fits your needs when you book. No prices are listed in this concept demo — please ask the clinic directly.</p>
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>What we offer</p>
+          <h2>Services</h2>
+          <p class="section-intro">A general overview of the kinds of skin and aesthetic care offered. The clinic can confirm which service fits your needs when you book. No prices are listed in this concept demo — please ask the clinic directly.</p>
+        </div>
 
         <div class="services-grid">
-          <article class="service-card">
+          <article class="service-card reveal">
+            <span class="service-num" aria-hidden="true">01</span>
             <div class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-6.5 8-6.5s8 2.5 8 6.5"/></svg>
             </div>
             <h3>Skin consultation</h3>
             <p>A consultation to discuss your skin concerns, your current routine, and care options with the clinic.</p>
+            <a class="service-link" href="#booking">Request this service <span aria-hidden="true">&rarr;</span></a>
           </article>
 
-          <article class="service-card">
+          <article class="service-card reveal">
+            <span class="service-num" aria-hidden="true">02</span>
             <div class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 4 6 6.5 6 10a6 6 0 1 1-12 0c0-3.5 3-6 6-10z"/></svg>
             </div>
             <h3>Facial treatments</h3>
             <p>Facial care sessions offered at the center. The clinic can explain the options available at your visit.</p>
+            <a class="service-link" href="#booking">Request this service <span aria-hidden="true">&rarr;</span></a>
           </article>
 
-          <article class="service-card">
+          <article class="service-card reveal">
+            <span class="service-num" aria-hidden="true">03</span>
             <div class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
             </div>
             <h3>Acne care consultation</h3>
             <p>A consultation to talk through acne-related concerns and the care options the clinic offers.</p>
+            <a class="service-link" href="#booking">Request this service <span aria-hidden="true">&rarr;</span></a>
           </article>
 
-          <article class="service-card">
+          <article class="service-card reveal">
+            <span class="service-num" aria-hidden="true">04</span>
             <div class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg>
             </div>
             <h3>Pigmentation care consultation</h3>
             <p>A consultation to discuss pigmentation concerns and the care options available at the center.</p>
+            <a class="service-link" href="#booking">Request this service <span aria-hidden="true">&rarr;</span></a>
           </article>
 
-          <article class="service-card">
+          <article class="service-card reveal">
+            <span class="service-num" aria-hidden="true">05</span>
             <div class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c4-1 5-6 5-10V6a3 3 0 0 1 6 0v4c0 4 1 9 5 10"/><path d="M9 21h6"/></svg>
             </div>
             <h3>Hair care consultation</h3>
             <p>A consultation to discuss hair and scalp concerns and the care options the clinic offers.</p>
+            <a class="service-link" href="#booking">Request this service <span aria-hidden="true">&rarr;</span></a>
           </article>
 
-          <article class="service-card">
+          <article class="service-card reveal">
+            <span class="service-num" aria-hidden="true">06</span>
             <div class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9C.8 8.5 3 5 6.5 5c2 0 3.5 1 4.5 2.5l1 1.5 1-1.5C14 6 15.5 5 17.5 5 21 5 23.2 8.5 21.5 12 19 16.5 12 21 12 21z"/></svg>
             </div>
             <h3>Aesthetic consultation</h3>
             <p>A consultation to talk through aesthetic care options, what they involve, and whether they suit you.</p>
+            <a class="service-link" href="#booking">Request this service <span aria-hidden="true">&rarr;</span></a>
           </article>
         </div>
 
-        <p class="note">Not sure which service to choose? Select “General consultation / not sure yet” in the booking form and describe your concern — the clinic will guide you.</p>
+        <p class="note reveal">Not sure which service to choose? Select “General consultation / not sure yet” in the booking form and describe your concern — the clinic will guide you.</p>
       </div>
     </section>
 
     <!-- How it works -->
     <section class="section section-alt" id="how-it-works">
       <div class="container">
-        <p class="eyebrow">Simple by design</p>
-        <h2>How booking works</h2>
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Simple by design</p>
+          <h2>How booking works</h2>
+        </div>
         <ol class="steps">
-          <li>
+          <li class="reveal">
             <span class="step-number" aria-hidden="true">1</span>
             <h3>Send a request</h3>
             <p>Choose a service and a preferred date and time in the form below. No payment is needed.</p>
           </li>
-          <li>
+          <li class="reveal">
             <span class="step-number" aria-hidden="true">2</span>
             <h3>The clinic confirms</h3>
             <p>The clinic contacts you to confirm the appointment, or to suggest another time.</p>
           </li>
-          <li>
+          <li class="reveal">
             <span class="step-number" aria-hidden="true">3</span>
             <h3>Visit the center</h3>
             <p>Come to the center in Dhanmondi, Dhaka, at your confirmed time.</p>
@@ -163,21 +197,23 @@
     </section>
 
     <!-- Booking -->
-    <section class="section" id="booking">
+    <section class="section section-booking" id="booking">
       <div class="container booking-inner">
-        <div class="booking-copy">
-          <p class="eyebrow">Book an appointment</p>
+        <div class="booking-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Book an appointment</p>
           <h2>Request an appointment</h2>
-          <p>Fill in the form and the clinic will contact you to confirm. <strong>This is a booking request, not a confirmed appointment.</strong></p>
+          <p class="lead">Fill in the form and the clinic will contact you to confirm. <strong>This is a booking request, not a confirmed appointment.</strong></p>
           <ul class="booking-points">
-            <li>No payment is taken here.</li>
-            <li>Your details are only used for this appointment request in this demo — nothing is sent to the clinic from this sample page.</li>
-            <li>Prefer to message instead? Appointments are also taken via the clinic’s Facebook Page, WhatsApp and phone.</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span>No payment is taken here.</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span>Your details are only used for this appointment request in this demo — nothing is sent to the clinic from this sample page.</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span>Prefer to message instead? Appointments are also taken via the clinic’s Facebook Page, WhatsApp and phone.</li>
           </ul>
           <p class="note">In the live version, this form would send the request to the clinic and confirm it by WhatsApp, Messenger or phone.</p>
         </div>
 
-        <form class="booking-form" id="booking-form" novalidate>
+        <form class="booking-form reveal" id="booking-form" novalidate>
+          <p class="form-title">Booking request</p>
+          <p class="form-subtitle">Request only — not a confirmed appointment until the clinic replies.</p>
           <div class="form-field">
             <label for="name">Your name <span aria-hidden="true">*</span></label>
             <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Ayesha Rahman" required>
@@ -230,7 +266,7 @@
 
           <p class="form-disclaimer">By sending this form you are making a booking request only. It is <strong>not a confirmed appointment</strong> until the clinic contacts you to confirm. No payment is taken.</p>
 
-          <button class="btn btn-primary btn-full" type="submit">Send booking request</button>
+          <button class="btn btn-primary btn-full" type="submit">Send booking request <span aria-hidden="true">&rarr;</span></button>
           <p class="form-success" id="form-success" role="status" hidden></p>
         </form>
       </div>
@@ -239,30 +275,32 @@
     <!-- FAQ -->
     <section class="section section-alt" id="faq">
       <div class="container faq-inner">
-        <p class="eyebrow">Good to know</p>
-        <h2>Frequently asked questions</h2>
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Good to know</p>
+          <h2>Frequently asked questions</h2>
+        </div>
         <div class="faq-list">
-          <details class="faq-item">
+          <details class="faq-item reveal">
             <summary>Do I need an appointment, or can I walk in?</summary>
             <p>Appointments are taken via this booking request form, and also via the clinic’s Facebook Page, WhatsApp and phone. Please request a time first — the clinic will confirm it before your visit.</p>
           </details>
-          <details class="faq-item">
+          <details class="faq-item reveal">
             <summary>Is my booking confirmed as soon as I send the form?</summary>
             <p>No. Sending the form is a request only. Your appointment is confirmed only when the clinic contacts you to confirm the date and time.</p>
           </details>
-          <details class="faq-item">
+          <details class="faq-item reveal">
             <summary>Do I need to pay when I book?</summary>
             <p>No payment is taken in this booking form. Please ask the clinic directly about fees when they confirm your appointment.</p>
           </details>
-          <details class="faq-item">
+          <details class="faq-item reveal">
             <summary>What should I bring to my appointment?</summary>
             <p>Bring a note of any skin or hair products you currently use, and any questions you would like to ask. The clinic can tell you if anything else is needed when they confirm.</p>
           </details>
-          <details class="faq-item">
+          <details class="faq-item reveal">
             <summary>How do I reschedule or cancel?</summary>
             <p>Contact the clinic as soon as you can via Facebook, WhatsApp or phone, and mention your name, service and requested date. The clinic will confirm the change.</p>
           </details>
-          <details class="faq-item">
+          <details class="faq-item reveal">
             <summary>Where is the center?</summary>
             <p>The center is in Dhanmondi, Dhaka, Bangladesh. The exact address, phone number and opening hours were not verified for this concept demo — please confirm them via the clinic’s Facebook Page before visiting.</p>
           </details>
@@ -273,18 +311,18 @@
     <!-- Visit / contact -->
     <section class="section" id="visit">
       <div class="container visit-inner">
-        <div>
-          <p class="eyebrow">Visit us</p>
+        <div class="reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Visit us</p>
           <h2>Dr. Setu's Skin &amp; Aesthetic Center</h2>
           <p class="lead">Dhanmondi, Dhaka, Bangladesh</p>
           <p>Appointments are taken via Facebook posts and WhatsApp/phone, as observed in the clinic’s public posts. This concept demo adds an online booking request form — the clinic confirms every request directly.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#booking">Request an appointment</a>
+            <a class="btn btn-primary" href="#booking">Request an appointment <span aria-hidden="true">&rarr;</span></a>
             <a class="btn btn-secondary" href="https://www.facebook.com/permalink.php?story_fbid=pfbid0wyb8krNa3v7VwrNoeD169fTbh9KhjDEMrbnzUwFGtXjDig9XH6Vcm8JHip6JaeHwl&amp;id=61564470041228" target="_blank" rel="noopener">Clinic on Facebook</a>
           </div>
           <p class="note">Exact address, phone number and opening hours were not verified for this concept demo. Please confirm them via the clinic’s Facebook Page. No phone number is listed here, because none was verified in the public source used for this demo.</p>
         </div>
-        <div class="visit-card" aria-label="Location summary">
+        <div class="visit-card reveal" aria-label="Location summary">
           <h3>At a glance</h3>
           <dl>
             <div><dt>Area</dt><dd>Dhanmondi, Dhaka</dd></div>
@@ -300,7 +338,13 @@
   <footer class="site-footer">
     <div class="container">
       <p class="footer-demo"><strong>CONCEPT DEMO</strong> — sample by Ahmed AI Studio, not a client project, not affiliated with Dr. Setu's Skin &amp; Aesthetic Center</p>
-      <p>Dr. Setu's Skin &amp; Aesthetic Center — Dhanmondi, Dhaka, Bangladesh. This is a concept demo only. Booking requests made here are not sent to the clinic and are not confirmed appointments. For a real appointment, please contact the clinic via its Facebook Page, WhatsApp or phone.</p>
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Dr. Setu&rsquo;s Skin &amp; Aesthetic Center</p>
+          <p>Dhanmondi, Dhaka, Bangladesh</p>
+        </div>
+        <p>Dr. Setu's Skin &amp; Aesthetic Center — Dhanmondi, Dhaka, Bangladesh. This is a concept demo only. Booking requests made here are not sent to the clinic and are not confirmed appointments. For a real appointment, please contact the clinic via its Facebook Page, WhatsApp or phone.</p>
+      </div>
       <p class="footer-credit">Concept demo built by Ahmed AI Studio, Bangladesh — digital services for small businesses.</p>
     </div>
   </footer>

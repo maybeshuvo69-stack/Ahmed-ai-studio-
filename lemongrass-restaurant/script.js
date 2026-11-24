@@ -1,6 +1,17 @@
-// Lemongrass Restaurant — Concept Demo
+// Lemongrass Restaurant — Concept Demo (redesign)
 // Sample menu data only. These are generic dishes with placeholder prices in BDT.
 // They are NOT Lemongrass Restaurant's real menu or real prices.
+// Photos are free Unsplash sample photos, illustrative only — not the restaurant's own dishes.
+
+const IMG = (id) => "https://images.unsplash.com/photo-" + id + "?auto=format&fit=crop&w=800&q=80";
+const CATEGORY_IMG = {
+  "starters": IMG("1546069901-ba9599a7e63c"),
+  "main": IMG("1551218808-94e220e084d2"),
+  "rice-noodles": IMG("1512058564366-18510be2db19"),
+  "grill": IMG("1555939594-58d7cb561ad1"),
+  "desserts": IMG("1565958011703-44f9829ba187"),
+  "drinks": IMG("1551024709-8f23befc6f87")
+};
 
 const MENU = [
   { id: 1, name: "Chicken Biryani", category: "rice-noodles", tag: "Rice & Noodles", price: 320, desc: "Fragrant rice with spiced chicken, served with salad and raita. Sample dish." },
@@ -38,15 +49,31 @@ const menuEmpty = document.getElementById("menuEmpty");
 const summaryList = document.getElementById("summaryList");
 const summaryEmpty = document.getElementById("summaryEmpty");
 const summaryTotal = document.getElementById("summaryTotal");
+const cartCount = document.getElementById("cartCount");
+const toast = document.getElementById("toast");
+let toastTimer = null;
+
+function showToast(msg) {
+  toast.textContent = msg;
+  toast.hidden = false;
+  requestAnimationFrame(() => toast.classList.add("show"));
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => {
+    toast.classList.remove("show");
+    setTimeout(() => { toast.hidden = true; }, 300);
+  }, 2200);
+}
 
 function filteredMenu() {
   const q = searchTerm.trim().toLowerCase();
   return MENU.filter((item) => {
-    const inCategory = activeCategory === "all" || item.category === activeCategory;
+    const inCategory = activeCategory === "all" || item.category === categoryOf(item);
     const inSearch = !q || item.name.toLowerCase().includes(q) || item.desc.toLowerCase().includes(q);
     return inCategory && inSearch;
   });
 }
+// NOTE: category is stored on each item as `category`; kept as a helper for clarity.
+function categoryOf(item) { return item.category; }
 
 function renderMenu() {
   const items = filteredMenu();
@@ -57,6 +84,18 @@ function renderMenu() {
   items.forEach((item) => {
     const card = document.createElement("article");
     card.className = "menu-card";
+
+    const photo = document.createElement("div");
+    photo.className = "menu-photo";
+    const img = document.createElement("img");
+    img.src = CATEGORY_IMG[item.category];
+    img.alt = item.name + " — sample photo, not the restaurant's own dish";
+    img.loading = "lazy";
+    img.onerror = () => { photo.style.display = "none"; };
+    photo.appendChild(img);
+
+    const body = document.createElement("div");
+    body.className = "menu-body";
 
     const top = document.createElement("div");
     top.className = "menu-card-top";
@@ -77,11 +116,14 @@ function renderMenu() {
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = "menu-add";
-    btn.textContent = "Add to Order";
+    const qty = cart.get(item.id) || 0;
+    btn.textContent = qty > 0 ? "Added • " + qty + " — Add more" : "Add to Order";
+    if (qty > 0) btn.classList.add("added");
     btn.setAttribute("aria-label", "Add " + item.name + " to order");
     btn.addEventListener("click", () => addToCart(item.id));
 
-    card.append(top, tag, desc, btn);
+    body.append(top, tag, desc, btn);
+    card.append(photo, body);
     menuGrid.appendChild(card);
   });
 }
@@ -95,10 +137,20 @@ function cartTotal() {
   return total;
 }
 
+function cartItemCount() {
+  let n = 0;
+  cart.forEach((qty) => { n += qty; });
+  return n;
+}
+
 function renderCart() {
   summaryList.innerHTML = "";
   const hasItems = cart.size > 0;
   summaryEmpty.hidden = hasItems;
+
+  const count = cartItemCount();
+  cartCount.hidden = count === 0;
+  cartCount.textContent = count;
 
   cart.forEach((qty, id) => {
     const item = MENU.find((m) => m.id === id);
@@ -139,6 +191,9 @@ function renderCart() {
 function addToCart(id) {
   cart.set(id, (cart.get(id) || 0) + 1);
   renderCart();
+  renderMenu();
+  const item = MENU.find((m) => m.id === id);
+  if (item) showToast(item.name + " added to your order");
 }
 
 function changeQty(id, delta) {
@@ -146,11 +201,13 @@ function changeQty(id, delta) {
   if (next <= 0) cart.delete(id);
   else cart.set(id, next);
   renderCart();
+  renderMenu();
 }
 
 document.getElementById("clearOrder").addEventListener("click", () => {
   cart.clear();
   renderCart();
+  renderMenu();
   document.getElementById("orderConfirm").hidden = true;
 });
 
@@ -221,6 +278,52 @@ document.getElementById("bookForm").addEventListener("submit", (e) => {
   confirmBox.hidden = false;
   confirmBox.focus();
 });
+
+// Booking date cannot be in the past.
+const bookDate = document.getElementById("bookDate");
+if (bookDate) bookDate.min = new Date().toISOString().split("T")[0];
+
+// Sticky header shadow.
+const header = document.getElementById("siteHeader");
+window.addEventListener("scroll", () => {
+  header.classList.toggle("scrolled", window.scrollY > 8);
+}, { passive: true });
+
+// Mobile nav toggle.
+const navToggle = document.getElementById("navToggle");
+const mainNav = document.getElementById("mainNav");
+navToggle.addEventListener("click", () => {
+  const open = mainNav.classList.toggle("open");
+  navToggle.setAttribute("aria-expanded", String(open));
+  navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+});
+mainNav.querySelectorAll("a").forEach((a) => {
+  a.addEventListener("click", () => {
+    mainNav.classList.remove("open");
+    navToggle.setAttribute("aria-expanded", "false");
+  });
+});
+
+// Active nav link + scroll reveal.
+const navLinks = Array.from(mainNav.querySelectorAll("a"));
+const sections = ["menu", "order", "book", "visit"].map((id) => document.getElementById(id)).filter(Boolean);
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    navLinks.forEach((a) => a.classList.toggle("active", a.getAttribute("href") === "#" + entry.target.id));
+  });
+}, { rootMargin: "-40% 0px -55% 0px" });
+sections.forEach((s) => sectionObserver.observe(s));
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
 
 renderMenu();
 renderCart();

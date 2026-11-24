@@ -1,9 +1,33 @@
-// Dr. Setu's Skin & Aesthetic Center — concept demo
+// Dr. Setu's Skin & Aesthetic Center — concept demo (redesigned)
 // No data leaves the browser. The booking form only shows a local
 // confirmation message; nothing is sent to the clinic from this sample page.
 
 (function () {
   'use strict';
+
+  // Sticky header shadow on scroll
+  var header = document.getElementById('site-header');
+  function onScroll() {
+    if (header) header.classList.toggle('scrolled', window.scrollY > 8);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Scroll-reveal animations (respects reduced motion via CSS)
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && revealEls.length) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(function (el) { observer.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('visible'); });
+  }
 
   // Mobile navigation
   var toggle = document.querySelector('.nav-toggle');
@@ -22,6 +46,44 @@
       }
     });
   }
+
+  // Active nav link highlighting
+  var navLinks = document.querySelectorAll('.main-nav a[href^="#"]:not(.btn)');
+  var sections = Array.prototype.map.call(navLinks, function (link) {
+    return document.querySelector(link.getAttribute('href'));
+  }).filter(Boolean);
+  if ('IntersectionObserver' in window && sections.length) {
+    var sectionObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          navLinks.forEach(function (link) {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+          });
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    sections.forEach(function (section) { sectionObserver.observe(section); });
+  }
+
+  // Service cards: "Request this service" pre-selects that service in the booking form
+  var serviceSelect = document.getElementById('service');
+  document.querySelectorAll('.service-link').forEach(function (link) {
+    link.addEventListener('click', function () {
+      var card = link.closest('.service-card');
+      var title = card && card.querySelector('h3') ? card.querySelector('h3').textContent.trim() : '';
+      if (serviceSelect && title) {
+        var option = Array.prototype.find.call(serviceSelect.options, function (opt) {
+          return opt.value === title;
+        });
+        if (option) {
+          serviceSelect.value = title;
+          serviceSelect.setAttribute('aria-invalid', 'false');
+          var err = document.getElementById('service-error');
+          if (err) err.hidden = true;
+        }
+      }
+    });
+  });
 
   // Booking form: minimum date is today (local time)
   var dateInput = document.getElementById('date');
