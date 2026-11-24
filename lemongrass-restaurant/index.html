@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Concept demo website for Lemongrass Restaurant, Agrabad, Chattogram — sample by Ahmed AI Studio. Not a client project and not affiliated with Lemongrass Restaurant.">
+  <title>Lemongrass Restaurant — Agrabad, Chattogram | Concept Demo by Ahmed AI Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- CONCEPT DEMO banner -->
+  <div class="demo-banner" role="note">
+    CONCEPT DEMO — sample by Ahmed AI Studio, not a client project, not affiliated with Lemongrass Restaurant
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">LG</span>
+        <span class="brand-text">
+          <strong>Lemongrass Restaurant</strong>
+          <small>Agrabad, Chattogram</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#menu">Menu</a>
+        <a href="#order">Order Online</a>
+        <a href="#book">Book a Table</a>
+        <a href="#visit">Visit Us</a>
+      </nav>
+      <a class="btn btn-primary header-cta" href="#order">Order Now</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Agrabad, Chattogram</p>
+          <h1>Fresh, flavourful food in the heart of Agrabad.</h1>
+          <p class="lead">Browse the menu, place an order for delivery or pickup, or book a table — all in one place. This is a concept demo showing how a restaurant website can work.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#menu">View Menu</a>
+            <a class="btn btn-secondary" href="#order">Order Online</a>
+            <a class="btn btn-ghost" href="#book">Book a Table</a>
+          </div>
+          <p class="hero-note">No payment is taken on this demo page. Orders placed here are samples only and are not sent to the restaurant.</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-card">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+            <p class="hero-card-title">Today's sample picks</p>
+            <ul class="hero-list">
+              <li><span>Chicken Biryani</span><strong>৳ 320*</strong></li>
+              <li><span>Thai Green Curry</span><strong>৳ 450*</strong></li>
+              <li><span>Grilled Chicken</span><strong>৳ 380*</strong></li>
+            </ul>
+            <p class="hero-card-note">* Sample prices — placeholder only.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST / HOW IT WORKS -->
+    <section class="strip">
+      <div class="container strip-grid">
+        <div><strong>1. Browse</strong><span>Search the menu by dish or category.</span></div>
+        <div><strong>2. Order</strong><span>Choose delivery or pickup, no payment online.</span></div>
+        <div><strong>3. Enjoy</strong><span>Collect your order or get it delivered.</span></div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="section">
+      <div class="container">
+        <h2>Menu</h2>
+        <p class="section-intro">Search the catalogue below. These are <strong>generic sample dishes with placeholder prices in BDT</strong> to show how an online menu could look. <strong>They are not Lemongrass Restaurant's real menu or real prices.</strong> For the restaurant's actual menu, please check its Facebook Page.</p>
+
+        <div class="menu-controls">
+          <label class="search-box">
+            <span class="visually-hidden">Search menu</span>
+            <input type="search" id="menuSearch" placeholder="Search dishes, e.g. biryani, curry, noodles" autocomplete="off">
+          </label>
+          <div class="filters" role="group" aria-label="Filter menu by category">
+            <button class="filter-btn active" data-category="all" type="button">All</button>
+            <button class="filter-btn" data-category="starters" type="button">Starters</button>
+            <button class="filter-btn" data-category="main" type="button">Main Dishes</button>
+            <button class="filter-btn" data-category="rice-noodles" type="button">Rice &amp; Noodles</button>
+            <button class="filter-btn" data-category="grill" type="button">BBQ &amp; Grill</button>
+            <button class="filter-btn" data-category="desserts" type="button">Desserts</button>
+            <button class="filter-btn" data-category="drinks" type="button">Drinks</button>
+          </div>
+        </div>
+
+        <p class="results-count" id="resultsCount" aria-live="polite"></p>
+        <div class="menu-grid" id="menuGrid"></div>
+        <p class="menu-empty" id="menuEmpty" hidden>No dishes match your search. Try a different word or category.</p>
+        <p class="placeholder-note">Sample prices — placeholder only, not the restaurant's real prices. Prices are shown in Bangladeshi Taka (BDT / ৳).</p>
+      </div>
+    </section>
+
+    <!-- ORDER -->
+    <section id="order" class="section section-alt">
+      <div class="container order-layout">
+        <div>
+          <h2>Order Online</h2>
+          <p class="section-intro">Build your order below. This is a <strong>demo form only</strong> — no order is sent to the restaurant and no payment is taken.</p>
+
+          <form id="orderForm" novalidate>
+            <div class="form-row">
+              <label for="orderName">Your name
+                <input type="text" id="orderName" name="name" placeholder="e.g. Ahmed" required autocomplete="name">
+              </label>
+              <label for="orderPhone">Phone number
+                <input type="tel" id="orderPhone" name="phone" placeholder="e.g. 01XXXXXXXXX" required autocomplete="tel">
+              </label>
+            </div>
+
+            <fieldset>
+              <legend>How would you like your order?</legend>
+              <label class="radio"><input type="radio" name="fulfilment" value="Delivery" checked> Delivery</label>
+              <label class="radio"><input type="radio" name="fulfilment" value="Pickup"> Pickup from Agrabad</label>
+            </fieldset>
+
+            <label for="orderAddress">Delivery address <span class="optional">(delivery only)</span>
+              <textarea id="orderAddress" name="address" rows="2" placeholder="House / road / area in Chattogram"></textarea>
+            </label>
+
+            <label for="orderNotes">Notes for the kitchen <span class="optional">(optional)</span>
+              <textarea id="orderNotes" name="notes" rows="2" placeholder="e.g. less spicy, no onion"></textarea>
+            </label>
+
+            <p class="form-error" id="orderError" hidden>Please add at least one dish and fill in your name and phone number.</p>
+            <button class="btn btn-primary btn-full" type="submit">Place Sample Order</button>
+            <p class="form-note">Demo only — this form does not send an order or take payment.</p>
+          </form>
+        </div>
+
+        <aside class="order-summary" aria-label="Your order summary">
+          <h3>Your Order</h3>
+          <p class="summary-empty" id="summaryEmpty">No dishes added yet. Use “Add” on a menu item.</p>
+          <ul class="summary-list" id="summaryList"></ul>
+          <div class="summary-total">
+            <span>Estimated total <small>(sample prices)</small></span>
+            <strong id="summaryTotal">৳ 0</strong>
+          </div>
+          <button class="btn btn-secondary btn-full" id="clearOrder" type="button">Clear Order</button>
+          <p class="summary-note">Prices are placeholders. The restaurant would confirm the real total before preparing an order.</p>
+        </aside>
+      </div>
+      <div class="container">
+        <div class="order-confirm" id="orderConfirm" hidden tabindex="-1">
+          <h3>Thank you — this is a sample order.</h3>
+          <p id="orderConfirmText"></p>
+          <p>No order was sent to the restaurant and no payment was taken.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABLE BOOKING -->
+    <section id="book" class="section">
+      <div class="container narrow">
+        <h2>Book a Table</h2>
+        <p class="section-intro">Send a table enquiry. This is a <strong>demo form only</strong> — it does not book a table with the restaurant.</p>
+        <form id="bookForm" novalidate>
+          <div class="form-row">
+            <label for="bookName">Your name
+              <input type="text" id="bookName" name="name" placeholder="e.g. Ahmed" required autocomplete="name">
+            </label>
+            <label for="bookPhone">Phone number
+              <input type="tel" id="bookPhone" name="phone" placeholder="e.g. 01XXXXXXXXX" required autocomplete="tel">
+            </label>
+          </div>
+          <div class="form-row form-row-3">
+            <label for="bookDate">Date
+              <input type="date" id="bookDate" name="date" required>
+            </label>
+            <label for="bookTime">Time
+              <select id="bookTime" name="time" required>
+                <option value="">Choose a time</option>
+                <option>12:00 PM</option>
+                <option>1:00 PM</option>
+                <option>2:00 PM</option>
+                <option>6:00 PM</option>
+                <option>7:00 PM</option>
+                <option>8:00 PM</option>
+                <option>9:00 PM</option>
+              </select>
+            </label>
+            <label for="bookGuests">Guests
+              <select id="bookGuests" name="guests" required>
+                <option value="">Guests</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7+</option>
+              </select>
+            </label>
+          </div>
+          <label for="bookNotes">Anything else? <span class="optional">(optional)</span>
+            <textarea id="bookNotes" name="notes" rows="2" placeholder="e.g. window seat, birthday"></textarea>
+          </label>
+          <p class="form-error" id="bookError" hidden>Please fill in your name, phone, date, time and number of guests.</p>
+          <button class="btn btn-primary btn-full" type="submit">Send Table Enquiry</button>
+          <p class="form-note">Demo only — this enquiry is not sent to the restaurant.</p>
+        </form>
+        <div class="order-confirm" id="bookConfirm" hidden tabindex="-1">
+          <h3>Thank you — this is a sample enquiry.</h3>
+          <p id="bookConfirmText"></p>
+          <p>No table was booked. Please contact the restaurant via its Facebook Page to book for real.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section id="visit" class="section section-alt">
+      <div class="container visit-layout">
+        <div>
+          <h2>Visit Us</h2>
+          <p><strong>Lemongrass Restaurant</strong><br>Agrabad, Chattogram, Bangladesh</p>
+          <p>No street address or phone number is shown here, because none was verified for this demo. For the restaurant's real address, phone number and opening hours, please check its official Facebook Page.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://www.facebook.com/lemongrass.restaurant.ctg/" target="_blank" rel="noopener">Visit Facebook Page</a>
+            <a class="btn btn-secondary" href="#menu">Browse the Sample Menu</a>
+          </div>
+        </div>
+        <div class="visit-card" aria-label="Contact summary">
+          <h3>Contact</h3>
+          <dl>
+            <dt>Location</dt>
+            <dd>Agrabad, Chattogram</dd>
+            <dt>Facebook</dt>
+            <dd><a href="https://www.facebook.com/lemongrass.restaurant.ctg/" target="_blank" rel="noopener">facebook.com/lemongrass.restaurant.ctg</a></dd>
+            <dt>Orders</dt>
+            <dd>Delivery / pickup — sample form above</dd>
+            <dt>Opening hours</dt>
+            <dd>See the Facebook Page</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="demo-banner footer-banner">CONCEPT DEMO — sample by Ahmed AI Studio, not a client project, not affiliated with Lemongrass Restaurant</p>
+      <p><strong>Lemongrass Restaurant</strong> — Agrabad, Chattogram. Sample menu, sample prices and sample forms only.</p>
+      <p>Facebook: <a href="https://www.facebook.com/lemongrass.restaurant.ctg/" target="_blank" rel="noopener">facebook.com/lemongrass.restaurant.ctg</a></p>
+      <p class="footer-credit">Concept demo built by <strong>Ahmed AI Studio</strong>, Bangladesh — websites, AI chatbots and business automation for small businesses.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
