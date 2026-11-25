@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Concept demo for Bazar BD — a general local shop / e-commerce template with a searchable catalogue, cart and order enquiry. Sample by Ahmed AI Studio.">
+  <title>Bazar BD — General Shop & E-commerce | Concept Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Concept demo banner -->
+  <div class="demo-banner" role="note">
+    <p><strong>CONCEPT DEMO</strong> &mdash; &#2453;&#2472;&#2488;&#2503;&#2474;&#2509;&#2463; &#2465;&#2503;&#2478;&#2507; &mdash; sample by Ahmed AI Studio, not a real shop</p>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Bazar BD &mdash; home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Bazar BD</span>
+          <span class="brand-sub">General Shop & E-commerce</span>
+        </span>
+      </a>
+      <div class="header-actions">
+        <button class="cart-btn" type="button" id="cart-btn" aria-label="Open cart">
+          <span aria-hidden="true">&#128722;</span> Cart <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#catalogue">Catalogue</a>
+        <a href="#how-it-works">How ordering works</a>
+        <a href="#order">Order</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small" href="#order">Order now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>General shop &amp; e-commerce &middot; Bangladesh</p>
+          <h1>Daily needs to gadgets, <em>all in one shop.</em></h1>
+          <p class="lead">Bazar BD is a sample general shop template — daily needs, home items, fashion and gadgets, all in a searchable catalogue with a cart. Browse the samples, add to cart, and send an order enquiry.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#catalogue">Browse the catalogue <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-secondary" href="#how-it-works">How ordering works</a>
+          </div>
+          <ul class="hero-notes">
+            <li><strong>One shop, many categories</strong> — gadgets, fashion, home items and beauty.</li>
+            <li><strong>Search &amp; filter</strong> — find any sample product in seconds.</li>
+            <li><strong>Cart + order form</strong> — add items, then send an enquiry. No payment is taken in this demo.</li>
+          </ul>
+        </div>
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="hero-card">
+            <img class="hero-photo" src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="" loading="lazy">
+            <div class="hero-card-overlay">
+              <span class="hero-card-eyebrow">Sample catalogue</span>
+              <p class="hero-card-title">Gadgets, fashion<br>&amp; home items</p>
+            </div>
+            <div class="hero-card-bottom">
+              <div class="hero-stat"><strong>12</strong><span>Sample products</span></div>
+              <div class="hero-stat"><strong>04</strong><span>Categories</span></div>
+              <div class="hero-stat"><strong>All BD</strong><span>Delivery</span></div>
+            </div>
+            <p class="hero-card-chip">General Shop</p>
+          </div>
+          <div class="hero-float">
+            <span class="hero-float-dot" aria-hidden="true"></span>
+            <div><strong>One cart for everything</strong><span>Gadgets, fashion, home & beauty</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><span></span>Scroll</div>
+    </section>
+
+    <!-- Trust / at-a-glance strip -->
+    <section class="strip" aria-label="At a glance">
+      <div class="container strip-inner">
+        <div class="strip-item"><span class="strip-label">Shop type</span><span>General shop — daily needs, home items, fashion & gadgets</span></div>
+        <div class="strip-item"><span class="strip-label">Ordering</span><span>Catalogue + cart + order form, or message the shop</span></div>
+        <div class="strip-item"><span class="strip-label">Delivery</span><span>All over Bangladesh, as the shop offers</span></div>
+      </div>
+    </section>
+
+    <!-- Catalogue -->
+    <section class="section" id="catalogue">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>The catalogue</p>
+          <h2>Browse the sample catalogue</h2>
+          <p class="section-intro">Sample products only — generic sample items to show how a general shop catalogue can work, not a real shop&rsquo;s products. All prices are sample prices — <strong>নমুনা মূল্য / sample price</strong>. The shop confirms the real price and availability when you order.</p>
+        </div>
+
+        <div class="catalogue-tools reveal">
+          <div class="search-wrap">
+            <label class="visually-hidden" for="search">Search the catalogue</label>
+            <input type="search" id="search" placeholder="Search by item, e.g. headphones, shoes, mug&hellip;" autocomplete="off">
+          </div>
+          <div class="filter-pills" role="group" aria-label="Filter by category">
+            <button class="pill active" type="button" data-filter="all">All items</button>
+            <button class="pill" type="button" data-filter="gadgets">Gadgets</button>
+            <button class="pill" type="button" data-filter="fashion">Fashion</button>
+            <button class="pill" type="button" data-filter="home">Home & Daily</button>
+            <button class="pill" type="button" data-filter="beauty">Beauty</button>
+          </div>
+          <p class="catalogue-count" id="catalogue-count" role="status">Showing 12 sample items</p>
+        </div>
+
+        <div class="catalogue-grid" id="catalogue-grid">
+          <article class="product-card reveal" data-category="gadgets" data-name="Wireless Headphones">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Wireless Headphones" loading="lazy">
+              <span class="product-tag">Gadgets</span>
+            </div>
+            <div class="product-body">
+              <h3>Wireless Headphones</h3>
+              <p>Everyday wireless headphones with clear sound — sample item.</p>
+              <p class="product-price"><strong>&#2547;1,850</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Sample model &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Wireless Headphones" data-price="1850" data-img="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="gadgets" data-name="Smartwatch">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Smartwatch" loading="lazy">
+              <span class="product-tag">Gadgets</span>
+            </div>
+            <div class="product-body">
+              <h3>Smartwatch</h3>
+              <p>A smartwatch for time, fitness and notifications — sample item.</p>
+              <p class="product-price"><strong>&#2547;2,450</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Sample model &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Smartwatch" data-price="2450" data-img="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="gadgets" data-name="Digital Camera">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Digital Camera" loading="lazy">
+              <span class="product-tag">Gadgets</span>
+            </div>
+            <div class="product-body">
+              <h3>Digital Camera</h3>
+              <p>A compact digital camera for photos and videos — sample item.</p>
+              <p class="product-price"><strong>&#2547;12,500</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Sample model &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Digital Camera" data-price="12500" data-img="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="gadgets" data-name="Classic Analog Watch">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Classic Analog Watch" loading="lazy">
+              <span class="product-tag">Gadgets</span>
+            </div>
+            <div class="product-body">
+              <h3>Classic Analog Watch</h3>
+              <p>A simple classic watch for everyday wear — sample item.</p>
+              <p class="product-price"><strong>&#2547;3,200</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Sample model &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Classic Analog Watch" data-price="3200" data-img="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="fashion" data-name="Running Shoes">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Running Shoes" loading="lazy">
+              <span class="product-tag">Fashion</span>
+            </div>
+            <div class="product-body">
+              <h3>Running Shoes</h3>
+              <p>Light running shoes for daily use — sample item.</p>
+              <p class="product-price"><strong>&#2547;2,800</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Sizes: 39–44 &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Running Shoes" data-price="2800" data-img="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="fashion" data-name="Cotton T-Shirt">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Cotton T-Shirt" loading="lazy">
+              <span class="product-tag">Fashion</span>
+            </div>
+            <div class="product-body">
+              <h3>Cotton T-Shirt</h3>
+              <p>Soft cotton t-shirt in a plain colour — sample item.</p>
+              <p class="product-price"><strong>&#2547;550</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Sizes: M–XL &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Cotton T-Shirt" data-price="550" data-img="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="fashion" data-name="Leather Handbag">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Leather Handbag" loading="lazy">
+              <span class="product-tag">Fashion</span>
+            </div>
+            <div class="product-body">
+              <h3>Leather Handbag</h3>
+              <p>A neat everyday handbag — sample item.</p>
+              <p class="product-price"><strong>&#2547;1,950</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Sample style &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Leather Handbag" data-price="1950" data-img="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="fashion" data-name="Sunglasses">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Sunglasses" loading="lazy">
+              <span class="product-tag">Fashion</span>
+            </div>
+            <div class="product-body">
+              <h3>Sunglasses</h3>
+              <p>Classic sunglasses for sunny days — sample item.</p>
+              <p class="product-price"><strong>&#2547;950</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Sample style &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Sunglasses" data-price="950" data-img="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="home" data-name="Ceramic Mug">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Ceramic Mug" loading="lazy">
+              <span class="product-tag">Home & Daily</span>
+            </div>
+            <div class="product-body">
+              <h3>Ceramic Mug</h3>
+              <p>A sturdy ceramic mug for tea or coffee — sample item.</p>
+              <p class="product-price"><strong>&#2547;350</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">1 piece &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Ceramic Mug" data-price="350" data-img="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="home" data-name="Table Lamp">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Table Lamp" loading="lazy">
+              <span class="product-tag">Home & Daily</span>
+            </div>
+            <div class="product-body">
+              <h3>Table Lamp</h3>
+              <p>A warm table lamp for home or study — sample item.</p>
+              <p class="product-price"><strong>&#2547;850</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">1 piece &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Table Lamp" data-price="850" data-img="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="beauty" data-name="Skincare Set">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Skincare Set" loading="lazy">
+              <span class="product-tag">Beauty</span>
+            </div>
+            <div class="product-body">
+              <h3>Skincare Set</h3>
+              <p>A simple daily skincare set — sample item.</p>
+              <p class="product-price"><strong>&#2547;1,250</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Sample set &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Skincare Set" data-price="1250" data-img="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="beauty" data-name="Perfume">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Perfume" loading="lazy">
+              <span class="product-tag">Beauty</span>
+            </div>
+            <div class="product-body">
+              <h3>Perfume</h3>
+              <p>A light everyday fragrance — sample item.</p>
+              <p class="product-price"><strong>&#2547;1,650</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Sample bottle &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Perfume" data-price="1650" data-img="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+        </div>
+        <p class="catalogue-empty" id="catalogue-empty" hidden>No sample items match your search. Try another word, or choose &ldquo;All items&rdquo;.</p>
+        <p class="note reveal">Photos are free sample photos, not the shop&rsquo;s real products. The shop&rsquo;s real catalogue, prices and stock are confirmed by the shop when you order. All prices shown are sample prices &mdash; &#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / sample price.</p>
+      </div>
+    </section>
+
+    <!-- How ordering works -->
+    <section class="section section-alt" id="how-it-works">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Simple by design</p>
+          <h2>How ordering works</h2>
+          <p class="section-intro">Ordering is kept simple: browse the catalogue, add items to the cart, and send an order enquiry. The shop confirms every order before it is final.</p>
+        </div>
+        <ol class="steps">
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">1</span>
+            <h3>Browse the catalogue</h3>
+            <p>Search by item or filter by category — gadgets, fashion, home or beauty — and check the note on each sample item.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">2</span>
+            <h3>Add to cart & send an enquiry</h3>
+            <p>Add items to the cart, then use the order form below — or message the shop directly.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">3</span>
+            <h3>The shop confirms</h3>
+            <p>The shop contacts you to confirm the price, availability and delivery. No payment is taken in this demo form.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Order -->
+    <section class="section section-booking" id="order">
+      <div class="container booking-inner">
+        <div class="booking-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Order enquiry</p>
+          <h2>Send an order enquiry</h2>
+          <p class="lead">Fill in the form and the shop will contact you to confirm. <strong>This is an enquiry, not a confirmed order.</strong></p>
+          <ul class="booking-points">
+            <li><span class="check" aria-hidden="true">&#10003;</span>No payment is taken here.</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span>Your details are only used for this order enquiry in this demo — nothing is sent to the shop from this sample page.</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span>Prefer to message instead? Orders are also taken by message, as the shop offers.</li>
+          </ul>
+          <p class="note">In the live version, this form would send the enquiry to the shop and confirm it by WhatsApp or Messenger.</p>
+        </div>
+
+        <form class="booking-form reveal" id="order-form" novalidate>
+          <p class="form-title">Order enquiry</p>
+          <p class="form-subtitle">Enquiry only &mdash; not a confirmed order until the shop replies.</p>
+          <div class="form-field">
+            <label for="name">Your name <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Ayesha Rahman" required>
+            <p class="field-error" id="name-error" hidden>Please enter your name.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="e.g. 01XXXXXXXXX" required>
+            <p class="field-error" id="phone-error" hidden>Please enter a valid phone number, e.g. 01XXXXXXXXX.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="item">Item <span aria-hidden="true">*</span></label>
+            <select id="item" name="item" required>
+              <option value="" selected>Choose an item</option>
+              <option value="Wireless Headphones">Wireless Headphones (sample)</option>
+              <option value="Smartwatch">Smartwatch (sample)</option>
+              <option value="Digital Camera">Digital Camera (sample)</option>
+              <option value="Classic Analog Watch">Classic Analog Watch (sample)</option>
+              <option value="Running Shoes">Running Shoes (sample)</option>
+              <option value="Cotton T-Shirt">Cotton T-Shirt (sample)</option>
+              <option value="Leather Handbag">Leather Handbag (sample)</option>
+              <option value="Sunglasses">Sunglasses (sample)</option>
+              <option value="Ceramic Mug">Ceramic Mug (sample)</option>
+              <option value="Table Lamp">Table Lamp (sample)</option>
+              <option value="Skincare Set">Skincare Set (sample)</option>
+              <option value="Perfume">Perfume (sample)</option>
+              <option value="Another item — I will message the shop">Another item &mdash; I will message the shop</option>
+            </select>
+            <p class="field-error" id="item-error" hidden>Please choose an item.</p>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="area">Delivery area <span aria-hidden="true">*</span></label>
+              <select id="area" name="area" required>
+                <option value="" selected>Choose an area</option>
+                <option value="Inside Dhaka">Inside Dhaka</option>
+                <option value="Outside Dhaka">Outside Dhaka</option>
+              </select>
+              <p class="field-error" id="area-error" hidden>Please choose a delivery area.</p>
+            </div>
+            <div class="form-field">
+              <label for="channel">Reply me on <span aria-hidden="true">*</span></label>
+              <select id="channel" name="channel" required>
+                <option value="" selected>Choose a channel</option>
+                <option value="Messenger">Messenger</option>
+                <option value="WhatsApp">WhatsApp</option>
+                <option value="Phone call">Phone call</option>
+              </select>
+              <p class="field-error" id="channel-error" hidden>Please choose how the shop should reply.</p>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="notes">Delivery address or anything to add? <span class="optional">(optional)</span></label>
+            <textarea id="notes" name="notes" rows="3" placeholder="e.g. Your area, or a note about the size"></textarea>
+          </div>
+
+          <p class="form-disclaimer">By sending this form you are making an order enquiry only. It is <strong>not a confirmed order</strong> until the shop contacts you to confirm the price, availability and delivery. No payment is taken.</p>
+
+          <button class="btn btn-primary btn-full" type="submit">Send order enquiry <span aria-hidden="true">&rarr;</span></button>
+          <p class="form-success" id="form-success" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container faq-inner">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Good to know</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>How do I order from this shop?</summary>
+            <p>Use the order form on this page, or message the shop — the way the shop already takes orders. The shop confirms every order before it is final.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Is my order confirmed as soon as I send the form?</summary>
+            <p>No. Sending the form is an enquiry only. Your order is confirmed only when the shop contacts you to confirm the price, availability and delivery.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Do I need to pay when I order?</summary>
+            <p>No payment is taken in this order form. Please ask the shop directly about payment options when they confirm your order.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Do you deliver outside Dhaka?</summary>
+            <p>The shop delivers all over Bangladesh, as it offers. Delivery details and charges are confirmed by the shop when they confirm your order.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Can I order more than one item at once?</summary>
+            <p>Yes — add every item to the cart, then send one order enquiry with the items you want, or list them in the order notes.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit / about -->
+    <section class="section" id="visit">
+      <div class="container visit-inner">
+        <div class="reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>About this template</p>
+          <h2>Bazar BD</h2>
+          <p class="lead">General shop & e-commerce — Bangladesh</p>
+          <p>A sample general shop template: daily needs, home items, fashion and gadgets, with a searchable catalogue, a cart and an order form. No real shop details are listed here, because this is a generic template, not a real shop.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#order">Send an order enquiry <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-secondary" href="#catalogue">Browse the catalogue</a>
+          </div>
+          <p class="note">No address, phone number or opening hours are listed here, because this is a generic template — the real shop adds its own details when this template is used.</p>
+        </div>
+        <div class="visit-card reveal" aria-label="At a glance">
+          <h3>At a glance</h3>
+          <dl>
+            <div><dt>Shop type</dt><dd>General shop / e-commerce</dd></div>
+            <div><dt>Country</dt><dd>Bangladesh</dd></div>
+            <div><dt>Catalogue</dt><dd>12 sample products, 4 categories</dd></div>
+            <div><dt>Ordering</dt><dd>Catalogue + cart + order form</dd></div>
+            <div><dt>Delivery</dt><dd>All over Bangladesh, as the shop offers</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-demo"><strong>CONCEPT DEMO</strong> &mdash; &#2453;&#2472;&#2488;&#2503;&#2474;&#2509;&#2463; &#2465;&#2503;&#2478;&#2507; &mdash; sample by Ahmed AI Studio, not a real shop</p>
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Bazar BD</p>
+          <p>General Shop & E-commerce &mdash; Bangladesh</p>
+        </div>
+        <p>Bazar BD &mdash; Bangladesh. This is a concept demo only. Order enquiries made here are not sent to any shop and are not confirmed orders. All prices are sample prices.</p>
+      </div>
+      <p class="footer-credit">Concept demo built by Ahmed AI Studio, Bangladesh &mdash; digital services for small businesses.</p>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-head">
+      <h2>Your cart</h2>
+      <button class="cart-close" type="button" id="cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <p class="cart-empty">Your cart is empty. Add a sample item from the catalogue above.</p>
+    </div>
+    <div class="cart-foot">
+      <p class="cart-total-row"><span>Total</span> <strong id="cart-total">&#2547;0</strong></p>
+      <p class="cart-note">All prices are sample prices &mdash; &#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / sample price. No payment is taken in this demo.</p>
+      <button class="btn btn-primary btn-full" type="button" id="checkout-btn">Send order enquiry <span aria-hidden="true">&rarr;</span></button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

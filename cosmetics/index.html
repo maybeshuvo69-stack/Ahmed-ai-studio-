@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Concept demo for Glow & Care — a cosmetics & skincare shop template with a searchable catalogue, cart and order enquiry. Sample by Ahmed AI Studio.">
+  <title>Glow & Care — Cosmetics & Skincare | Concept Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Concept demo banner -->
+  <div class="demo-banner" role="note">
+    <p><strong>CONCEPT DEMO</strong> &mdash; &#2453;&#2472;&#2488;&#2503;&#2474;&#2509;&#2463; &#2465;&#2503;&#2478;&#2507; &mdash; sample by Ahmed AI Studio, not a real shop</p>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Glow & Care &mdash; home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7s6.5 7.1 6.5 11.3a6.5 6.5 0 0 1-13 0C5.5 9.8 12 2.7 12 2.7z"/><path d="M9.5 14a2.5 2.5 0 0 0 2.5 2.5"/></svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Glow & Care</span>
+          <span class="brand-sub">Cosmetics &amp; Skincare</span>
+        </span>
+      </a>
+      <div class="header-actions">
+        <button class="cart-btn" type="button" id="cart-btn" aria-label="Open cart">
+          <span aria-hidden="true">&#128722;</span> Cart <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#catalogue">Catalogue</a>
+        <a href="#how-it-works">How ordering works</a>
+        <a href="#order">Order</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small" href="#order">Order now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Cosmetics &amp; skincare &middot; Bangladesh</p>
+          <h1>Glow starts with <em>good care.</em></h1>
+          <p class="lead">Glow &amp; Care is a sample cosmetics template — skincare, makeup and hair care, all in a searchable catalogue with a cart. Browse the samples, add to cart, and send an order enquiry.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#catalogue">Browse the catalogue <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-secondary" href="#how-it-works">How ordering works</a>
+          </div>
+          <ul class="hero-notes">
+            <li><strong>Care for skin &amp; hair</strong> — skincare, makeup and hair care.</li>
+            <li><strong>Search &amp; filter</strong> — find a serum, lipstick or hair oil in seconds.</li>
+            <li><strong>Cart + order form</strong> — add items, then send an enquiry. No payment is taken in this demo.</li>
+          </ul>
+        </div>
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="hero-card">
+            <img class="hero-photo" src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="" loading="lazy">
+            <div class="hero-card-overlay">
+              <span class="hero-card-eyebrow">Sample collection</span>
+              <p class="hero-card-title">Skincare, makeup<br>&amp; hair care</p>
+            </div>
+            <div class="hero-card-bottom">
+              <div class="hero-stat"><strong>12</strong><span>Sample items</span></div>
+              <div class="hero-stat"><strong>03</strong><span>Categories</span></div>
+              <div class="hero-stat"><strong>Sample</strong><span>Prices shown</span></div>
+            </div>
+            <p class="hero-card-chip">Cosmetics</p>
+          </div>
+          <div class="hero-float">
+            <span class="hero-float-dot" aria-hidden="true"></span>
+            <div><strong>Everyday care, in one place</strong><span>Skincare, makeup &amp; hair care</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><span></span>Scroll</div>
+    </section>
+
+    <!-- Trust / at-a-glance strip -->
+    <section class="strip" aria-label="At a glance">
+      <div class="container strip-inner">
+        <div class="strip-item"><span class="strip-label">Shop type</span><span>Cosmetics & skincare — skincare, makeup & hair care</span></div>
+        <div class="strip-item"><span class="strip-label">Ordering</span><span>Menu + cart + order form, or message the shop</span></div>
+        <div class="strip-item"><span class="strip-label">Delivery</span><span>All over Bangladesh, as the shop offers</span></div>
+      </div>
+    </section>
+
+    <!-- Catalogue -->
+    <section class="section" id="catalogue">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>The catalogue</p>
+          <h2>Browse the sample catalogue</h2>
+          <p class="section-intro">Sample items only — generic sample items to show how a cosmetics catalogue can work, not a real shop&rsquo;s products. All prices are sample prices — <strong>নমুনা মূল্য / sample price</strong>. The shop confirms the real price, size and availability when you order.</p>
+        </div>
+
+        <div class="catalogue-tools reveal">
+          <div class="search-wrap">
+            <label class="visually-hidden" for="search">Search the catalogue</label>
+            <input type="search" id="search" placeholder="Search by item, e.g. serum, lipstick, hair oil&hellip;" autocomplete="off">
+          </div>
+          <div class="filter-pills" role="group" aria-label="Filter by category">
+            <button class="pill active" type="button" data-filter="all">All items</button>
+            <button class="pill" type="button" data-filter="skincare">Skincare</button>
+            <button class="pill" type="button" data-filter="makeup">Makeup</button>
+            <button class="pill" type="button" data-filter="haircare">Hair Care</button>
+          </div>
+          <p class="catalogue-count" id="catalogue-count" role="status">Showing 12 sample items</p>
+        </div>
+
+        <div class="catalogue-grid" id="catalogue-grid">
+          <article class="product-card reveal" data-category="skincare" data-name="Gentle Foaming Face Cleanser">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Gentle Foaming Face Cleanser" loading="lazy">
+              <span class="product-tag">Skincare</span>
+            </div>
+            <div class="product-body">
+              <h3>Gentle Foaming Face Cleanser</h3>
+              <p>A gentle daily cleanser for fresh, clean skin — sample item.</p>
+              <p class="product-price"><strong>&#2547;450</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">100 ml sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Gentle Foaming Face Cleanser" data-price="450" data-img="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="skincare" data-name="Hydrating Face Serum">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Hydrating Face Serum" loading="lazy">
+              <span class="product-tag">Skincare</span>
+            </div>
+            <div class="product-body">
+              <h3>Hydrating Face Serum</h3>
+              <p>A lightweight serum for soft, hydrated skin — sample item.</p>
+              <p class="product-price"><strong>&#2547;850</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">30 ml sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Hydrating Face Serum" data-price="850" data-img="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="skincare" data-name="Vitamin C Glow Serum">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Vitamin C Glow Serum" loading="lazy">
+              <span class="product-tag">Skincare</span>
+            </div>
+            <div class="product-body">
+              <h3>Vitamin C Glow Serum</h3>
+              <p>A brightening serum for a healthy, natural glow — sample item.</p>
+              <p class="product-price"><strong>&#2547;950</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">30 ml sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Vitamin C Glow Serum" data-price="950" data-img="https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="skincare" data-name="Skincare Gift Set">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Skincare Gift Set" loading="lazy">
+              <span class="product-tag">Skincare</span>
+            </div>
+            <div class="product-body">
+              <h3>Skincare Gift Set</h3>
+              <p>Cleanser, cream and care in one gift set — sample item.</p>
+              <p class="product-price"><strong>&#2547;1,450</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">3-piece set sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Skincare Gift Set" data-price="1450" data-img="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="makeup" data-name="Matte Red Lipstick">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Matte Red Lipstick" loading="lazy">
+              <span class="product-tag">Makeup</span>
+            </div>
+            <div class="product-body">
+              <h3>Matte Red Lipstick</h3>
+              <p>A bold matte red for day or evening — sample item.</p>
+              <p class="product-price"><strong>&#2547;550</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">1 piece sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Matte Red Lipstick" data-price="550" data-img="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="makeup" data-name="Eyeshadow &amp; Blush Palette">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Eyeshadow &amp; Blush Palette" loading="lazy">
+              <span class="product-tag">Makeup</span>
+            </div>
+            <div class="product-body">
+              <h3>Eyeshadow &amp; Blush Palette</h3>
+              <p>Warm eyeshadows and blush in one palette — sample item.</p>
+              <p class="product-price"><strong>&#2547;1,250</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">1 palette sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Eyeshadow &amp; Blush Palette" data-price="1250" data-img="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="makeup" data-name="Makeup Essentials Kit">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Makeup Essentials Kit" loading="lazy">
+              <span class="product-tag">Makeup</span>
+            </div>
+            <div class="product-body">
+              <h3>Makeup Essentials Kit</h3>
+              <p>Palette, blush and lip colour for everyday looks — sample item.</p>
+              <p class="product-price"><strong>&#2547;1,450</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">Kit sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Makeup Essentials Kit" data-price="1450" data-img="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="makeup" data-name="Everyday Makeup Set">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Everyday Makeup Set" loading="lazy">
+              <span class="product-tag">Makeup</span>
+            </div>
+            <div class="product-body">
+              <h3>Everyday Makeup Set</h3>
+              <p>Everyday makeup essentials in one set — sample item.</p>
+              <p class="product-price"><strong>&#2547;1,150</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">Set sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Everyday Makeup Set" data-price="1150" data-img="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="haircare" data-name="Coconut Hair Oil">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Coconut Hair Oil" loading="lazy">
+              <span class="product-tag">Hair Care</span>
+            </div>
+            <div class="product-body">
+              <h3>Coconut Hair Oil</h3>
+              <p>Nourishing oil for soft, shiny hair — sample item.</p>
+              <p class="product-price"><strong>&#2547;650</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">200 ml sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Coconut Hair Oil" data-price="650" data-img="https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="haircare" data-name="Restorative Hair Mask">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Restorative Hair Mask" loading="lazy">
+              <span class="product-tag">Hair Care</span>
+            </div>
+            <div class="product-body">
+              <h3>Restorative Hair Mask</h3>
+              <p>A deep-care mask for dry, damaged hair — sample item.</p>
+              <p class="product-price"><strong>&#2547;750</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">150 ml sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Restorative Hair Mask" data-price="750" data-img="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="haircare" data-name="Gentle Shampoo &amp; Conditioner Set">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Gentle Shampoo &amp; Conditioner Set" loading="lazy">
+              <span class="product-tag">Hair Care</span>
+            </div>
+            <div class="product-body">
+              <h3>Gentle Shampoo &amp; Conditioner Set</h3>
+              <p>Gentle cleansing and conditioning for everyday hair — sample item.</p>
+              <p class="product-price"><strong>&#2547;850</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">2-piece set sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Gentle Shampoo &amp; Conditioner Set" data-price="850" data-img="https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="haircare" data-name="Hair Styling Brush Set">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Hair Styling Brush Set" loading="lazy">
+              <span class="product-tag">Hair Care</span>
+            </div>
+            <div class="product-body">
+              <h3>Hair Styling Brush Set</h3>
+              <p>Brushes for smooth, easy styling at home — sample item.</p>
+              <p class="product-price"><strong>&#2547;650</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">Set sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Hair Styling Brush Set" data-price="650" data-img="https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+        </div>
+        <p class="catalogue-empty" id="catalogue-empty" hidden>No sample items match your search. Try another word, or choose &ldquo;All items&rdquo;.</p>
+        <p class="note reveal">Photos are free sample photos, not the shop&rsquo;s real products. The shop&rsquo;s real catalogue, prices and stock are confirmed by the shop when you order. All prices shown are sample prices &mdash; &#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / sample price.</p>
+      </div>
+    </section>
+
+    <!-- How ordering works -->
+    <section class="section section-alt" id="how-it-works">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Simple by design</p>
+          <h2>How ordering works</h2>
+          <p class="section-intro">Ordering is kept simple: browse the catalogue, add items to the cart, and send an order enquiry. The shop confirms every order before it is final.</p>
+        </div>
+        <ol class="steps">
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">1</span>
+            <h3>Browse the menu</h3>
+            <p>Search by item or filter by category — skincare, makeup or hair care — and check the size note on each sample item.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">2</span>
+            <h3>Add to cart & send an enquiry</h3>
+            <p>Add items to the cart, then use the order form below — or message the shop directly.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">3</span>
+            <h3>The shop confirms</h3>
+            <p>The shop contacts you to confirm the price, size, availability and delivery. No payment is taken in this demo form.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Order -->
+    <section class="section section-booking" id="order">
+      <div class="container booking-inner">
+        <div class="booking-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Order enquiry</p>
+          <h2>Send an order enquiry</h2>
+          <p class="lead">Fill in the form and the shop will contact you to confirm. <strong>This is an enquiry, not a confirmed order.</strong></p>
+          <ul class="booking-points">
+            <li><span class="check" aria-hidden="true">&#10003;</span>No payment is taken here.</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span>Your details are only used for this order enquiry in this demo — nothing is sent to the shop from this sample page.</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span>Not sure which product suits you? Mention your skin or hair type in the order notes.</li>
+          </ul>
+          <p class="note">In the live version, this form would send the enquiry to the shop and confirm it by WhatsApp or Messenger.</p>
+        </div>
+
+        <form class="booking-form reveal" id="order-form" novalidate>
+          <p class="form-title">Order enquiry</p>
+          <p class="form-subtitle">Enquiry only &mdash; not a confirmed order until the shop replies.</p>
+          <div class="form-field">
+            <label for="name">Your name <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Ayesha Rahman" required>
+            <p class="field-error" id="name-error" hidden>Please enter your name.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="e.g. 01XXXXXXXXX" required>
+            <p class="field-error" id="phone-error" hidden>Please enter a valid phone number, e.g. 01XXXXXXXXX.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="item">Item <span aria-hidden="true">*</span></label>
+            <select id="item" name="item" required>
+              <option value="" selected>Choose an item</option>
+              <option value="Gentle Foaming Face Cleanser">Gentle Foaming Face Cleanser (sample)</option>
+              <option value="Hydrating Face Serum">Hydrating Face Serum (sample)</option>
+              <option value="Vitamin C Glow Serum">Vitamin C Glow Serum (sample)</option>
+              <option value="Skincare Gift Set">Skincare Gift Set (sample)</option>
+              <option value="Matte Red Lipstick">Matte Red Lipstick (sample)</option>
+              <option value="Eyeshadow &amp; Blush Palette">Eyeshadow &amp; Blush Palette (sample)</option>
+              <option value="Makeup Essentials Kit">Makeup Essentials Kit (sample)</option>
+              <option value="Everyday Makeup Set">Everyday Makeup Set (sample)</option>
+              <option value="Coconut Hair Oil">Coconut Hair Oil (sample)</option>
+              <option value="Restorative Hair Mask">Restorative Hair Mask (sample)</option>
+              <option value="Gentle Shampoo &amp; Conditioner Set">Gentle Shampoo &amp; Conditioner Set (sample)</option>
+              <option value="Hair Styling Brush Set">Hair Styling Brush Set (sample)</option>
+              <option value="Another item — I will message the shop">Another item &mdash; I will message the shop</option>
+            </select>
+            <p class="field-error" id="item-error" hidden>Please choose an item.</p>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="area">Delivery area <span aria-hidden="true">*</span></label>
+              <select id="area" name="area" required>
+                <option value="" selected>Choose an area</option>
+                <option value="Inside Dhaka">Inside Dhaka</option>
+                <option value="Outside Dhaka">Outside Dhaka</option>
+              </select>
+              <p class="field-error" id="area-error" hidden>Please choose a delivery area.</p>
+            </div>
+            <div class="form-field">
+              <label for="channel">Reply me on <span aria-hidden="true">*</span></label>
+              <select id="channel" name="channel" required>
+                <option value="" selected>Choose a channel</option>
+                <option value="Messenger">Messenger</option>
+                <option value="WhatsApp">WhatsApp</option>
+                <option value="Phone call">Phone call</option>
+              </select>
+              <p class="field-error" id="channel-error" hidden>Please choose how the shop should reply.</p>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="notes">Delivery address or anything to add? <span class="optional">(optional)</span></label>
+            <textarea id="notes" name="notes" rows="3" placeholder="e.g. Your area, or a note about the size"></textarea>
+          </div>
+
+          <p class="form-disclaimer">By sending this form you are making an order enquiry only. It is <strong>not a confirmed order</strong> until the shop contacts you to confirm the price, availability and delivery. No payment is taken.</p>
+
+          <button class="btn btn-primary btn-full" type="submit">Send order enquiry <span aria-hidden="true">&rarr;</span></button>
+          <p class="form-success" id="form-success" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container faq-inner">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Good to know</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>How do I order from this shop?</summary>
+            <p>Use the order form on this page, or message the shop — the way the shop already takes orders. The shop confirms every order before it is final.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Is my order confirmed as soon as I send the form?</summary>
+            <p>No. Sending the form is an enquiry only. Your order is confirmed only when the shop contacts you to confirm the price, availability and delivery.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Do I need to pay when I order?</summary>
+            <p>No payment is taken in this order form. Please ask the shop directly about payment options when they confirm your order.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Do you deliver outside Dhaka?</summary>
+            <p>The shop delivers all over Bangladesh, as it offers. Delivery details and charges are confirmed by the shop when they confirm your order.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Are these real products?</summary>
+            <p>No. These are generic sample items to show how a cosmetics catalogue can work. The shop lists its real products, prices and stock when this template is used — the shop confirms the real price and availability when you order.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit / about -->
+    <section class="section" id="visit">
+      <div class="container visit-inner">
+        <div class="reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>About this template</p>
+          <h2>Glow &amp; Care</h2>
+          <p class="lead">Cosmetics & skincare — Bangladesh</p>
+          <p>A sample cosmetics template: skincare, makeup and hair care, with a searchable catalogue, a cart and an order form. No real shop details are listed here, because this is a generic template, not a real shop.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#order">Send an order enquiry <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-secondary" href="#catalogue">Browse the catalogue</a>
+          </div>
+          <p class="note">No address, phone number or opening hours are listed here, because this is a generic template — the real shop adds its own details when this template is used.</p>
+        </div>
+        <div class="visit-card reveal" aria-label="At a glance">
+          <h3>At a glance</h3>
+          <dl>
+            <div><dt>Shop type</dt><dd>Cosmetics & skincare</dd></div>
+            <div><dt>Country</dt><dd>Bangladesh</dd></div>
+            <div><dt>Catalogue</dt><dd>12 sample items, 3 categories</dd></div>
+            <div><dt>Ordering</dt><dd>Catalogue + cart + order form</dd></div>
+            <div><dt>Delivery</dt><dd>All over Bangladesh, as the shop offers</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-demo"><strong>CONCEPT DEMO</strong> &mdash; &#2453;&#2472;&#2488;&#2503;&#2474;&#2509;&#2463; &#2465;&#2503;&#2478;&#2507; &mdash; sample by Ahmed AI Studio, not a real shop</p>
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Glow &amp; Care</p>
+          <p>Cosmetics &amp; Skincare &mdash; Bangladesh</p>
+        </div>
+        <p>Glow &amp; Care &mdash; Bangladesh. This is a concept demo only. Order enquiries made here are not sent to any shop and are not confirmed orders. All prices are sample prices.</p>
+      </div>
+      <p class="footer-credit">Concept demo built by Ahmed AI Studio, Bangladesh &mdash; digital services for small businesses.</p>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-head">
+      <h2>Your cart</h2>
+      <button class="cart-close" type="button" id="cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <p class="cart-empty">Your cart is empty. Add a sample item from the catalogue above.</p>
+    </div>
+    <div class="cart-foot">
+      <p class="cart-total-row"><span>Total</span> <strong id="cart-total">&#2547;0</strong></p>
+      <p class="cart-note">All prices are sample prices &mdash; &#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / sample price. No payment is taken in this demo.</p>
+      <button class="btn btn-primary btn-full" type="button" id="checkout-btn">Send order enquiry <span aria-hidden="true">&rarr;</span></button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

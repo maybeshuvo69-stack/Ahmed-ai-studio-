@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Concept demo for Misti Bake House — a bakery & homemade cake shop template with a searchable menu, cart and order enquiry. Sample by Ahmed AI Studio.">
+  <title>Misti Bake House — Bakery & Homemade Cakes | Concept Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Concept demo banner -->
+  <div class="demo-banner" role="note">
+    <p><strong>CONCEPT DEMO</strong> &mdash; &#2453;&#2472;&#2488;&#2503;&#2474;&#2509;&#2463; &#2465;&#2503;&#2478;&#2507; &mdash; sample by Ahmed AI Studio, not a real shop</p>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Misti Bake House &mdash; home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Misti Bake House</span>
+          <span class="brand-sub">Bakery & Homemade Cakes</span>
+        </span>
+      </a>
+      <div class="header-actions">
+        <button class="cart-btn" type="button" id="cart-btn" aria-label="Open cart">
+          <span aria-hidden="true">&#128722;</span> Cart <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#catalogue">Catalogue</a>
+        <a href="#how-it-works">How ordering works</a>
+        <a href="#order">Order</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small" href="#order">Order now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Bakery &amp; homemade cakes &middot; Bangladesh</p>
+          <h1>Baked fresh, <em>ordered with ease.</em></h1>
+          <p class="lead">Misti Bake House is a sample bakery template — cakes, cupcakes, cookies and breads, all in a searchable menu with a cart. Browse the samples, add to cart, and send an order enquiry for your next celebration.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#catalogue">Browse the catalogue <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-secondary" href="#how-it-works">How ordering works</a>
+          </div>
+          <ul class="hero-notes">
+            <li><strong>Fresh from the oven</strong> — cakes, cupcakes, cookies and breads.</li>
+            <li><strong>Search &amp; filter</strong> — find a cake, cupcakes, cookies or bread in seconds.</li>
+            <li><strong>Cart + order form</strong> — add items, then send an enquiry. No payment is taken in this demo.</li>
+          </ul>
+        </div>
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="hero-card">
+            <img class="hero-photo" src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="" loading="lazy">
+            <div class="hero-card-overlay">
+              <span class="hero-card-eyebrow">Sample menu</span>
+              <p class="hero-card-title">Cakes, cupcakes<br>&amp; fresh bread</p>
+            </div>
+            <div class="hero-card-bottom">
+              <div class="hero-stat"><strong>12</strong><span>Sample items</span></div>
+              <div class="hero-stat"><strong>04</strong><span>Categories</span></div>
+              <div class="hero-stat"><strong>Fresh</strong><span>Baked to order</span></div>
+            </div>
+            <p class="hero-card-chip">Bakery</p>
+          </div>
+          <div class="hero-float">
+            <span class="hero-float-dot" aria-hidden="true"></span>
+            <div><strong>Order a cake for any occasion</strong><span>Birthday, wedding or tea time</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><span></span>Scroll</div>
+    </section>
+
+    <!-- Trust / at-a-glance strip -->
+    <section class="strip" aria-label="At a glance">
+      <div class="container strip-inner">
+        <div class="strip-item"><span class="strip-label">Shop type</span><span>Bakery & homemade cakes — cakes, cupcakes, cookies & breads</span></div>
+        <div class="strip-item"><span class="strip-label">Ordering</span><span>Menu + cart + order form, or message the shop</span></div>
+        <div class="strip-item"><span class="strip-label">Delivery</span><span>All over Bangladesh, as the shop offers</span></div>
+      </div>
+    </section>
+
+    <!-- Catalogue -->
+    <section class="section" id="catalogue">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>The catalogue</p>
+          <h2>Browse the sample menu</h2>
+          <p class="section-intro">Sample items only — generic sample items to show how a bakery menu can work, not a real bakery&rsquo;s products. All prices are sample prices — <strong>নমুনা মূল্য / sample price</strong>. The shop confirms the real price, size and availability when you order.</p>
+        </div>
+
+        <div class="catalogue-tools reveal">
+          <div class="search-wrap">
+            <label class="visually-hidden" for="search">Search the catalogue</label>
+            <input type="search" id="search" placeholder="Search by item, e.g. chocolate cake, cookies, bread&hellip;" autocomplete="off">
+          </div>
+          <div class="filter-pills" role="group" aria-label="Filter by category">
+            <button class="pill active" type="button" data-filter="all">All items</button>
+            <button class="pill" type="button" data-filter="cakes">Cakes</button>
+            <button class="pill" type="button" data-filter="cupcakes">Cupcakes</button>
+            <button class="pill" type="button" data-filter="cookies">Cookies</button>
+            <button class="pill" type="button" data-filter="breads">Breads</button>
+          </div>
+          <p class="catalogue-count" id="catalogue-count" role="status">Showing 12 sample items</p>
+        </div>
+
+        <div class="catalogue-grid" id="catalogue-grid">
+          <article class="product-card reveal" data-category="cakes" data-name="Chocolate Fudge Cake">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Chocolate Fudge Cake" loading="lazy">
+              <span class="product-tag">Cakes</span>
+            </div>
+            <div class="product-body">
+              <h3>Chocolate Fudge Cake</h3>
+              <p>Rich chocolate sponge with fudge frosting — sample item.</p>
+              <p class="product-price"><strong>&#2547;950</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">1 kg sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Chocolate Fudge Cake" data-price="950" data-img="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="cakes" data-name="Strawberry Cream Cake">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Strawberry Cream Cake" loading="lazy">
+              <span class="product-tag">Cakes</span>
+            </div>
+            <div class="product-body">
+              <h3>Strawberry Cream Cake</h3>
+              <p>Fresh cream and strawberries, light and sweet — sample item.</p>
+              <p class="product-price"><strong>&#2547;1,100</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">1 kg sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Strawberry Cream Cake" data-price="1100" data-img="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="cakes" data-name="Vanilla Birthday Cake">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Vanilla Birthday Cake" loading="lazy">
+              <span class="product-tag">Cakes</span>
+            </div>
+            <div class="product-body">
+              <h3>Vanilla Birthday Cake</h3>
+              <p>Classic vanilla sponge for birthdays — sample item.</p>
+              <p class="product-price"><strong>&#2547;850</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">1 kg sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Vanilla Birthday Cake" data-price="850" data-img="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="cakes" data-name="Red Velvet Cake">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Red Velvet Cake" loading="lazy">
+              <span class="product-tag">Cakes</span>
+            </div>
+            <div class="product-body">
+              <h3>Red Velvet Cake</h3>
+              <p>Soft red velvet with cream-cheese frosting — sample item.</p>
+              <p class="product-price"><strong>&#2547;1,200</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">1 kg sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Red Velvet Cake" data-price="1200" data-img="https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="cupcakes" data-name="Chocolate Cupcakes — Box of 6">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Chocolate Cupcakes — Box of 6" loading="lazy">
+              <span class="product-tag">Cupcakes</span>
+            </div>
+            <div class="product-body">
+              <h3>Chocolate Cupcakes — Box of 6</h3>
+              <p>Six chocolate cupcakes with swirled frosting — sample item.</p>
+              <p class="product-price"><strong>&#2547;550</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Box of 6 &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Chocolate Cupcakes — Box of 6" data-price="550" data-img="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="cupcakes" data-name="Vanilla Cupcakes — Box of 6">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Vanilla Cupcakes — Box of 6" loading="lazy">
+              <span class="product-tag">Cupcakes</span>
+            </div>
+            <div class="product-body">
+              <h3>Vanilla Cupcakes — Box of 6</h3>
+              <p>Six vanilla cupcakes, baked fresh — sample item.</p>
+              <p class="product-price"><strong>&#2547;500</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Box of 6 &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Vanilla Cupcakes — Box of 6" data-price="500" data-img="https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="cookies" data-name="Butter Cookies — Box">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Butter Cookies — Box" loading="lazy">
+              <span class="product-tag">Cookies</span>
+            </div>
+            <div class="product-body">
+              <h3>Butter Cookies — Box</h3>
+              <p>Crisp, buttery cookies for tea time — sample item.</p>
+              <p class="product-price"><strong>&#2547;350</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Box of 12 &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Butter Cookies — Box" data-price="350" data-img="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="cookies" data-name="Choco Chip Cookies — Box">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1599785209707-a456fc1337bb?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Choco Chip Cookies — Box" loading="lazy">
+              <span class="product-tag">Cookies</span>
+            </div>
+            <div class="product-body">
+              <h3>Choco Chip Cookies — Box</h3>
+              <p>Chewy cookies loaded with chocolate chips — sample item.</p>
+              <p class="product-price"><strong>&#2547;380</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Box of 12 &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Choco Chip Cookies — Box" data-price="380" data-img="https://images.unsplash.com/photo-1599785209707-a456fc1337bb?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="breads" data-name="Fresh White Bread">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Fresh White Bread" loading="lazy">
+              <span class="product-tag">Breads</span>
+            </div>
+            <div class="product-body">
+              <h3>Fresh White Bread</h3>
+              <p>Soft everyday loaf, baked fresh — sample item.</p>
+              <p class="product-price"><strong>&#2547;120</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">1 loaf &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Fresh White Bread" data-price="120" data-img="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="breads" data-name="Sourdough Loaf">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Sourdough Loaf" loading="lazy">
+              <span class="product-tag">Breads</span>
+            </div>
+            <div class="product-body">
+              <h3>Sourdough Loaf</h3>
+              <p>Rustic sourdough with a crisp crust — sample item.</p>
+              <p class="product-price"><strong>&#2547;220</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">1 loaf &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Sourdough Loaf" data-price="220" data-img="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="breads" data-name="Butter Croissant">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Butter Croissant" loading="lazy">
+              <span class="product-tag">Breads</span>
+            </div>
+            <div class="product-body">
+              <h3>Butter Croissant</h3>
+              <p>Flaky, golden butter croissant — sample item.</p>
+              <p class="product-price"><strong>&#2547;150</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">1 piece &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Butter Croissant" data-price="150" data-img="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="breads" data-name="Glazed Donuts — Box of 4">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Glazed Donuts — Box of 4" loading="lazy">
+              <span class="product-tag">Breads</span>
+            </div>
+            <div class="product-body">
+              <h3>Glazed Donuts — Box of 4</h3>
+              <p>Four soft glazed donuts — sample item.</p>
+              <p class="product-price"><strong>&#2547;320</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Box of 4 &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Glazed Donuts — Box of 4" data-price="320" data-img="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+        </div>
+        <p class="catalogue-empty" id="catalogue-empty" hidden>No sample items match your search. Try another word, or choose &ldquo;All items&rdquo;.</p>
+        <p class="note reveal">Photos are free sample photos, not the shop&rsquo;s real products. The shop&rsquo;s real catalogue, prices and stock are confirmed by the shop when you order. All prices shown are sample prices &mdash; &#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / sample price.</p>
+      </div>
+    </section>
+
+    <!-- How ordering works -->
+    <section class="section section-alt" id="how-it-works">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Simple by design</p>
+          <h2>How ordering works</h2>
+          <p class="section-intro">Ordering is kept simple: browse the catalogue, add items to the cart, and send an order enquiry. The shop confirms every order before it is final.</p>
+        </div>
+        <ol class="steps">
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">1</span>
+            <h3>Browse the menu</h3>
+            <p>Search by item or filter by category — cakes, cupcakes, cookies or breads — and check the size note on each sample item.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">2</span>
+            <h3>Add to cart & send an enquiry</h3>
+            <p>Add items to the cart, then use the order form below — or message the shop directly.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">3</span>
+            <h3>The shop confirms</h3>
+            <p>The shop contacts you to confirm the price, size, availability and delivery. No payment is taken in this demo form.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Order -->
+    <section class="section section-booking" id="order">
+      <div class="container booking-inner">
+        <div class="booking-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Order enquiry</p>
+          <h2>Send an order enquiry</h2>
+          <p class="lead">Fill in the form and the shop will contact you to confirm. <strong>This is an enquiry, not a confirmed order.</strong></p>
+          <ul class="booking-points">
+            <li><span class="check" aria-hidden="true">&#10003;</span>No payment is taken here.</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span>Your details are only used for this order enquiry in this demo — nothing is sent to the shop from this sample page.</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span>Need a custom cake? Mention the flavour, size and date in the order notes.</li>
+          </ul>
+          <p class="note">In the live version, this form would send the enquiry to the shop and confirm it by WhatsApp or Messenger.</p>
+        </div>
+
+        <form class="booking-form reveal" id="order-form" novalidate>
+          <p class="form-title">Order enquiry</p>
+          <p class="form-subtitle">Enquiry only &mdash; not a confirmed order until the shop replies.</p>
+          <div class="form-field">
+            <label for="name">Your name <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Ayesha Rahman" required>
+            <p class="field-error" id="name-error" hidden>Please enter your name.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="e.g. 01XXXXXXXXX" required>
+            <p class="field-error" id="phone-error" hidden>Please enter a valid phone number, e.g. 01XXXXXXXXX.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="item">Item <span aria-hidden="true">*</span></label>
+            <select id="item" name="item" required>
+              <option value="" selected>Choose an item</option>
+              <option value="Chocolate Fudge Cake">Chocolate Fudge Cake (sample)</option>
+              <option value="Strawberry Cream Cake">Strawberry Cream Cake (sample)</option>
+              <option value="Vanilla Birthday Cake">Vanilla Birthday Cake (sample)</option>
+              <option value="Red Velvet Cake">Red Velvet Cake (sample)</option>
+              <option value="Chocolate Cupcakes — Box of 6">Chocolate Cupcakes — Box of 6 (sample)</option>
+              <option value="Vanilla Cupcakes — Box of 6">Vanilla Cupcakes — Box of 6 (sample)</option>
+              <option value="Butter Cookies — Box">Butter Cookies — Box (sample)</option>
+              <option value="Choco Chip Cookies — Box">Choco Chip Cookies — Box (sample)</option>
+              <option value="Fresh White Bread">Fresh White Bread (sample)</option>
+              <option value="Sourdough Loaf">Sourdough Loaf (sample)</option>
+              <option value="Butter Croissant">Butter Croissant (sample)</option>
+              <option value="Glazed Donuts — Box of 4">Glazed Donuts — Box of 4 (sample)</option>
+              <option value="Another item — I will message the shop">Another item &mdash; I will message the shop</option>
+            </select>
+            <p class="field-error" id="item-error" hidden>Please choose an item.</p>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="area">Delivery area <span aria-hidden="true">*</span></label>
+              <select id="area" name="area" required>
+                <option value="" selected>Choose an area</option>
+                <option value="Inside Dhaka">Inside Dhaka</option>
+                <option value="Outside Dhaka">Outside Dhaka</option>
+              </select>
+              <p class="field-error" id="area-error" hidden>Please choose a delivery area.</p>
+            </div>
+            <div class="form-field">
+              <label for="channel">Reply me on <span aria-hidden="true">*</span></label>
+              <select id="channel" name="channel" required>
+                <option value="" selected>Choose a channel</option>
+                <option value="Messenger">Messenger</option>
+                <option value="WhatsApp">WhatsApp</option>
+                <option value="Phone call">Phone call</option>
+              </select>
+              <p class="field-error" id="channel-error" hidden>Please choose how the shop should reply.</p>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="notes">Delivery address or anything to add? <span class="optional">(optional)</span></label>
+            <textarea id="notes" name="notes" rows="3" placeholder="e.g. Your area, or a note about the size"></textarea>
+          </div>
+
+          <p class="form-disclaimer">By sending this form you are making an order enquiry only. It is <strong>not a confirmed order</strong> until the shop contacts you to confirm the price, availability and delivery. No payment is taken.</p>
+
+          <button class="btn btn-primary btn-full" type="submit">Send order enquiry <span aria-hidden="true">&rarr;</span></button>
+          <p class="form-success" id="form-success" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container faq-inner">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Good to know</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>How do I order from this bakery?</summary>
+            <p>Use the order form on this page, or message the shop — the way the shop already takes orders. The shop confirms every order before it is final.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Is my order confirmed as soon as I send the form?</summary>
+            <p>No. Sending the form is an enquiry only. Your order is confirmed only when the shop contacts you to confirm the price, size, availability and delivery.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Do I need to pay when I order?</summary>
+            <p>No payment is taken in this order form. Please ask the shop directly about payment options when they confirm your order.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Do you deliver outside Dhaka?</summary>
+            <p>The shop delivers all over Bangladesh, as it offers. Delivery details and charges are confirmed by the shop when they confirm your order.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Can I order a custom cake?</summary>
+            <p>Yes — mention the flavour, size, message and date in the order notes, and the shop will confirm whether it can be made.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit / about -->
+    <section class="section" id="visit">
+      <div class="container visit-inner">
+        <div class="reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>About this template</p>
+          <h2>Misti Bake House</h2>
+          <p class="lead">Bakery & homemade cakes — Bangladesh</p>
+          <p>A sample bakery template: cakes, cupcakes, cookies and breads, with a searchable menu, a cart and an order form. No real bakery details are listed here, because this is a generic template, not a real bakery.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#order">Send an order enquiry <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-secondary" href="#catalogue">Browse the catalogue</a>
+          </div>
+          <p class="note">No address, phone number or opening hours are listed here, because this is a generic template — the real shop adds its own details when this template is used.</p>
+        </div>
+        <div class="visit-card reveal" aria-label="At a glance">
+          <h3>At a glance</h3>
+          <dl>
+            <div><dt>Shop type</dt><dd>Bakery & homemade cakes</dd></div>
+            <div><dt>Country</dt><dd>Bangladesh</dd></div>
+            <div><dt>Menu</dt><dd>12 sample items, 4 categories</dd></div>
+            <div><dt>Ordering</dt><dd>Menu + cart + order form</dd></div>
+            <div><dt>Delivery</dt><dd>All over Bangladesh, as the shop offers</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-demo"><strong>CONCEPT DEMO</strong> &mdash; &#2453;&#2472;&#2488;&#2503;&#2474;&#2509;&#2463; &#2465;&#2503;&#2478;&#2507; &mdash; sample by Ahmed AI Studio, not a real shop</p>
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Misti Bake House</p>
+          <p>Bakery & Homemade Cakes &mdash; Bangladesh</p>
+        </div>
+        <p>Misti Bake House &mdash; Bangladesh. This is a concept demo only. Order enquiries made here are not sent to any shop and are not confirmed orders. All prices are sample prices.</p>
+      </div>
+      <p class="footer-credit">Concept demo built by Ahmed AI Studio, Bangladesh &mdash; digital services for small businesses.</p>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-head">
+      <h2>Your cart</h2>
+      <button class="cart-close" type="button" id="cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <p class="cart-empty">Your cart is empty. Add a sample item from the catalogue above.</p>
+    </div>
+    <div class="cart-foot">
+      <p class="cart-total-row"><span>Total</span> <strong id="cart-total">&#2547;0</strong></p>
+      <p class="cart-note">All prices are sample prices &mdash; &#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / sample price. No payment is taken in this demo.</p>
+      <button class="btn btn-primary btn-full" type="button" id="checkout-btn">Send order enquiry <span aria-hidden="true">&rarr;</span></button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

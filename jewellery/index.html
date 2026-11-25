@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alankar — concept demo jewellery shop template: necklaces, earrings, bangles and rings. Sample by Ahmed AI Studio.">
+  <title>Alankar — Shonar Goyona | Concept Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Concept demo banner -->
+  <div class="demo-banner" role="note">
+    <p><strong>CONCEPT DEMO — কনসেপ্ট ডেমো</strong> &middot; sample by Ahmed AI Studio &middot; Ahmed AI Studio-এর তৈরি নমুনা ওয়েবসাইট</p>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Alankar — home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 12L2 9l4-6z"/><path d="M2 9h20M12 21 8 9l4-6 4 6-4 12"/></svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Alankar</span>
+          <span class="brand-sub">Shonar Goyona &middot; Jewellery</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#catalogue">Collection</a>
+        <a href="#how-it-works">How to order</a>
+        <a href="#features">Why shop here</a>
+        <a href="#order">Order</a>
+        <a href="#faq">FAQ</a>
+        <button class="cart-btn" type="button" id="cart-open" aria-label="Open cart">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Cart <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Jewellery &middot; Bangladesh</p>
+          <h1>Gold that glows, <em>made for your moments.</em></h1>
+          <p class="lead">হার, দুল, চুড়ি আর আংটি — প্রতিটি অনুষ্ঠানের জন্য। Browse the sample collection, add your favourites to the cart, and send an order enquiry. No payment is taken here.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#catalogue">Browse the collection <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-secondary" href="#how-it-works">How to order</a>
+          </div>
+          <ul class="hero-notes">
+            <li><strong>12 sample pieces</strong> — necklaces, earrings, bangles &amp; rings.</li>
+            <li><strong>Search &amp; filter</strong> — find the right piece in seconds.</li>
+            <li><strong>Prices are sample prices</strong> — the shop confirms the real price before any order is final.</li>
+          </ul>
+        </div>
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="hero-card">
+            <img class="hero-photo" src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="" loading="lazy">
+            <div class="hero-card-overlay">
+              <span class="hero-card-eyebrow">Sample collection</span>
+              <p class="hero-card-title">Necklaces, earrings<br>&amp; gold bangles</p>
+            </div>
+            <div class="hero-card-bottom">
+              <div class="hero-stat"><strong>12</strong><span>Sample pieces</span></div>
+              <div class="hero-stat"><strong>04</strong><span>Categories</span></div>
+              <div class="hero-stat"><strong>৳1,950+</strong><span>Sample prices</span></div>
+            </div>
+            <p class="hero-card-chip">Alankar</p>
+          </div>
+          <div class="hero-float">
+            <span class="hero-float-dot" aria-hidden="true"></span>
+            <div><strong>Cart + order enquiry</strong><span>Built into this template</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><span></span>Scroll</div>
+    </section>
+
+    <!-- At-a-glance strip -->
+    <section class="strip" aria-label="At a glance">
+      <div class="container strip-inner">
+        <div class="strip-item"><span class="strip-label">Collection</span><span>12 sample pieces across 4 categories</span></div>
+        <div class="strip-item"><span class="strip-label">Ordering</span><span>Add to cart, then send an order enquiry — no payment here</span></div>
+        <div class="strip-item"><span class="strip-label">Prices</span><span>All prices shown are sample prices (নমুনা মূল্য)</span></div>
+      </div>
+    </section>
+
+    <!-- Catalogue -->
+    <section class="section" id="catalogue">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>The collection</p>
+          <h2>Shop the collection</h2>
+          <p class="section-intro">Sample pieces only — generic sample items to show how a jewellery shop can work, not a real shop&rsquo;s stock. Every price is a sample price (নমুনা মূল্য); the shop confirms the real price, size and availability when you order.</p>
+        </div>
+
+        <div class="catalogue-tools reveal">
+          <div class="search-wrap">
+            <label class="visually-hidden" for="search">Search the collection</label>
+            <input type="search" id="search" placeholder="Search, e.g. necklace, ring, gold bangle&hellip;" autocomplete="off">
+          </div>
+          <div class="filter-pills" role="group" aria-label="Filter by category">
+            <button class="pill active" type="button" data-filter="all">All pieces</button>
+            <button class="pill" type="button" data-filter="necklaces">Necklaces</button>
+            <button class="pill" type="button" data-filter="earrings">Earrings</button>
+            <button class="pill" type="button" data-filter="bangles">Bangles</button>
+            <button class="pill" type="button" data-filter="rings">Rings</button>
+          </div>
+          <p class="catalogue-count" id="catalogue-count" role="status">Showing 12 sample pieces</p>
+        </div>
+
+        <div class="catalogue-grid" id="catalogue-grid">
+          <article class="product-card reveal" data-category="necklaces" data-name="Gold Pendant Necklace">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample gold pendant necklaces" loading="lazy">
+              <span class="product-tag">Necklace</span>
+            </div>
+            <div class="product-body">
+              <h3>Gold Pendant Necklace</h3>
+              <p>A classic gold necklace with a pendant — sample piece.</p>
+              <p class="product-price"><strong>&#2547;4,850</strong> <span class="sample-label">নমুনা মূল্য &middot; Sample price</span></p>
+              <p class="product-meta">Gold tone &middot; Sample photo, not a real product</p>
+              <button class="btn btn-small btn-outline add-btn" type="button" data-id="gold-pendant" data-name="Gold Pendant Necklace" data-price="4850">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="necklaces" data-name="Silver Pendant Necklace">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1589128777073-263566ae5e4d?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample silver pendant necklace" loading="lazy">
+              <span class="product-tag">Necklace</span>
+            </div>
+            <div class="product-body">
+              <h3>Silver Pendant Necklace</h3>
+              <p>A delicate silver necklace with a stone pendant — sample piece.</p>
+              <p class="product-price"><strong>&#2547;3,250</strong> <span class="sample-label">নমুনা মূল্য &middot; Sample price</span></p>
+              <p class="product-meta">Silver tone &middot; Sample photo, not a real product</p>
+              <button class="btn btn-small btn-outline add-btn" type="button" data-id="silver-pendant" data-name="Silver Pendant Necklace" data-price="3250">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="necklaces" data-name="Green Stone Gold Necklace">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample green stone gold necklace" loading="lazy">
+              <span class="product-tag">Necklace</span>
+            </div>
+            <div class="product-body">
+              <h3>Green Stone Gold Necklace</h3>
+              <p>A gold chain with a deep green stone pendant — sample piece.</p>
+              <p class="product-price"><strong>&#2547;6,450</strong> <span class="sample-label">নমুনা মূল্য &middot; Sample price</span></p>
+              <p class="product-meta">Gold tone &middot; Sample photo, not a real product</p>
+              <button class="btn btn-small btn-outline add-btn" type="button" data-id="green-stone-necklace" data-name="Green Stone Gold Necklace" data-price="6450">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="necklaces" data-name="Pearl Pendant Necklace">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample pearl pendant necklace worn" loading="lazy">
+              <span class="product-tag">Necklace</span>
+            </div>
+            <div class="product-body">
+              <h3>Pearl Pendant Necklace</h3>
+              <p>A soft pearl pendant on a fine chain — sample piece.</p>
+              <p class="product-price"><strong>&#2547;5,250</strong> <span class="sample-label">নমুনা মূল্য &middot; Sample price</span></p>
+              <p class="product-meta">Pearl &middot; Sample photo, not a real product</p>
+              <button class="btn btn-small btn-outline add-btn" type="button" data-id="pearl-necklace" data-name="Pearl Pendant Necklace" data-price="5250">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="earrings" data-name="Blue Stone Drop Earrings">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample blue stone drop earrings" loading="lazy">
+              <span class="product-tag">Earrings</span>
+            </div>
+            <div class="product-body">
+              <h3>Blue Stone Drop Earrings</h3>
+              <p>Drop earrings with blue stones and fine detailing — sample piece.</p>
+              <p class="product-price"><strong>&#2547;2,850</strong> <span class="sample-label">নমুনা মূল্য &middot; Sample price</span></p>
+              <p class="product-meta">Drop style &middot; Sample photo, not a real product</p>
+              <button class="btn btn-small btn-outline add-btn" type="button" data-id="blue-drop-earrings" data-name="Blue Stone Drop Earrings" data-price="2850">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="earrings" data-name="Blue Heart Drop Earrings">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample blue heart drop earrings" loading="lazy">
+              <span class="product-tag">Earrings</span>
+            </div>
+            <div class="product-body">
+              <h3>Blue Heart Drop Earrings</h3>
+              <p>Playful heart-shaped drops in bright blue — sample piece.</p>
+              <p class="product-price"><strong>&#2547;1,950</strong> <span class="sample-label">নমুনা মূল্য &middot; Sample price</span></p>
+              <p class="product-meta">Drop style &middot; Sample photo, not a real product</p>
+              <button class="btn btn-small btn-outline add-btn" type="button" data-id="blue-heart-earrings" data-name="Blue Heart Drop Earrings" data-price="1950">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="bangles" data-name="Diamond Bangle">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample diamond bangle" loading="lazy">
+              <span class="product-tag">Bangle</span>
+            </div>
+            <div class="product-body">
+              <h3>Diamond Bangle</h3>
+              <p>A sparkling bangle for special occasions — sample piece.</p>
+              <p class="product-price"><strong>&#2547;7,850</strong> <span class="sample-label">নমুনা মূল্য &middot; Sample price</span></p>
+              <p class="product-meta">Stone-set &middot; Sample photo, not a real product</p>
+              <button class="btn btn-small btn-outline add-btn" type="button" data-id="diamond-bangle" data-name="Diamond Bangle" data-price="7850">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="bangles" data-name="Gold Chain Bracelet">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample gold chain bracelet" loading="lazy">
+              <span class="product-tag">Bangle</span>
+            </div>
+            <div class="product-body">
+              <h3>Gold Chain Bracelet</h3>
+              <p>A bold gold chain bracelet for everyday wear — sample piece.</p>
+              <p class="product-price"><strong>&#2547;5,450</strong> <span class="sample-label">নমুনা মূল্য &middot; Sample price</span></p>
+              <p class="product-meta">Gold tone &middot; Sample photo, not a real product</p>
+              <button class="btn btn-small btn-outline add-btn" type="button" data-id="gold-chain-bracelet" data-name="Gold Chain Bracelet" data-price="5450">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="bangles" data-name="Slim Gold Bangle">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample slim gold bangle worn on wrist" loading="lazy">
+              <span class="product-tag">Bangle</span>
+            </div>
+            <div class="product-body">
+              <h3>Slim Gold Bangle</h3>
+              <p>A slim, elegant gold bangle — sample piece.</p>
+              <p class="product-price"><strong>&#2547;4,250</strong> <span class="sample-label">নমুনা মূল্য &middot; Sample price</span></p>
+              <p class="product-meta">Gold tone &middot; Sample photo, not a real product</p>
+              <button class="btn btn-small btn-outline add-btn" type="button" data-id="slim-gold-bangle" data-name="Slim Gold Bangle" data-price="4250">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="rings" data-name="Diamond Solitaire Ring">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample diamond solitaire ring" loading="lazy">
+              <span class="product-tag">Ring</span>
+            </div>
+            <div class="product-body">
+              <h3>Diamond Solitaire Ring</h3>
+              <p>A classic solitaire ring with a single bright stone — sample piece.</p>
+              <p class="product-price"><strong>&#2547;9,850</strong> <span class="sample-label">নমুনা মূল্য &middot; Sample price</span></p>
+              <p class="product-meta">Solitaire &middot; Sample photo, not a real product</p>
+              <button class="btn btn-small btn-outline add-btn" type="button" data-id="solitaire-ring" data-name="Diamond Solitaire Ring" data-price="9850">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="rings" data-name="Pink Stone Ring">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample pink stone ring" loading="lazy">
+              <span class="product-tag">Ring</span>
+            </div>
+            <div class="product-body">
+              <h3>Pink Stone Ring</h3>
+              <p>A pink stone ring with a halo of small stones — sample piece.</p>
+              <p class="product-price"><strong>&#2547;6,850</strong> <span class="sample-label">নমুনা মূল্য &middot; Sample price</span></p>
+              <p class="product-meta">Halo setting &middot; Sample photo, not a real product</p>
+              <button class="btn btn-small btn-outline add-btn" type="button" data-id="pink-stone-ring" data-name="Pink Stone Ring" data-price="6850">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="rings" data-name="Gold Twist Rings">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample gold twist rings" loading="lazy">
+              <span class="product-tag">Ring</span>
+            </div>
+            <div class="product-body">
+              <h3>Gold Twist Rings</h3>
+              <p>Twisted gold bands, worn alone or as a pair — sample piece.</p>
+              <p class="product-price"><strong>&#2547;5,850</strong> <span class="sample-label">নমুনা মূল্য &middot; Sample price</span></p>
+              <p class="product-meta">Gold tone &middot; Sample photo, not a real product</p>
+              <button class="btn btn-small btn-outline add-btn" type="button" data-id="gold-twist-rings" data-name="Gold Twist Rings" data-price="5850">Add to cart</button>
+            </div>
+          </article>
+        </div>
+        <p class="catalogue-empty" id="catalogue-empty" hidden>No sample pieces match your search. Try another word, or choose &ldquo;All pieces&rdquo;.</p>
+        <p class="note reveal">Photos are free sample photos, not a real shop&rsquo;s products. The shop&rsquo;s real collection, prices and stock are confirmed by the shop when you order.</p>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section-alt" id="how-it-works">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Simple by design</p>
+          <h2>How to order</h2>
+          <p class="section-intro">Three steps — browse, add to cart, send an enquiry. The shop confirms everything before your order is final.</p>
+        </div>
+        <ol class="steps">
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">1</span>
+            <h3>Browse &amp; search</h3>
+            <p>Search by piece or filter by category, and check the sample price before you add anything.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">2</span>
+            <h3>Add to cart</h3>
+            <p>Add your favourites to the cart. Change quantities or remove pieces any time from the cart panel.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">3</span>
+            <h3>Send an enquiry</h3>
+            <p>Fill in the order form below. The shop contacts you to confirm the price, size and delivery. No payment is taken here.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>What this template does</p>
+          <h2>Why shop here</h2>
+          <p class="section-intro">This template shows what a small jewellery shop&rsquo;s website can do. In the live version, the shop fills in its real pieces, prices, delivery areas and contact details.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <h3>Searchable collection</h3>
+            <p>Customers find a necklace, ring or bangle in seconds instead of scrolling through photos in an inbox.</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>Cart &amp; enquiry</h3>
+            <p>Customers build one cart and send one enquiry — no lost messages, no repeated questions.</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>Mobile-first</h3>
+            <p>Built for phones first, so customers can browse and order from anywhere in Bangladesh.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order -->
+    <section class="section section-booking" id="order">
+      <div class="container booking-inner">
+        <div class="booking-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Order enquiry</p>
+          <h2>Send an order enquiry</h2>
+          <p class="lead">Fill in the form and the shop will contact you to confirm. <strong>This is an enquiry, not a confirmed order.</strong></p>
+          <ul class="booking-points">
+            <li><span class="check" aria-hidden="true">&#10003;</span>No payment is taken here.</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span>Your details are only used for this order enquiry in this demo — nothing is sent to the shop from this sample page.</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span>All prices are sample prices (নমুনা মূল্য) — the shop confirms the real price first.</li>
+          </ul>
+          <div class="cart-summary" id="cart-summary" aria-label="Your cart summary">
+            <h3>Your cart (sample)</h3>
+            <p id="cart-summary-empty">Your cart is empty. Add a piece from the collection above.</p>
+            <ul id="cart-summary-list" hidden></ul>
+            <p class="cart-summary-total" id="cart-summary-total" hidden>Total (sample): <strong>&#2547;<span id="cart-summary-amount">0</span></strong></p>
+          </div>
+        </div>
+
+        <form class="booking-form reveal" id="order-form" novalidate>
+          <p class="form-title">Order enquiry</p>
+          <p class="form-subtitle">Enquiry only — not a confirmed order until the shop replies.</p>
+          <div class="form-field">
+            <label for="name">Your name <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Nusrat Jahan" required>
+            <p class="field-error" id="name-error" hidden>Please enter your name.</p>
+          </div>
+          <div class="form-field">
+            <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="e.g. 01XXXXXXXXX" required>
+            <p class="field-error" id="phone-error" hidden>Please enter a valid phone number, e.g. 01XXXXXXXXX.</p>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="area">Delivery area <span aria-hidden="true">*</span></label>
+              <select id="area" name="area" required>
+                <option value="" selected>Choose an area</option>
+                <option value="Inside Dhaka">Inside Dhaka</option>
+                <option value="Outside Dhaka">Outside Dhaka</option>
+              </select>
+              <p class="field-error" id="area-error" hidden>Please choose a delivery area.</p>
+            </div>
+            <div class="form-field">
+              <label for="channel">Reply me on <span aria-hidden="true">*</span></label>
+              <select id="channel" name="channel" required>
+                <option value="" selected>Choose a channel</option>
+                <option value="Messenger">Messenger</option>
+                <option value="WhatsApp">WhatsApp</option>
+                <option value="Phone call">Phone call</option>
+              </select>
+              <p class="field-error" id="channel-error" hidden>Please choose how the shop should reply.</p>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="notes">Delivery address or anything to add? <span class="optional">(optional)</span></label>
+            <textarea id="notes" name="notes" rows="3" placeholder="e.g. Your area, or the ring size you need"></textarea>
+          </div>
+          <p class="form-disclaimer">By sending this form you are making an order enquiry only. It is <strong>not a confirmed order</strong> until the shop contacts you to confirm the price, size, availability and delivery. No payment is taken.</p>
+          <button class="btn btn-primary btn-full" type="submit">Send order enquiry <span aria-hidden="true">&rarr;</span></button>
+          <p class="form-success" id="form-success" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container faq-inner">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Good to know</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>Is my order confirmed as soon as I send the form?</summary>
+            <p>No. Sending the form is an enquiry only. Your order is confirmed only when the shop contacts you to confirm the price, size, availability and delivery.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Are the prices on this page final?</summary>
+            <p>No — every price here is a sample price (নমুনা মূল্য). The shop confirms the real price when they reply to your enquiry.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Do I need to pay when I order?</summary>
+            <p>No payment is taken in this order form. Please ask the shop directly about payment options when they confirm your order.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>How do I know the right ring or bangle size?</summary>
+            <p>Mention your size in the order notes. The shop confirms the size and fit before your order is final.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Do you deliver outside Dhaka?</summary>
+            <p>Delivery areas and charges are confirmed by the shop when they confirm your order.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-demo"><strong>CONCEPT DEMO — কনসেপ্ট ডেমো</strong> &middot; sample by Ahmed AI Studio &middot; Ahmed AI Studio-এর তৈরি নমুনা ওয়েবসাইট — this is a concept demo only, not a real shop.</p>
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Alankar</p>
+          <p>Shonar Goyona — sample template</p>
+        </div>
+        <p>Alankar is a generic sample brand for this concept demo. Order enquiries made here are not sent to any shop and are not confirmed orders. All pieces, photos and prices are samples only.</p>
+      </div>
+      <p class="footer-credit">Concept demo built by Ahmed AI Studio, Bangladesh — digital services for small businesses.</p>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="cart-overlay" id="cart-overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-drawer-head">
+      <h2>Your cart</h2>
+      <button class="cart-close" type="button" id="cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    <p class="cart-drawer-note">Sample prices only (নমুনা মূল্য). Nothing is bought here — this is an enquiry cart.</p>
+    <ul class="cart-items" id="cart-items"></ul>
+    <p class="cart-empty" id="cart-empty">Your cart is empty. Add a piece from the collection.</p>
+    <div class="cart-drawer-foot" id="cart-foot" hidden>
+      <p class="cart-total">Total (sample): <strong>&#2547;<span id="cart-total">0</span></strong></p>
+      <button class="btn btn-primary btn-full" type="button" id="cart-checkout">Send order enquiry <span aria-hidden="true">&rarr;</span></button>
+      <button class="btn btn-secondary btn-full" type="button" id="cart-clear">Clear cart</button>
+    </div>
+  </aside>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Concept demo for Ghore Ghore — a home decor & handicrafts shop template with a searchable catalogue, cart and order enquiry. Sample by Ahmed AI Studio.">
+  <title>Ghore Ghore — Home Decor & Handicrafts | Concept Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Concept demo banner -->
+  <div class="demo-banner" role="note">
+    <p><strong>CONCEPT DEMO</strong> &mdash; &#2453;&#2472;&#2488;&#2503;&#2474;&#2509;&#2463; &#2465;&#2503;&#2478;&#2507; &mdash; sample by Ahmed AI Studio, not a real shop</p>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Ghore Ghore &mdash; home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9.5 21v-6h5v6"/></svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Ghore Ghore</span>
+          <span class="brand-sub">Home Decor &amp; Handicrafts</span>
+        </span>
+      </a>
+      <div class="header-actions">
+        <button class="cart-btn" type="button" id="cart-btn" aria-label="Open cart">
+          <span aria-hidden="true">&#128722;</span> Cart <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#catalogue">Catalogue</a>
+        <a href="#how-it-works">How ordering works</a>
+        <a href="#order">Order</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small" href="#order">Order now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Home decor &amp; handicrafts &middot; Bangladesh</p>
+          <h1>Make your home <em>feel like home.</em></h1>
+          <p class="lead">Ghore Ghore is a sample home decor template — wall art, planters, lamps, cushions and baskets, all in a searchable catalogue with a cart. Browse the samples, add to cart, and send an order enquiry.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#catalogue">Browse the catalogue <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-secondary" href="#how-it-works">How ordering works</a>
+          </div>
+          <ul class="hero-notes">
+            <li><strong>For every corner</strong> — wall art, planters, lamps, cushions &amp; baskets.</li>
+            <li><strong>Search &amp; filter</strong> — find wall art, a planter or a lamp in seconds.</li>
+            <li><strong>Cart + order form</strong> — add items, then send an enquiry. No payment is taken in this demo.</li>
+          </ul>
+        </div>
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="hero-card">
+            <img class="hero-photo" src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="" loading="lazy">
+            <div class="hero-card-overlay">
+              <span class="hero-card-eyebrow">Sample collection</span>
+              <p class="hero-card-title">Wall art, planters<br>&amp; lamps</p>
+            </div>
+            <div class="hero-card-bottom">
+              <div class="hero-stat"><strong>12</strong><span>Sample items</span></div>
+              <div class="hero-stat"><strong>05</strong><span>Categories</span></div>
+              <div class="hero-stat"><strong>Sample</strong><span>Prices shown</span></div>
+            </div>
+            <p class="hero-card-chip">Home decor</p>
+          </div>
+          <div class="hero-float">
+            <span class="hero-float-dot" aria-hidden="true"></span>
+            <div><strong>Decor for every room</strong><span>Wall art, planters, lamps &amp; more</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><span></span>Scroll</div>
+    </section>
+
+    <!-- Trust / at-a-glance strip -->
+    <section class="strip" aria-label="At a glance">
+      <div class="container strip-inner">
+        <div class="strip-item"><span class="strip-label">Shop type</span><span>Home decor & handicrafts — wall art, planters, lamps, cushions & baskets</span></div>
+        <div class="strip-item"><span class="strip-label">Ordering</span><span>Menu + cart + order form, or message the shop</span></div>
+        <div class="strip-item"><span class="strip-label">Delivery</span><span>All over Bangladesh, as the shop offers</span></div>
+      </div>
+    </section>
+
+    <!-- Catalogue -->
+    <section class="section" id="catalogue">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>The catalogue</p>
+          <h2>Browse the sample catalogue</h2>
+          <p class="section-intro">Sample items only — generic sample items to show how a home decor catalogue can work, not a real shop&rsquo;s products. All prices are sample prices — <strong>নমুনা মূল্য / sample price</strong>. The shop confirms the real price, size and availability when you order.</p>
+        </div>
+
+        <div class="catalogue-tools reveal">
+          <div class="search-wrap">
+            <label class="visually-hidden" for="search">Search the catalogue</label>
+            <input type="search" id="search" placeholder="Search by item, e.g. wall art, planter, lamp&hellip;" autocomplete="off">
+          </div>
+          <div class="filter-pills" role="group" aria-label="Filter by category">
+            <button class="pill active" type="button" data-filter="all">All items</button>
+            <button class="pill" type="button" data-filter="wall-art">Wall Art</button>
+            <button class="pill" type="button" data-filter="planters">Planters</button>
+            <button class="pill" type="button" data-filter="lamps">Lamps</button>
+            <button class="pill" type="button" data-filter="cushions">Cushions</button>
+            <button class="pill" type="button" data-filter="baskets">Baskets</button>
+          </div>
+          <p class="catalogue-count" id="catalogue-count" role="status">Showing 12 sample items</p>
+        </div>
+
+        <div class="catalogue-grid" id="catalogue-grid">
+          <article class="product-card reveal" data-category="wall-art" data-name="Botanical Frame Set">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Botanical Frame Set" loading="lazy">
+              <span class="product-tag">Wall Art</span>
+            </div>
+            <div class="product-body">
+              <h3>Botanical Frame Set</h3>
+              <p>Framed botanical prints for a calm, green wall — sample item.</p>
+              <p class="product-price"><strong>&#2547;2,450</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">Set of 4 frames sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Botanical Frame Set" data-price="2450" data-img="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="wall-art" data-name="Modern Art Print Set">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Modern Art Print Set" loading="lazy">
+              <span class="product-tag">Wall Art</span>
+            </div>
+            <div class="product-body">
+              <h3>Modern Art Print Set</h3>
+              <p>Modern prints for the living room wall — sample item.</p>
+              <p class="product-price"><strong>&#2547;1,850</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">Set of 3 prints sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Modern Art Print Set" data-price="1850" data-img="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="wall-art" data-name="Rattan Round Mirror Set">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Rattan Round Mirror Set" loading="lazy">
+              <span class="product-tag">Wall Art</span>
+            </div>
+            <div class="product-body">
+              <h3>Rattan Round Mirror Set</h3>
+              <p>Round rattan mirrors that open up a room — sample item.</p>
+              <p class="product-price"><strong>&#2547;2,150</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">Set of 2 mirrors sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Rattan Round Mirror Set" data-price="2150" data-img="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="planters" data-name="Mint Succulent Planter">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Mint Succulent Planter" loading="lazy">
+              <span class="product-tag">Planters</span>
+            </div>
+            <div class="product-body">
+              <h3>Mint Succulent Planter</h3>
+              <p>A small succulent in a mint ceramic pot — sample item.</p>
+              <p class="product-price"><strong>&#2547;450</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">Pot + plant sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Mint Succulent Planter" data-price="450" data-img="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="planters" data-name="Ceramic Planter Set">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Ceramic Planter Set" loading="lazy">
+              <span class="product-tag">Planters</span>
+            </div>
+            <div class="product-body">
+              <h3>Ceramic Planter Set</h3>
+              <p>Speckled ceramic pots for herbs and greens — sample item.</p>
+              <p class="product-price"><strong>&#2547;850</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">Set of 3 pots sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Ceramic Planter Set" data-price="850" data-img="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="planters" data-name="Vase Planter Set">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1584589167171-541ce45f1eea?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Vase Planter Set" loading="lazy">
+              <span class="product-tag">Planters</span>
+            </div>
+            <div class="product-body">
+              <h3>Vase Planter Set</h3>
+              <p>Ceramic vases for fresh leaves and stems — sample item.</p>
+              <p class="product-price"><strong>&#2547;750</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">Set of 2 vases sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Vase Planter Set" data-price="750" data-img="https://images.unsplash.com/photo-1584589167171-541ce45f1eea?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="lamps" data-name="Teal Pendant Lamp">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Teal Pendant Lamp" loading="lazy">
+              <span class="product-tag">Lamps</span>
+            </div>
+            <div class="product-body">
+              <h3>Teal Pendant Lamp</h3>
+              <p>A pendant lamp that warms up any corner — sample item.</p>
+              <p class="product-price"><strong>&#2547;1,450</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">1 lamp sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Teal Pendant Lamp" data-price="1450" data-img="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="lamps" data-name="Arc Floor Lamp">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Arc Floor Lamp" loading="lazy">
+              <span class="product-tag">Lamps</span>
+            </div>
+            <div class="product-body">
+              <h3>Arc Floor Lamp</h3>
+              <p>A tall arc lamp for reading corners — sample item.</p>
+              <p class="product-price"><strong>&#2547;2,850</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">1 lamp sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Arc Floor Lamp" data-price="2850" data-img="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="lamps" data-name="Dining Pendant Light">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1617104551722-3b2d51366400?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Dining Pendant Light" loading="lazy">
+              <span class="product-tag">Lamps</span>
+            </div>
+            <div class="product-body">
+              <h3>Dining Pendant Light</h3>
+              <p>A pendant light for the dining table — sample item.</p>
+              <p class="product-price"><strong>&#2547;1,850</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">1 lamp sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Dining Pendant Light" data-price="1850" data-img="https://images.unsplash.com/photo-1617104551722-3b2d51366400?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="cushions" data-name="Blush Cushion Cover Set">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Blush Cushion Cover Set" loading="lazy">
+              <span class="product-tag">Cushions</span>
+            </div>
+            <div class="product-body">
+              <h3>Blush Cushion Cover Set</h3>
+              <p>Soft blush cushion covers for the sofa — sample item.</p>
+              <p class="product-price"><strong>&#2547;650</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">Set of 2 covers sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Blush Cushion Cover Set" data-price="650" data-img="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="cushions" data-name="Teal Cushion Set">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Teal Cushion Set" loading="lazy">
+              <span class="product-tag">Cushions</span>
+            </div>
+            <div class="product-body">
+              <h3>Teal Cushion Set</h3>
+              <p>Teal cushions that lift a grey sofa — sample item.</p>
+              <p class="product-price"><strong>&#2547;750</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">Set of 2 cushions sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Teal Cushion Set" data-price="750" data-img="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="baskets" data-name="Woven Storage Basket">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1615875605825-5eb9bb5d52ac?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Woven Storage Basket" loading="lazy">
+              <span class="product-tag">Baskets</span>
+            </div>
+            <div class="product-body">
+              <h3>Woven Storage Basket</h3>
+              <p>A handwoven basket for blankets, toys or everyday clutter — sample item.</p>
+              <p class="product-price"><strong>&#2547;950</strong> <span class="sample-label">নমুনা মূল্য / Sample price</span></p>
+              <p class="product-meta">1 basket sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Woven Storage Basket" data-price="950" data-img="https://images.unsplash.com/photo-1615875605825-5eb9bb5d52ac?auto=format&fit=crop&w=700&q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+        </div>
+        <p class="catalogue-empty" id="catalogue-empty" hidden>No sample items match your search. Try another word, or choose &ldquo;All items&rdquo;.</p>
+        <p class="note reveal">Photos are free sample photos, not the shop&rsquo;s real products. The shop&rsquo;s real catalogue, prices and stock are confirmed by the shop when you order. All prices shown are sample prices &mdash; &#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / sample price.</p>
+      </div>
+    </section>
+
+    <!-- How ordering works -->
+    <section class="section section-alt" id="how-it-works">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Simple by design</p>
+          <h2>How ordering works</h2>
+          <p class="section-intro">Ordering is kept simple: browse the catalogue, add items to the cart, and send an order enquiry. The shop confirms every order before it is final.</p>
+        </div>
+        <ol class="steps">
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">1</span>
+            <h3>Browse the menu</h3>
+            <p>Search by item or filter by category — wall art, planters, lamps, cushions or baskets — and check the size note on each sample item.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">2</span>
+            <h3>Add to cart & send an enquiry</h3>
+            <p>Add items to the cart, then use the order form below — or message the shop directly.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">3</span>
+            <h3>The shop confirms</h3>
+            <p>The shop contacts you to confirm the price, size, availability and delivery. No payment is taken in this demo form.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Order -->
+    <section class="section section-booking" id="order">
+      <div class="container booking-inner">
+        <div class="booking-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Order enquiry</p>
+          <h2>Send an order enquiry</h2>
+          <p class="lead">Fill in the form and the shop will contact you to confirm. <strong>This is an enquiry, not a confirmed order.</strong></p>
+          <ul class="booking-points">
+            <li><span class="check" aria-hidden="true">&#10003;</span>No payment is taken here.</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span>Your details are only used for this order enquiry in this demo — nothing is sent to the shop from this sample page.</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span>Decorating a whole room? Mention the room and size in the order notes.</li>
+          </ul>
+          <p class="note">In the live version, this form would send the enquiry to the shop and confirm it by WhatsApp or Messenger.</p>
+        </div>
+
+        <form class="booking-form reveal" id="order-form" novalidate>
+          <p class="form-title">Order enquiry</p>
+          <p class="form-subtitle">Enquiry only &mdash; not a confirmed order until the shop replies.</p>
+          <div class="form-field">
+            <label for="name">Your name <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Ayesha Rahman" required>
+            <p class="field-error" id="name-error" hidden>Please enter your name.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="e.g. 01XXXXXXXXX" required>
+            <p class="field-error" id="phone-error" hidden>Please enter a valid phone number, e.g. 01XXXXXXXXX.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="item">Item <span aria-hidden="true">*</span></label>
+            <select id="item" name="item" required>
+              <option value="" selected>Choose an item</option>
+              <option value="Botanical Frame Set">Botanical Frame Set (sample)</option>
+              <option value="Modern Art Print Set">Modern Art Print Set (sample)</option>
+              <option value="Rattan Round Mirror Set">Rattan Round Mirror Set (sample)</option>
+              <option value="Mint Succulent Planter">Mint Succulent Planter (sample)</option>
+              <option value="Ceramic Planter Set">Ceramic Planter Set (sample)</option>
+              <option value="Vase Planter Set">Vase Planter Set (sample)</option>
+              <option value="Teal Pendant Lamp">Teal Pendant Lamp (sample)</option>
+              <option value="Arc Floor Lamp">Arc Floor Lamp (sample)</option>
+              <option value="Dining Pendant Light">Dining Pendant Light (sample)</option>
+              <option value="Blush Cushion Cover Set">Blush Cushion Cover Set (sample)</option>
+              <option value="Teal Cushion Set">Teal Cushion Set (sample)</option>
+              <option value="Woven Storage Basket">Woven Storage Basket (sample)</option>
+              <option value="Another item — I will message the shop">Another item &mdash; I will message the shop</option>
+            </select>
+            <p class="field-error" id="item-error" hidden>Please choose an item.</p>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="area">Delivery area <span aria-hidden="true">*</span></label>
+              <select id="area" name="area" required>
+                <option value="" selected>Choose an area</option>
+                <option value="Inside Dhaka">Inside Dhaka</option>
+                <option value="Outside Dhaka">Outside Dhaka</option>
+              </select>
+              <p class="field-error" id="area-error" hidden>Please choose a delivery area.</p>
+            </div>
+            <div class="form-field">
+              <label for="channel">Reply me on <span aria-hidden="true">*</span></label>
+              <select id="channel" name="channel" required>
+                <option value="" selected>Choose a channel</option>
+                <option value="Messenger">Messenger</option>
+                <option value="WhatsApp">WhatsApp</option>
+                <option value="Phone call">Phone call</option>
+              </select>
+              <p class="field-error" id="channel-error" hidden>Please choose how the shop should reply.</p>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="notes">Delivery address or anything to add? <span class="optional">(optional)</span></label>
+            <textarea id="notes" name="notes" rows="3" placeholder="e.g. Your area, or a note about the size"></textarea>
+          </div>
+
+          <p class="form-disclaimer">By sending this form you are making an order enquiry only. It is <strong>not a confirmed order</strong> until the shop contacts you to confirm the price, availability and delivery. No payment is taken.</p>
+
+          <button class="btn btn-primary btn-full" type="submit">Send order enquiry <span aria-hidden="true">&rarr;</span></button>
+          <p class="form-success" id="form-success" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container faq-inner">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Good to know</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>How do I order from this shop?</summary>
+            <p>Use the order form on this page, or message the shop — the way the shop already takes orders. The shop confirms every order before it is final.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Is my order confirmed as soon as I send the form?</summary>
+            <p>No. Sending the form is an enquiry only. Your order is confirmed only when the shop contacts you to confirm the price, availability and delivery.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Do I need to pay when I order?</summary>
+            <p>No payment is taken in this order form. Please ask the shop directly about payment options when they confirm your order.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Do you deliver outside Dhaka?</summary>
+            <p>The shop delivers all over Bangladesh, as it offers. Delivery details and charges are confirmed by the shop when they confirm your order.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Will it match my room?</summary>
+            <p>Sample photos show the style only — colours and sizes can look different in your room. The shop confirms the real size, material and colour when you order.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit / about -->
+    <section class="section" id="visit">
+      <div class="container visit-inner">
+        <div class="reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>About this template</p>
+          <h2>Ghore Ghore</h2>
+          <p class="lead">Home decor & handicrafts — Bangladesh</p>
+          <p>A sample home decor template: wall art, planters, lamps, cushions and baskets, with a searchable catalogue, a cart and an order form. No real shop details are listed here, because this is a generic template, not a real shop.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#order">Send an order enquiry <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-secondary" href="#catalogue">Browse the catalogue</a>
+          </div>
+          <p class="note">No address, phone number or opening hours are listed here, because this is a generic template — the real shop adds its own details when this template is used.</p>
+        </div>
+        <div class="visit-card reveal" aria-label="At a glance">
+          <h3>At a glance</h3>
+          <dl>
+            <div><dt>Shop type</dt><dd>Home decor & handicrafts</dd></div>
+            <div><dt>Country</dt><dd>Bangladesh</dd></div>
+            <div><dt>Catalogue</dt><dd>12 sample items, 5 categories</dd></div>
+            <div><dt>Ordering</dt><dd>Catalogue + cart + order form</dd></div>
+            <div><dt>Delivery</dt><dd>All over Bangladesh, as the shop offers</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-demo"><strong>CONCEPT DEMO</strong> &mdash; &#2453;&#2472;&#2488;&#2503;&#2474;&#2509;&#2463; &#2465;&#2503;&#2478;&#2507; &mdash; sample by Ahmed AI Studio, not a real shop</p>
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Ghore Ghore</p>
+          <p>Home Decor &amp; Handicrafts &mdash; Bangladesh</p>
+        </div>
+        <p>Ghore Ghore &mdash; Bangladesh. This is a concept demo only. Order enquiries made here are not sent to any shop and are not confirmed orders. All prices are sample prices.</p>
+      </div>
+      <p class="footer-credit">Concept demo built by Ahmed AI Studio, Bangladesh &mdash; digital services for small businesses.</p>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-head">
+      <h2>Your cart</h2>
+      <button class="cart-close" type="button" id="cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <p class="cart-empty">Your cart is empty. Add a sample item from the catalogue above.</p>
+    </div>
+    <div class="cart-foot">
+      <p class="cart-total-row"><span>Total</span> <strong id="cart-total">&#2547;0</strong></p>
+      <p class="cart-note">All prices are sample prices &mdash; &#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / sample price. No payment is taken in this demo.</p>
+      <button class="btn btn-primary btn-full" type="button" id="checkout-btn">Send order enquiry <span aria-hidden="true">&rarr;</span></button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

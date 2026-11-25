@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Concept demo for Chotto Moni — a baby & kids shop template with a searchable catalogue, cart and order enquiry. Sample by Ahmed AI Studio.">
+  <title>Chotto Moni — Baby & Kids Shop | Concept Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Concept demo banner -->
+  <div class="demo-banner" role="note">
+    <p><strong>CONCEPT DEMO</strong> &mdash; &#2453;&#2472;&#2488;&#2503;&#2474;&#2509;&#2463; &#2465;&#2503;&#2478;&#2507; &mdash; sample by Ahmed AI Studio, not a real shop</p>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Chotto Moni &mdash; home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Chotto Moni</span>
+          <span class="brand-sub">Baby & Kids Shop</span>
+        </span>
+      </a>
+      <div class="header-actions">
+        <button class="cart-btn" type="button" id="cart-btn" aria-label="Open cart">
+          <span aria-hidden="true">&#128722;</span> Cart <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#catalogue">Catalogue</a>
+        <a href="#how-it-works">How ordering works</a>
+        <a href="#order">Order</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small" href="#order">Order now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Baby & kids shop &middot; Bangladesh</p>
+          <h1>Everything little ones need, <em>in one place.</em></h1>
+          <p class="lead">Chotto Moni is a sample baby & kids shop template — soft clothes, toys, diapers and feeding items, all in a searchable catalogue with a cart. Browse the samples, add to cart, and send an order enquiry.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#catalogue">Browse the catalogue <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-secondary" href="#how-it-works">How ordering works</a>
+          </div>
+          <ul class="hero-notes">
+            <li><strong>Soft &amp; safe picks</strong> — clothes, toys and care items for babies and kids.</li>
+            <li><strong>Search &amp; filter</strong> — find clothes, feeding items, toys or baby care in seconds.</li>
+            <li><strong>Cart + order form</strong> — add items, then send an enquiry. No payment is taken in this demo.</li>
+          </ul>
+        </div>
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="hero-card">
+            <img class="hero-photo" src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="" loading="lazy">
+            <div class="hero-card-overlay">
+              <span class="hero-card-eyebrow">Sample collection</span>
+              <p class="hero-card-title">Baby clothes,<br>toys &amp; care</p>
+            </div>
+            <div class="hero-card-bottom">
+              <div class="hero-stat"><strong>12</strong><span>Sample products</span></div>
+              <div class="hero-stat"><strong>04</strong><span>Categories</span></div>
+              <div class="hero-stat"><strong>All BD</strong><span>Delivery</span></div>
+            </div>
+            <p class="hero-card-chip">Baby &amp; Kids</p>
+          </div>
+          <div class="hero-float">
+            <span class="hero-float-dot" aria-hidden="true"></span>
+            <div><strong>Order by form or message</strong><span>Messenger or WhatsApp</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><span></span>Scroll</div>
+    </section>
+
+    <!-- Trust / at-a-glance strip -->
+    <section class="strip" aria-label="At a glance">
+      <div class="container strip-inner">
+        <div class="strip-item"><span class="strip-label">Shop type</span><span>Baby & kids shop — clothes, toys, diapers & feeding items</span></div>
+        <div class="strip-item"><span class="strip-label">Ordering</span><span>Catalogue + cart + order form, or message the shop</span></div>
+        <div class="strip-item"><span class="strip-label">Delivery</span><span>All over Bangladesh, as the shop offers</span></div>
+      </div>
+    </section>
+
+    <!-- Catalogue -->
+    <section class="section" id="catalogue">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>The catalogue</p>
+          <h2>Browse the sample collection</h2>
+          <p class="section-intro">Sample products only — generic sample items to show how a shop catalogue can work, not a real shop&rsquo;s products. All prices are sample prices — <strong>নমুনা মূল্য / sample price</strong>. The shop confirms the real price, size and availability when you order.</p>
+        </div>
+
+        <div class="catalogue-tools reveal">
+          <div class="search-wrap">
+            <label class="visually-hidden" for="search">Search the catalogue</label>
+            <input type="search" id="search" placeholder="Search by item, e.g. onesie, toy, diaper&hellip;" autocomplete="off">
+          </div>
+          <div class="filter-pills" role="group" aria-label="Filter by category">
+            <button class="pill active" type="button" data-filter="all">All items</button>
+            <button class="pill" type="button" data-filter="clothes">Baby Clothes</button>
+            <button class="pill" type="button" data-filter="feeding">Feeding</button>
+            <button class="pill" type="button" data-filter="toys">Toys</button>
+            <button class="pill" type="button" data-filter="care">Baby Care</button>
+          </div>
+          <p class="catalogue-count" id="catalogue-count" role="status">Showing 12 sample items</p>
+        </div>
+
+        <div class="catalogue-grid" id="catalogue-grid">
+          <article class="product-card reveal" data-category="clothes" data-name="Cotton Onesie Set (0–6 months)">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Cotton Onesie Set (0–6 months)" loading="lazy">
+              <span class="product-tag">Baby Clothes</span>
+            </div>
+            <div class="product-body">
+              <h3>Cotton Onesie Set (0–6 months)</h3>
+              <p>Soft cotton onesie set, gentle on newborn skin — sample item.</p>
+              <p class="product-price"><strong>&#2547;450</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Sizes: 0–6 months &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Cotton Onesie Set (0–6 months)" data-price="450" data-img="https://images.unsplash.com/photo-1522771930-78848d9293e8?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="clothes" data-name="Baby Frock Set">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1491013516836-7db643ee125a?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Baby Frock Set" loading="lazy">
+              <span class="product-tag">Baby Clothes</span>
+            </div>
+            <div class="product-body">
+              <h3>Baby Frock Set</h3>
+              <p>A light, pretty frock set for little ones — sample item.</p>
+              <p class="product-price"><strong>&#2547;650</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Sizes: 6–18 months &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Baby Frock Set" data-price="650" data-img="https://images.unsplash.com/photo-1491013516836-7db643ee125a?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="clothes" data-name="Soft-Sole Baby Booties">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1520006403909-838d6b92c22e?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Soft-Sole Baby Booties" loading="lazy">
+              <span class="product-tag">Baby Clothes</span>
+            </div>
+            <div class="product-body">
+              <h3>Soft-Sole Baby Booties</h3>
+              <p>Warm, soft booties that stay on tiny feet — sample item.</p>
+              <p class="product-price"><strong>&#2547;350</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Sizes: 0–12 months &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Soft-Sole Baby Booties" data-price="350" data-img="https://images.unsplash.com/photo-1520006403909-838d6b92c22e?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="clothes" data-name="Baby First Shoes">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1566004100631-35d015d6a491?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Baby First Shoes" loading="lazy">
+              <span class="product-tag">Baby Clothes</span>
+            </div>
+            <div class="product-body">
+              <h3>Baby First Shoes</h3>
+              <p>Light first shoes for little walkers — sample item.</p>
+              <p class="product-price"><strong>&#2547;550</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Sizes: 6–18 months &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Baby First Shoes" data-price="550" data-img="https://images.unsplash.com/photo-1566004100631-35d015d6a491?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="feeding" data-name="Baby Feeding Bottle">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Baby Feeding Bottle" loading="lazy">
+              <span class="product-tag">Feeding</span>
+            </div>
+            <div class="product-body">
+              <h3>Baby Feeding Bottle</h3>
+              <p>Easy-hold feeding bottle for everyday use — sample item.</p>
+              <p class="product-price"><strong>&#2547;380</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">BPA-free style sample &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Baby Feeding Bottle" data-price="380" data-img="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="feeding" data-name="Baby Bibs — Pack of 3">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Baby Bibs — Pack of 3" loading="lazy">
+              <span class="product-tag">Feeding</span>
+            </div>
+            <div class="product-body">
+              <h3>Baby Bibs — Pack of 3</h3>
+              <p>Soft, washable bibs for mealtimes — sample item.</p>
+              <p class="product-price"><strong>&#2547;280</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Pack of 3 &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Baby Bibs — Pack of 3" data-price="280" data-img="https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="toys" data-name="Soft Toy Teddy">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Soft Toy Teddy" loading="lazy">
+              <span class="product-tag">Toys</span>
+            </div>
+            <div class="product-body">
+              <h3>Soft Toy Teddy</h3>
+              <p>A cuddly soft teddy for playtime and naps — sample item.</p>
+              <p class="product-price"><strong>&#2547;750</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Soft & washable &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Soft Toy Teddy" data-price="750" data-img="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="toys" data-name="Wooden Toy Blocks">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1544126592-807ade215a0b?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Wooden Toy Blocks" loading="lazy">
+              <span class="product-tag">Toys</span>
+            </div>
+            <div class="product-body">
+              <h3>Wooden Toy Blocks</h3>
+              <p>Colourful wooden blocks for stacking and learning — sample item.</p>
+              <p class="product-price"><strong>&#2547;850</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Ages 1+ &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Wooden Toy Blocks" data-price="850" data-img="https://images.unsplash.com/photo-1544126592-807ade215a0b?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="toys" data-name="Baby Rattle &amp; Play Set">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Baby Rattle &amp; Play Set" loading="lazy">
+              <span class="product-tag">Toys</span>
+            </div>
+            <div class="product-body">
+              <h3>Baby Rattle &amp; Play Set</h3>
+              <p>A gentle rattle and play set for tiny hands — sample item.</p>
+              <p class="product-price"><strong>&#2547;950</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Ages 0+ &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Baby Rattle &amp; Play Set" data-price="950" data-img="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="care" data-name="Baby Diapers — Pack">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Baby Diapers — Pack" loading="lazy">
+              <span class="product-tag">Baby Care</span>
+            </div>
+            <div class="product-body">
+              <h3>Baby Diapers — Pack</h3>
+              <p>Comfortable everyday diapers, sample pack — sample item.</p>
+              <p class="product-price"><strong>&#2547;650</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Sample pack &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Baby Diapers — Pack" data-price="650" data-img="https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="care" data-name="Soft Baby Blanket">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Soft Baby Blanket" loading="lazy">
+              <span class="product-tag">Baby Care</span>
+            </div>
+            <div class="product-body">
+              <h3>Soft Baby Blanket</h3>
+              <p>A warm, breathable blanket for naps — sample item.</p>
+              <p class="product-price"><strong>&#2547;700</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Soft cotton feel &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Soft Baby Blanket" data-price="700" data-img="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="care" data-name="Baby Bath &amp; Care Set">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1555009393-f20bdb245c4d?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo — Baby Bath &amp; Care Set" loading="lazy">
+              <span class="product-tag">Baby Care</span>
+            </div>
+            <div class="product-body">
+              <h3>Baby Bath &amp; Care Set</h3>
+              <p>Gentle bath-time essentials in one set — sample item.</p>
+              <p class="product-price"><strong>&#2547;550</strong> <span class="sample-label">&#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / Sample price</span></p>
+              <p class="product-meta">Bath-time set &middot; Sample photo, not the shop&rsquo;s product</p>
+              <button class="btn btn-small btn-outline add-to-cart" type="button" data-item="Baby Bath &amp; Care Set" data-price="550" data-img="https://images.unsplash.com/photo-1555009393-f20bdb245c4d?auto=format&amp;fit=crop&amp;w=700&amp;q=80">Add to cart <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+        </div>
+        <p class="catalogue-empty" id="catalogue-empty" hidden>No sample items match your search. Try another word, or choose &ldquo;All items&rdquo;.</p>
+        <p class="note reveal">Photos are free sample photos, not the shop&rsquo;s real products. The shop&rsquo;s real catalogue, prices and stock are confirmed by the shop when you order. All prices shown are sample prices &mdash; &#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / sample price.</p>
+      </div>
+    </section>
+
+    <!-- How ordering works -->
+    <section class="section section-alt" id="how-it-works">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Simple by design</p>
+          <h2>How ordering works</h2>
+          <p class="section-intro">Ordering is kept simple: browse the catalogue, add items to the cart, and send an order enquiry. The shop confirms every order before it is final.</p>
+        </div>
+        <ol class="steps">
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">1</span>
+            <h3>Browse the catalogue</h3>
+            <p>Search by item or filter by category, and check the size or age note on each sample item.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">2</span>
+            <h3>Add to cart & send an enquiry</h3>
+            <p>Add items to the cart, then use the order form below — or message the shop directly.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">3</span>
+            <h3>The shop confirms</h3>
+            <p>The shop contacts you to confirm the price, size, availability and delivery. No payment is taken in this demo form.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Order -->
+    <section class="section section-booking" id="order">
+      <div class="container booking-inner">
+        <div class="booking-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Order enquiry</p>
+          <h2>Send an order enquiry</h2>
+          <p class="lead">Fill in the form and the shop will contact you to confirm. <strong>This is an enquiry, not a confirmed order.</strong></p>
+          <ul class="booking-points">
+            <li><span class="check" aria-hidden="true">&#10003;</span>No payment is taken here.</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span>Your details are only used for this order enquiry in this demo — nothing is sent to the shop from this sample page.</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span>Prefer to message instead? Orders are also taken by message, as the shop offers.</li>
+          </ul>
+          <p class="note">In the live version, this form would send the enquiry to the shop and confirm it by WhatsApp or Messenger.</p>
+        </div>
+
+        <form class="booking-form reveal" id="order-form" novalidate>
+          <p class="form-title">Order enquiry</p>
+          <p class="form-subtitle">Enquiry only &mdash; not a confirmed order until the shop replies.</p>
+          <div class="form-field">
+            <label for="name">Your name <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Ayesha Rahman" required>
+            <p class="field-error" id="name-error" hidden>Please enter your name.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="e.g. 01XXXXXXXXX" required>
+            <p class="field-error" id="phone-error" hidden>Please enter a valid phone number, e.g. 01XXXXXXXXX.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="item">Item <span aria-hidden="true">*</span></label>
+            <select id="item" name="item" required>
+              <option value="" selected>Choose an item</option>
+              <option value="Cotton Onesie Set (0–6 months)">Cotton Onesie Set (0–6 months) (sample)</option>
+              <option value="Baby Frock Set">Baby Frock Set (sample)</option>
+              <option value="Soft-Sole Baby Booties">Soft-Sole Baby Booties (sample)</option>
+              <option value="Baby First Shoes">Baby First Shoes (sample)</option>
+              <option value="Baby Feeding Bottle">Baby Feeding Bottle (sample)</option>
+              <option value="Baby Bibs — Pack of 3">Baby Bibs — Pack of 3 (sample)</option>
+              <option value="Soft Toy Teddy">Soft Toy Teddy (sample)</option>
+              <option value="Wooden Toy Blocks">Wooden Toy Blocks (sample)</option>
+              <option value="Baby Rattle &amp; Play Set">Baby Rattle &amp; Play Set (sample)</option>
+              <option value="Baby Diapers — Pack">Baby Diapers — Pack (sample)</option>
+              <option value="Soft Baby Blanket">Soft Baby Blanket (sample)</option>
+              <option value="Baby Bath &amp; Care Set">Baby Bath &amp; Care Set (sample)</option>
+              <option value="Another item — I will message the shop">Another item &mdash; I will message the shop</option>
+            </select>
+            <p class="field-error" id="item-error" hidden>Please choose an item.</p>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="area">Delivery area <span aria-hidden="true">*</span></label>
+              <select id="area" name="area" required>
+                <option value="" selected>Choose an area</option>
+                <option value="Inside Dhaka">Inside Dhaka</option>
+                <option value="Outside Dhaka">Outside Dhaka</option>
+              </select>
+              <p class="field-error" id="area-error" hidden>Please choose a delivery area.</p>
+            </div>
+            <div class="form-field">
+              <label for="channel">Reply me on <span aria-hidden="true">*</span></label>
+              <select id="channel" name="channel" required>
+                <option value="" selected>Choose a channel</option>
+                <option value="Messenger">Messenger</option>
+                <option value="WhatsApp">WhatsApp</option>
+                <option value="Phone call">Phone call</option>
+              </select>
+              <p class="field-error" id="channel-error" hidden>Please choose how the shop should reply.</p>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="notes">Delivery address or anything to add? <span class="optional">(optional)</span></label>
+            <textarea id="notes" name="notes" rows="3" placeholder="e.g. Your area, or a note about the size"></textarea>
+          </div>
+
+          <p class="form-disclaimer">By sending this form you are making an order enquiry only. It is <strong>not a confirmed order</strong> until the shop contacts you to confirm the price, availability and delivery. No payment is taken.</p>
+
+          <button class="btn btn-primary btn-full" type="submit">Send order enquiry <span aria-hidden="true">&rarr;</span></button>
+          <p class="form-success" id="form-success" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container faq-inner">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Good to know</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>How do I order from this shop?</summary>
+            <p>Use the order form on this page, or message the shop — the way the shop already takes orders. The shop confirms every order before it is final.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Is my order confirmed as soon as I send the form?</summary>
+            <p>No. Sending the form is an enquiry only. Your order is confirmed only when the shop contacts you to confirm the price, size, availability and delivery.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Do I need to pay when I order?</summary>
+            <p>No payment is taken in this order form. Please ask the shop directly about payment options when they confirm your order.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Do you deliver outside Dhaka?</summary>
+            <p>The shop delivers all over Bangladesh, as it offers. Delivery details and charges are confirmed by the shop when they confirm your order.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>How do I choose the right size?</summary>
+            <p>Check the size or age note on each sample item. If you are between two sizes, mention it in the order notes — the shop can advise on the fit for the item you choose.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit / about -->
+    <section class="section" id="visit">
+      <div class="container visit-inner">
+        <div class="reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>About this template</p>
+          <h2>Chotto Moni</h2>
+          <p class="lead">Baby & kids shop — Bangladesh</p>
+          <p>A sample baby & kids shop template: soft clothes, toys, diapers and feeding items, with a searchable catalogue, a cart and an order form. No real shop details are listed here, because this is a generic template, not a real shop.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#order">Send an order enquiry <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-secondary" href="#catalogue">Browse the catalogue</a>
+          </div>
+          <p class="note">No address, phone number or opening hours are listed here, because this is a generic template — the real shop adds its own details when this template is used.</p>
+        </div>
+        <div class="visit-card reveal" aria-label="At a glance">
+          <h3>At a glance</h3>
+          <dl>
+            <div><dt>Shop type</dt><dd>Baby & kids shop</dd></div>
+            <div><dt>Country</dt><dd>Bangladesh</dd></div>
+            <div><dt>Catalogue</dt><dd>12 sample products, 4 categories</dd></div>
+            <div><dt>Ordering</dt><dd>Catalogue + cart + order form</dd></div>
+            <div><dt>Delivery</dt><dd>All over Bangladesh, as the shop offers</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-demo"><strong>CONCEPT DEMO</strong> &mdash; &#2453;&#2472;&#2488;&#2503;&#2474;&#2509;&#2463; &#2465;&#2503;&#2478;&#2507; &mdash; sample by Ahmed AI Studio, not a real shop</p>
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Chotto Moni</p>
+          <p>Baby & Kids Shop &mdash; Bangladesh</p>
+        </div>
+        <p>Chotto Moni &mdash; Bangladesh. This is a concept demo only. Order enquiries made here are not sent to any shop and are not confirmed orders. All prices are sample prices.</p>
+      </div>
+      <p class="footer-credit">Concept demo built by Ahmed AI Studio, Bangladesh &mdash; digital services for small businesses.</p>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-head">
+      <h2>Your cart</h2>
+      <button class="cart-close" type="button" id="cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <p class="cart-empty">Your cart is empty. Add a sample item from the catalogue above.</p>
+    </div>
+    <div class="cart-foot">
+      <p class="cart-total-row"><span>Total</span> <strong id="cart-total">&#2547;0</strong></p>
+      <p class="cart-note">All prices are sample prices &mdash; &#2472;&#2478;&#2497;&#2472;&#2494; &#2478;&#2498;&#2482;&#2509;&#2479; / sample price. No payment is taken in this demo.</p>
+      <button class="btn btn-primary btn-full" type="button" id="checkout-btn">Send order enquiry <span aria-hidden="true">&rarr;</span></button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
