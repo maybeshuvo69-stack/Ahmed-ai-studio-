@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Concept demo website for The Holidays Tours, Dhaka — tour packages departing Dhaka, booking requests, FAQs and how booking works. Sample by Ahmed AI Studio, not a client project.">
+  <title>The Holidays Tours — Dhaka | Concept Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Concept demo banner -->
+  <div class="demo-banner" role="note">
+    <p><strong>CONCEPT DEMO</strong> — sample by Ahmed AI Studio, not a client project, not affiliated with The Holidays Tours</p>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="The Holidays Tours — home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">The Holidays Tours</span>
+          <span class="brand-sub">Dhaka &middot; Bangladesh</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#tours">Tours</a>
+        <a href="#how-it-works">How booking works</a>
+        <a href="#booking">Book</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small" href="#booking">Request a booking</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Travel agency &middot; Tours departing Dhaka</p>
+          <h1>Your next holiday, <em>planned before you call.</em></h1>
+          <p class="lead">The Holidays Tours is a travel agency in Dhaka, arranging tours that depart from Dhaka. Browse the packages, pick your dates, and send a booking request — no payment needed to send a request.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#tours">Browse tour packages <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-secondary" href="#how-it-works">How booking works</a>
+          </div>
+          <ul class="hero-notes">
+            <li><strong>Tours depart from Dhaka</strong> — Sayedabad, Dhaka.</li>
+            <li><strong>Book by phone or Facebook today</strong> — customers call or message the Page to book. This demo adds a tour list and a booking-request form, so no booking gets lost in the inbox.</li>
+            <li><strong>A request is not a confirmed booking</strong> — the agency confirms seats, dates and the final price before anything is final.</li>
+          </ul>
+        </div>
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="hero-card">
+            <img class="hero-photo" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="" loading="lazy">
+            <div class="hero-card-overlay">
+              <span class="hero-card-eyebrow">Sample packages — departing Dhaka</span>
+              <p class="hero-card-title">Beaches, hills<br>&amp; heritage tours</p>
+            </div>
+            <div class="hero-card-bottom">
+              <div class="hero-stat"><strong>06</strong><span>Sample tours</span></div>
+              <div class="hero-stat"><strong>01–04</strong><span>Days each</span></div>
+              <div class="hero-stat"><strong>Dhaka</strong><span>Departure</span></div>
+            </div>
+            <p class="hero-card-chip">Sayedabad &middot; Dhaka</p>
+          </div>
+          <div class="hero-float">
+            <span class="hero-float-dot" aria-hidden="true"></span>
+            <div><strong>Request, then confirm</strong><span>No payment in this demo form</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><span></span>Scroll</div>
+    </section>
+
+    <!-- Trust / at-a-glance strip -->
+    <section class="strip" aria-label="At a glance">
+      <div class="container strip-inner">
+        <div class="strip-item"><span class="strip-label">Departure</span><span>Sayedabad, Dhaka, Bangladesh</span></div>
+        <div class="strip-item"><span class="strip-label">Booking</span><span>Tour list + booking-request form, or call / message the Facebook Page</span></div>
+        <div class="strip-item"><span class="strip-label">Confirmation</span><span>The agency confirms seats, dates and price before a booking is final</span></div>
+      </div>
+    </section>
+
+    <!-- Tours -->
+    <section class="section" id="tours">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Tour packages</p>
+          <h2>Choose your tour</h2>
+          <p class="section-intro">Sample tours only — these are generic sample packages to show how a tour list can work, not the agency&rsquo;s real itineraries. Prices shown are sample prices, per person. The agency confirms the real price, dates, seats and what is included when you book.</p>
+        </div>
+
+        <div class="catalogue-tools reveal">
+          <div class="search-wrap">
+            <label class="visually-hidden" for="search">Search the tours</label>
+            <input type="search" id="search" placeholder="Search by place, e.g. Cox's Bazar, Sajek, Sundarbans&hellip;" autocomplete="off">
+          </div>
+          <div class="filter-pills" role="group" aria-label="Filter by type">
+            <button class="pill active" type="button" data-filter="all">All tours</button>
+            <button class="pill" type="button" data-filter="beach">Beach</button>
+            <button class="pill" type="button" data-filter="hills">Hills</button>
+            <button class="pill" type="button" data-filter="nature">Nature</button>
+            <button class="pill" type="button" data-filter="city">City &amp; heritage</button>
+          </div>
+          <p class="catalogue-count" id="catalogue-count" role="status">Showing 6 sample tours</p>
+        </div>
+
+        <div class="catalogue-grid" id="catalogue-grid">
+          <article class="product-card reveal" data-category="beach" data-name="Cox's Bazar beach escape">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo for Cox's Bazar beach escape tour" loading="lazy">
+              <span class="product-tag">Beach &middot; 3 days</span>
+            </div>
+            <div class="product-body">
+              <h3>Cox&rsquo;s Bazar Beach Escape</h3>
+              <p>Three days by the sea — a sample beach package departing Dhaka.</p>
+              <p class="product-price"><strong>&#2547;9,500</strong> <span class="sample-label">Sample price / person</span></p>
+              <p class="product-meta">Departs: Dhaka &middot; Sample photo, not the agency&rsquo;s own</p>
+              <button class="btn btn-small btn-outline order-btn" type="button" data-item="Cox's Bazar Beach Escape (sample)">Book this tour <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="beach" data-name="Saint Martin's island getaway">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo for Saint Martin's island getaway tour" loading="lazy">
+              <span class="product-tag">Beach &middot; 3 days</span>
+            </div>
+            <div class="product-body">
+              <h3>Saint Martin&rsquo;s Island Getaway</h3>
+              <p>Three days on the island — a sample beach and island package departing Dhaka.</p>
+              <p class="product-price"><strong>&#2547;12,500</strong> <span class="sample-label">Sample price / person</span></p>
+              <p class="product-meta">Departs: Dhaka &middot; Sample photo, not the agency&rsquo;s own</p>
+              <button class="btn btn-small btn-outline order-btn" type="button" data-item="Saint Martin's Island Getaway (sample)">Book this tour <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="hills" data-name="Sajek Valley hills tour">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo for Sajek Valley hills tour" loading="lazy">
+              <span class="product-tag">Hills &middot; 3 days</span>
+            </div>
+            <div class="product-body">
+              <h3>Sajek Valley Hills Tour</h3>
+              <p>Three days in the hills — a sample hill tour departing Dhaka.</p>
+              <p class="product-price"><strong>&#2547;8,500</strong> <span class="sample-label">Sample price / person</span></p>
+              <p class="product-meta">Departs: Dhaka &middot; Sample photo, not the agency&rsquo;s own</p>
+              <button class="btn btn-small btn-outline order-btn" type="button" data-item="Sajek Valley Hills Tour (sample)">Book this tour <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="hills" data-name="Bandarban hills and waterfalls">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo for Bandarban hills and waterfalls tour" loading="lazy">
+              <span class="product-tag">Hills &middot; 4 days</span>
+            </div>
+            <div class="product-body">
+              <h3>Bandarban Hills &amp; Waterfalls</h3>
+              <p>Four days among hills and waterfalls — a sample hill tour departing Dhaka.</p>
+              <p class="product-price"><strong>&#2547;11,500</strong> <span class="sample-label">Sample price / person</span></p>
+              <p class="product-meta">Departs: Dhaka &middot; Sample photo, not the agency&rsquo;s own</p>
+              <button class="btn btn-small btn-outline order-btn" type="button" data-item="Bandarban Hills and Waterfalls (sample)">Book this tour <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="nature" data-name="Sundarbans mangrove cruise">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo for Sundarbans mangrove cruise tour" loading="lazy">
+              <span class="product-tag">Nature &middot; 3 days</span>
+            </div>
+            <div class="product-body">
+              <h3>Sundarbans Mangrove Cruise</h3>
+              <p>Three days on the water in the mangrove forest — a sample nature cruise departing Dhaka.</p>
+              <p class="product-price"><strong>&#2547;14,500</strong> <span class="sample-label">Sample price / person</span></p>
+              <p class="product-meta">Departs: Dhaka &middot; Sample photo, not the agency&rsquo;s own</p>
+              <button class="btn btn-small btn-outline order-btn" type="button" data-item="Sundarbans Mangrove Cruise (sample)">Book this tour <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="city" data-name="Dhaka city and heritage day tour">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample photo for Dhaka city and heritage day tour" loading="lazy">
+              <span class="product-tag">City &amp; heritage &middot; 1 day</span>
+            </div>
+            <div class="product-body">
+              <h3>Dhaka City &amp; Heritage Day Tour</h3>
+              <p>One day around the city&rsquo;s historic places — a sample day tour in Dhaka.</p>
+              <p class="product-price"><strong>&#2547;2,500</strong> <span class="sample-label">Sample price / person</span></p>
+              <p class="product-meta">Departs: Dhaka &middot; Sample photo, not the agency&rsquo;s own</p>
+              <button class="btn btn-small btn-outline order-btn" type="button" data-item="Dhaka City and Heritage Day Tour (sample)">Book this tour <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+        </div>
+        <p class="catalogue-empty" id="catalogue-empty" hidden>No sample tours match your search. Try another word, or choose &ldquo;All tours&rdquo;.</p>
+        <p class="note reveal">Photos are free sample photos, not the agency&rsquo;s real tour photos. The agency&rsquo;s real tours, prices, dates and what is included are confirmed by the agency when you book.</p>
+      </div>
+    </section>
+
+    <!-- How booking works -->
+    <section class="section section-alt" id="how-it-works">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Simple by design</p>
+          <h2>How booking works</h2>
+          <p class="section-intro">Today, tour sales are booked manually — customers call or message the agency&rsquo;s Facebook Page, and the agency notes the booking by phone. This demo keeps that way — and adds a tour list and a booking-request form, so every request is written down in one place.</p>
+        </div>
+        <ol class="steps">
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">1</span>
+            <h3>Choose a tour</h3>
+            <p>Browse the packages, search by place or filter by type, and pick the dates that suit you.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">2</span>
+            <h3>Send a booking request</h3>
+            <p>Use the booking form below — or call / message the agency&rsquo;s Facebook Page, as before. Tell the agency how many people are travelling.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">3</span>
+            <h3>The agency confirms</h3>
+            <p>The agency contacts you to confirm seats, dates, the final price and what is included. No payment is taken in this demo form, and a request is not a confirmed booking until the agency confirms it.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="section section-booking" id="booking">
+      <div class="container booking-inner">
+        <div class="booking-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Booking request</p>
+          <h2>Request a booking</h2>
+          <p class="lead">Fill in the form and the agency will contact you to confirm. <strong>This is a request only, not a confirmed booking.</strong></p>
+          <ul class="booking-points">
+            <li><span class="check" aria-hidden="true">&#10003;</span>No payment is taken here.</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span>Your details are only used for this booking request in this demo — nothing is sent to the agency from this sample page.</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span>Prefer to call or message instead? Bookings are also taken by phone or through the agency&rsquo;s Facebook Page.</li>
+          </ul>
+          <p class="note">In the live version, this form would send the request to the agency and confirm it by phone, WhatsApp or Messenger.</p>
+        </div>
+
+        <form class="booking-form reveal" id="order-form" novalidate>
+          <p class="form-title">Booking request</p>
+          <p class="form-subtitle">Request only — not a confirmed booking until the agency replies.</p>
+          <div class="form-field">
+            <label for="name">Your name <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Tanvir Ahmed" required>
+            <p class="field-error" id="name-error" hidden>Please enter your name.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="e.g. 01XXXXXXXXX" required>
+            <p class="field-error" id="phone-error" hidden>Please enter a valid phone number, e.g. 01XXXXXXXXX.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="item">Tour <span aria-hidden="true">*</span></label>
+            <select id="item" name="item" required>
+              <option value="" selected>Choose a tour</option>
+              <option value="Cox's Bazar Beach Escape (sample)">Cox&rsquo;s Bazar Beach Escape (sample)</option>
+              <option value="Saint Martin's Island Getaway (sample)">Saint Martin&rsquo;s Island Getaway (sample)</option>
+              <option value="Sajek Valley Hills Tour (sample)">Sajek Valley Hills Tour (sample)</option>
+              <option value="Bandarban Hills and Waterfalls (sample)">Bandarban Hills &amp; Waterfalls (sample)</option>
+              <option value="Sundarbans Mangrove Cruise (sample)">Sundarbans Mangrove Cruise (sample)</option>
+              <option value="Dhaka City and Heritage Day Tour (sample)">Dhaka City &amp; Heritage Day Tour (sample)</option>
+              <option value="Another tour — I will ask the agency">Another tour — I will ask the agency</option>
+            </select>
+            <p class="field-error" id="item-error" hidden>Please choose a tour.</p>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="size">Preferred date <span aria-hidden="true">*</span></label>
+              <input type="date" id="size" name="date" required>
+              <p class="field-error" id="size-error" hidden>Please choose a preferred date.</p>
+            </div>
+            <div class="form-field">
+              <label for="quantity">Travellers <span aria-hidden="true">*</span></label>
+              <select id="quantity" name="quantity" required>
+                <option value="1" selected>1 person</option>
+                <option value="2">2 people</option>
+                <option value="3">3 people</option>
+                <option value="4">4 people</option>
+                <option value="5+">5+ people</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="area">Departure <span aria-hidden="true">*</span></label>
+              <select id="area" name="area" required>
+                <option value="" selected>Choose a departure point</option>
+                <option value="Sayedabad, Dhaka">Sayedabad, Dhaka</option>
+                <option value="Another point in Dhaka — please advise">Another point in Dhaka — please advise</option>
+              </select>
+              <p class="field-error" id="area-error" hidden>Please choose a departure point.</p>
+            </div>
+            <div class="form-field">
+              <label for="channel">Reply me on <span aria-hidden="true">*</span></label>
+              <select id="channel" name="channel" required>
+                <option value="" selected>Choose a channel</option>
+                <option value="Phone call">Phone call</option>
+                <option value="WhatsApp">WhatsApp</option>
+                <option value="Messenger">Messenger</option>
+              </select>
+              <p class="field-error" id="channel-error" hidden>Please choose how the agency should reply.</p>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="notes">Anything to add? <span class="optional">(optional)</span></label>
+            <textarea id="notes" name="notes" rows="3" placeholder="e.g. Travelling with children, or a question about the tour"></textarea>
+          </div>
+
+          <p class="form-disclaimer">By sending this form you are making a booking request only. It is <strong>not a confirmed booking</strong> until the agency contacts you to confirm the seats, dates, price and what is included. No payment is taken.</p>
+
+          <button class="btn btn-primary btn-full" type="submit">Send booking request <span aria-hidden="true">&rarr;</span></button>
+          <p class="form-success" id="form-success" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container faq-inner">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Good to know</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>How do I book a tour with The Holidays Tours?</summary>
+            <p>Use the booking form on this page, or call / message the agency&rsquo;s Facebook Page — the way the agency already takes bookings. The agency confirms every booking before it is final.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Is my booking confirmed as soon as I send the form?</summary>
+            <p>No. Sending the form is a request only. Your booking is confirmed only when the agency contacts you to confirm the seats, dates, price and what is included.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Do I need to pay when I send a booking request?</summary>
+            <p>No payment is taken in this booking form. Please ask the agency directly about payment options and any advance payment when they confirm your booking.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Where do the tours depart from?</summary>
+            <p>The tours on this page depart from Dhaka — Sayedabad, Dhaka. The exact departure point and time for your tour are confirmed by the agency when they confirm your booking.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>What is included in the tour price?</summary>
+            <p>What is included varies by tour. The sample prices on this page are per person and are samples only — the agency confirms the real price and what is included when they confirm your booking.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Where is the agency?</summary>
+            <p>The Holidays Tours is a travel agency in Dhaka, Bangladesh, with tours departing from Sayedabad, Dhaka. The exact address, phone number and opening hours were not verified for this concept demo — please confirm them via the agency&rsquo;s Facebook Page before visiting.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit / contact -->
+    <section class="section" id="visit">
+      <div class="container visit-inner">
+        <div class="reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Visit us</p>
+          <h2>The Holidays Tours</h2>
+          <p class="lead">Dhaka, Bangladesh — tours departing Sayedabad, Dhaka</p>
+          <p>A travel agency in Dhaka arranging tours that depart from Dhaka. Bookings are taken by phone or through the agency&rsquo;s Facebook Page — this concept demo adds a tour list and a booking-request form.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#booking">Send a booking request <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-secondary" href="https://www.facebook.com/TheHolidaysTours" target="_blank" rel="noopener">Agency on Facebook</a>
+          </div>
+          <p class="note">Exact address, phone number and opening hours were not verified for this concept demo. Please confirm them via the agency&rsquo;s Facebook Page. No phone number is listed here, because none was verified in the public source used for this demo.</p>
+        </div>
+        <div class="visit-card reveal" aria-label="Location summary">
+          <h3>At a glance</h3>
+          <dl>
+            <div><dt>Based in</dt><dd>Dhaka, Bangladesh</dd></div>
+            <div><dt>Departure</dt><dd>Sayedabad, Dhaka</dd></div>
+            <div><dt>Business</dt><dd>Travel agency — tour packages</dd></div>
+            <div><dt>Booking</dt><dd>Tour list + booking-request form, or phone / Facebook Page</dd></div>
+            <div><dt>Confirmation</dt><dd>Agency confirms seats, dates and price</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-demo"><strong>CONCEPT DEMO</strong> — sample by Ahmed AI Studio, not a client project, not affiliated with The Holidays Tours</p>
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">The Holidays Tours</p>
+          <p>Dhaka, Bangladesh</p>
+        </div>
+        <p>The Holidays Tours — Dhaka, Bangladesh. This is a concept demo only. Booking requests made here are not sent to the agency and are not confirmed bookings. For a real booking, please contact the agency via its Facebook Page or phone.</p>
+      </div>
+      <p class="footer-credit">Concept demo built by Ahmed AI Studio, Bangladesh — digital services for small businesses.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

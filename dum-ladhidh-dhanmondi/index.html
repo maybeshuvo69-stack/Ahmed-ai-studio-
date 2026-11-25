@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Concept demo website for Dum Ladhidh Dhanmondi — restaurant in Dhanmondi, Dhaka — sample by Ahmed AI Studio. Not a client project and not affiliated with Dum Ladhidh.">
+  <title>Dum Ladhidh — Dhanmondi, Dhaka | Concept Demo by Ahmed AI Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- CONCEPT DEMO banner -->
+  <div class="demo-banner" role="note">
+    <span class="demo-dot" aria-hidden="true"></span>
+    CONCEPT DEMO — sample by Ahmed AI Studio, not a client project, not affiliated with Dum Ladhidh
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">D<span class="brand-leaf">L</span></span>
+        <span class="brand-text">
+          <strong>Dum Ladhidh</strong>
+          <small>Restaurant · Dhanmondi, Dhaka</small>
+        </span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#menu">Menu</a>
+        <a href="#order">Order Online</a>
+        <a href="#book">Book / Pre-order</a>
+        <a href="#visit">Visit Us</a>
+      </nav>
+      <div class="header-actions">
+        <a class="cart-link" href="#order" aria-label="View your order">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count" id="cartCount" hidden>0</span>
+        </a>
+        <a class="btn btn-primary header-cta" href="#order">Order Now</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span>Dhanmondi, Dhaka</p>
+          <h1>Slow-cooked flavour in the heart of Dhanmondi.</h1>
+          <p class="lead">Browse the menu, order for home delivery or pre-order, or book a table — all in one place, instead of ordering only by phone. This is a concept demo showing how a restaurant website can work.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#menu">View Menu
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost-light" href="#order">Order Online</a>
+            <a class="btn btn-ghost-light" href="#book">Book / Pre-order</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat"><strong>20</strong><span>sample dishes</span></div>
+            <div class="hero-stat"><strong>Home delivery</strong><span>&amp; pre-orders</span></div>
+            <div class="hero-stat"><strong>Delivery</strong><span>&amp; pickup</span></div>
+          </div>
+          <p class="hero-note">No payment is taken on this demo page. Orders placed here are samples only and are not sent to the restaurant.</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <figure class="hero-photo hero-photo-main">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=80" alt="" loading="eager">
+            <figcaption>Sample photo — not the restaurant's own food photography.</figcaption>
+          </figure>
+          <figure class="hero-photo hero-photo-small">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=500&q=80" alt="" loading="lazy">
+          </figure>
+          <div class="hero-card">
+            <p class="hero-card-label">Today's sample picks</p>
+            <ul class="hero-list">
+              <li><span>Chicken Dum Biryani</span><strong>৳ 350*</strong></li>
+              <li><span>Beef Dum Biryani</span><strong>৳ 380*</strong></li>
+              <li><span>Grilled Chicken</span><strong>৳ 380*</strong></li>
+            </ul>
+            <p class="hero-card-note">* Sample prices — placeholder only.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="strip">
+      <div class="container strip-grid">
+        <div class="strip-item"><span class="strip-num">01</span><div><strong>Browse</strong><span>Search the menu by dish or category.</span></div></div>
+        <div class="strip-item"><span class="strip-num">02</span><div><strong>Order</strong><span>Choose delivery or pickup, no payment online.</span></div></div>
+        <div class="strip-item"><span class="strip-num">03</span><div><strong>Enjoy</strong><span>Collect your order or get it delivered.</span></div></div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Our Menu</p>
+          <h2>What would you like today?</h2>
+          <p class="section-intro">Search the catalogue below. These are <strong>generic sample dishes with placeholder prices in BDT</strong> to show how an online menu could look. <strong>They are not Dum Ladhidh's real menu or real prices.</strong> For the restaurant's actual menu, please check its Facebook Page. Photos are free sample photos, not the restaurant's own dishes.</p>
+        </div>
+
+        <div class="menu-controls reveal">
+          <label class="search-box">
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            <span class="visually-hidden">Search menu</span>
+            <input type="search" id="menuSearch" placeholder="Search dishes, e.g. biryani, curry, noodles" autocomplete="off">
+          </label>
+          <div class="filters" role="group" aria-label="Filter menu by category">
+            <button class="filter-btn active" data-category="all" type="button">All</button>
+            <button class="filter-btn" data-category="starters" type="button">Starters</button>
+            <button class="filter-btn" data-category="main" type="button">Main Dishes</button>
+            <button class="filter-btn" data-category="rice-noodles" type="button">Rice &amp; Noodles</button>
+            <button class="filter-btn" data-category="grill" type="button">BBQ &amp; Grill</button>
+            <button class="filter-btn" data-category="desserts" type="button">Desserts</button>
+            <button class="filter-btn" data-category="drinks" type="button">Drinks</button>
+          </div>
+        </div>
+
+        <p class="results-count" id="resultsCount" aria-live="polite"></p>
+        <div class="menu-grid" id="menuGrid"></div>
+        <p class="menu-empty" id="menuEmpty" hidden>No dishes match your search. Try a different word or category.</p>
+        <p class="placeholder-note">Sample prices — placeholder only, not the restaurant's real prices. Prices are shown in Bangladeshi Taka (BDT / ৳).</p>
+      </div>
+    </section>
+
+    <!-- ORDER -->
+    <section id="order" class="section section-alt">
+      <div class="container order-layout">
+        <div class="reveal">
+          <p class="eyebrow">Order Online</p>
+          <h2>Build your order</h2>
+          <p class="section-intro">Build your order below. This is a <strong>demo form only</strong> — no order is sent to the restaurant and no payment is taken.</p>
+
+          <form id="orderForm" novalidate>
+            <div class="form-row">
+              <label for="orderName">Your name
+                <input type="text" id="orderName" name="name" placeholder="e.g. Ahmed" required autocomplete="name">
+              </label>
+              <label for="orderPhone">Phone number
+                <input type="tel" id="orderPhone" name="phone" placeholder="e.g. 01XXXXXXXXX" required autocomplete="tel">
+              </label>
+            </div>
+
+            <fieldset>
+              <legend>How would you like your order?</legend>
+              <label class="radio-pill"><input type="radio" name="fulfilment" value="Delivery" checked><span>Delivery</span></label>
+              <label class="radio-pill"><input type="radio" name="fulfilment" value="Pickup"><span>Pickup from Dhanmondi</span></label>
+            </fieldset>
+
+            <label for="orderAddress">Delivery address <span class="optional">(delivery only)</span>
+              <textarea id="orderAddress" name="address" rows="2" placeholder="House / road / area in Dhaka"></textarea>
+            </label>
+
+            <label for="orderNotes">Notes for the kitchen <span class="optional">(optional)</span>
+              <textarea id="orderNotes" name="notes" rows="2" placeholder="e.g. less spicy, no onion"></textarea>
+            </label>
+
+            <p class="form-error" id="orderError" hidden>Please add at least one dish and fill in your name and phone number.</p>
+            <button class="btn btn-primary btn-full" type="submit">Place Sample Order</button>
+            <p class="form-note">Demo only — this form does not send an order or take payment.</p>
+          </form>
+        </div>
+
+        <aside class="order-summary reveal" aria-label="Your order summary">
+          <h3>Your Order</h3>
+          <p class="summary-empty" id="summaryEmpty">No dishes added yet. Use “Add” on a menu item.</p>
+          <ul class="summary-list" id="summaryList"></ul>
+          <div class="summary-total">
+            <span>Estimated total <small>(sample prices)</small></span>
+            <strong id="summaryTotal">৳ 0</strong>
+          </div>
+          <button class="btn btn-secondary btn-full" id="clearOrder" type="button">Clear Order</button>
+          <p class="summary-note">Prices are placeholders. The restaurant would confirm the real total before preparing an order.</p>
+        </aside>
+      </div>
+      <div class="container">
+        <div class="order-confirm" id="orderConfirm" hidden tabindex="-1">
+          <h3>Thank you — this is a sample order.</h3>
+          <p id="orderConfirmText"></p>
+          <p>No order was sent to the restaurant and no payment was taken.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABLE BOOKING -->
+    <section id="book" class="section">
+      <div class="container narrow reveal">
+        <p class="eyebrow">Reservations</p>
+        <h2>Book a Table / Pre-order</h2>
+        <p class="section-intro">Send a table or pre-order enquiry. This is a <strong>demo form only</strong> — it does not book a table or place a pre-order with the restaurant.</p>
+        <form id="bookForm" novalidate>
+          <div class="form-row">
+            <label for="bookName">Your name
+              <input type="text" id="bookName" name="name" placeholder="e.g. Ahmed" required autocomplete="name">
+            </label>
+            <label for="bookPhone">Phone number
+              <input type="tel" id="bookPhone" name="phone" placeholder="e.g. 01XXXXXXXXX" required autocomplete="tel">
+            </label>
+          </div>
+          <div class="form-row form-row-3">
+            <label for="bookDate">Date
+              <input type="date" id="bookDate" name="date" required>
+            </label>
+            <label for="bookTime">Time
+              <select id="bookTime" name="time" required>
+                <option value="">Choose a time</option>
+                <option>12:00 PM</option>
+                <option>1:00 PM</option>
+                <option>2:00 PM</option>
+                <option>6:00 PM</option>
+                <option>7:00 PM</option>
+                <option>8:00 PM</option>
+                <option>9:00 PM</option>
+              </select>
+            </label>
+            <label for="bookGuests">Guests
+              <select id="bookGuests" name="guests" required>
+                <option value="">Guests</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7+</option>
+              </select>
+            </label>
+          </div>
+          <label for="bookNotes">Anything else? <span class="optional">(optional)</span>
+            <textarea id="bookNotes" name="notes" rows="2" placeholder="e.g. window seat, birthday"></textarea>
+          </label>
+          <p class="form-error" id="bookError" hidden>Please fill in your name, phone, date, time and number of guests.</p>
+          <button class="btn btn-primary btn-full" type="submit">Send Table / Pre-order Enquiry</button>
+          <p class="form-note">Demo only — this enquiry is not sent to the restaurant.</p>
+        </form>
+        <div class="order-confirm" id="bookConfirm" hidden tabindex="-1">
+          <h3>Thank you — this is a sample enquiry.</h3>
+          <p id="bookConfirmText"></p>
+          <p>No table was booked and no pre-order was placed. Please contact the restaurant via its Facebook Page to book or order for real.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section id="visit" class="section section-alt">
+      <div class="container visit-layout">
+        <div class="reveal">
+          <p class="eyebrow">Find Us</p>
+          <h2>Visit Us</h2>
+          <p><strong>Dum Ladhidh</strong><br>Dhanmondi, Dhaka, Bangladesh</p>
+          <p>No street address or phone number is shown here, because none was verified for this demo. For the restaurant's real address, phone number and opening hours, please check its official Facebook Page.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://www.facebook.com/102166442106558/" target="_blank" rel="noopener">Visit Facebook Page</a>
+            <a class="btn btn-secondary" href="#menu">Browse the Sample Menu</a>
+          </div>
+        </div>
+        <div class="visit-card reveal" aria-label="Contact summary">
+          <h3>Contact</h3>
+          <dl>
+            <dt>Location</dt>
+            <dd>Dhanmondi, Dhaka</dd>
+            <dt>Facebook</dt>
+            <dd><a href="https://www.facebook.com/102166442106558/" target="_blank" rel="noopener">facebook.com/102166442106558</a></dd>
+            <dt>Orders</dt>
+            <dd>Delivery / pickup — sample form above</dd>
+            <dt>Opening hours</dt>
+            <dd>See the Facebook Page</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="demo-banner footer-banner">CONCEPT DEMO — sample by Ahmed AI Studio, not a client project, not affiliated with Dum Ladhidh</p>
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Dum Ladhidh</p>
+          <p>Dhanmondi, Dhaka. Sample menu, sample prices and sample forms only.</p>
+        </div>
+        <div>
+          <p class="footer-brand">Explore</p>
+          <p><a href="#menu">Menu</a> · <a href="#order">Order Online</a> · <a href="#book">Book / Pre-order</a></p>
+          <p>Facebook: <a href="https://www.facebook.com/102166442106558/" target="_blank" rel="noopener">facebook.com/102166442106558</a></p>
+        </div>
+      </div>
+      <p class="footer-credit">Concept demo built by <strong>Ahmed AI Studio</strong>, Bangladesh — websites, AI chatbots and business automation for small businesses.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Concept demo website for Kolpotaru, Khulshi, Chattogram — clothing catalogue, size guide and order enquiries. Sample by Ahmed AI Studio, not a client project.">
+  <title>Kolpotaru — Khulshi, Chattogram | Concept Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Concept demo banner -->
+  <div class="demo-banner" role="note">
+    <p><strong>CONCEPT DEMO</strong> — sample by Ahmed AI Studio, not a client project, not affiliated with Kolpotaru</p>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Kolpotaru — home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V10"/><path d="M12 10C12 5 8 2 3 2c0 5 4 8 9 8z"/><path d="M12 10c0-5 4-8 9-8 0 5-4 8-9 8z"/><path d="M12 14c-2 0-4 1-4 3 0 2 2 3 4 3s4-1 4-3c0-2-2-3-4-3z"/></svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Kolpotaru — কল্পতরু</span>
+          <span class="brand-sub">Khulshi &middot; Chattogram</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#catalogue">Catalogue</a>
+        <a href="#how-it-works">How ordering works</a>
+        <a href="#size-guide">Size guide</a>
+        <a href="#order">Order</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small" href="#order">Order now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Clothing &amp; fashion &middot; Khulshi, Chattogram</p>
+          <h1>Everyday style, <em>picked in one place.</em></h1>
+          <p class="lead">Kolpotaru is a clothing and fashion store in Khulshi, Chattogram. Browse the catalogue, pick your size, and send your order — no payment needed to send an enquiry.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#catalogue">Browse the catalogue <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-secondary" href="#how-it-works">How ordering works</a>
+          </div>
+          <ul class="hero-notes">
+            <li><strong>Clothing store in Khulshi</strong> — Chattogram.</li>
+            <li><strong>Order by Messenger or WhatsApp</strong> — or with the form on this page.</li>
+            <li><strong>Today, orders come by message</strong> — customers write to the store&rsquo;s Facebook Page. This demo adds a searchable catalogue and an order form, so nothing gets lost in the inbox.</li>
+          </ul>
+        </div>
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="hero-card">
+            <img class="hero-photo" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="" loading="lazy">
+            <div class="hero-card-overlay">
+              <span class="hero-card-eyebrow">New in — sample collection</span>
+              <p class="hero-card-title">Sarees, three-piece<br>kurtis &amp; dresses</p>
+            </div>
+            <div class="hero-card-bottom">
+              <div class="hero-stat"><strong>12</strong><span>Sample styles</span></div>
+              <div class="hero-stat"><strong>04</strong><span>Categories</span></div>
+              <div class="hero-stat"><strong>Khulshi</strong><span>Chattogram</span></div>
+            </div>
+            <p class="hero-card-chip">Khulshi &middot; Chattogram</p>
+          </div>
+          <div class="hero-float">
+            <span class="hero-float-dot" aria-hidden="true"></span>
+            <div><strong>Order by message, or by form</strong><span>Messenger or WhatsApp</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><span></span>Scroll</div>
+    </section>
+
+    <!-- Trust / at-a-glance strip -->
+    <section class="strip" aria-label="At a glance">
+      <div class="container strip-inner">
+        <div class="strip-item"><span class="strip-label">Location</span><span>Khulshi, Chattogram, Bangladesh</span></div>
+        <div class="strip-item"><span class="strip-label">Ordering</span><span>Catalogue + order form, or message the Facebook Page</span></div>
+        <div class="strip-item"><span class="strip-label">Reply</span><span>Messenger or WhatsApp — the store confirms every order</span></div>
+      </div>
+    </section>
+
+    <!-- Catalogue -->
+    <section class="section" id="catalogue">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>The catalogue</p>
+          <h2>Browse the collection</h2>
+          <p class="section-intro">Sample styles only — these are generic sample items to show how a catalogue can work, not the store&rsquo;s real products. Prices shown are sample prices. The store confirms the real price, size and availability when you order.</p>
+        </div>
+
+        <div class="catalogue-tools reveal">
+          <div class="search-wrap">
+            <label class="visually-hidden" for="search">Search the catalogue</label>
+            <input type="search" id="search" placeholder="Search by style, e.g. saree, kurti, floral&hellip;" autocomplete="off">
+          </div>
+          <div class="filter-pills" role="group" aria-label="Filter by category">
+            <button class="pill active" type="button" data-filter="all">All styles</button>
+            <button class="pill" type="button" data-filter="saree">Sarees</button>
+            <button class="pill" type="button" data-filter="three-piece">Three-piece</button>
+            <button class="pill" type="button" data-filter="kurti">Kurtis</button>
+            <button class="pill" type="button" data-filter="dress">Dresses</button>
+          </div>
+          <p class="catalogue-count" id="catalogue-count" role="status">Showing 12 sample styles</p>
+        </div>
+
+        <div class="catalogue-grid" id="catalogue-grid">
+          <article class="product-card reveal" data-category="saree" data-name="Floral print saree">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample floral print saree" loading="lazy">
+              <span class="product-tag">Saree</span>
+            </div>
+            <div class="product-body">
+              <h3>Floral Print Saree</h3>
+              <p>A light, everyday saree with a floral print — sample style.</p>
+              <p class="product-price"><strong>&#2547;1,850</strong> <span class="sample-label">Sample price</span></p>
+              <p class="product-meta">Sizes: Free size &middot; Sample photo, not the store&rsquo;s product</p>
+              <button class="btn btn-small btn-outline order-btn" type="button" data-item="Floral Print Saree (sample)">Order this item <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="saree" data-name="Embroidered party saree">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample embroidered party saree" loading="lazy">
+              <span class="product-tag">Saree</span>
+            </div>
+            <div class="product-body">
+              <h3>Embroidered Party Saree</h3>
+              <p>A dressier saree with embroidery for occasions — sample style.</p>
+              <p class="product-price"><strong>&#2547;3,450</strong> <span class="sample-label">Sample price</span></p>
+              <p class="product-meta">Sizes: Free size &middot; Sample photo, not the store&rsquo;s product</p>
+              <button class="btn btn-small btn-outline order-btn" type="button" data-item="Embroidered Party Saree (sample)">Order this item <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="saree" data-name="Cotton handloom saree">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample cotton handloom saree" loading="lazy">
+              <span class="product-tag">Saree</span>
+            </div>
+            <div class="product-body">
+              <h3>Cotton Handloom Saree</h3>
+              <p>Soft cotton for daily wear — sample style.</p>
+              <p class="product-price"><strong>&#2547;1,450</strong> <span class="sample-label">Sample price</span></p>
+              <p class="product-meta">Sizes: Free size &middot; Sample photo, not the store&rsquo;s product</p>
+              <button class="btn btn-small btn-outline order-btn" type="button" data-item="Cotton Handloom Saree (sample)">Order this item <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="three-piece" data-name="Printed three-piece">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample printed three-piece" loading="lazy">
+              <span class="product-tag">Three-piece</span>
+            </div>
+            <div class="product-body">
+              <h3>Printed Three-Piece</h3>
+              <p>Kameez, salwar and dupatta in a matching print — sample style.</p>
+              <p class="product-price"><strong>&#2547;1,650</strong> <span class="sample-label">Sample price</span></p>
+              <p class="product-meta">Sizes: S &ndash; XL &middot; Sample photo, not the store&rsquo;s product</p>
+              <button class="btn btn-small btn-outline order-btn" type="button" data-item="Printed Three-Piece (sample)">Order this item <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="three-piece" data-name="Embroidered three-piece">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample embroidered three-piece" loading="lazy">
+              <span class="product-tag">Three-piece</span>
+            </div>
+            <div class="product-body">
+              <h3>Embroidered Three-Piece</h3>
+              <p>Embroidery on the neckline and sleeves — sample style.</p>
+              <p class="product-price"><strong>&#2547;2,250</strong> <span class="sample-label">Sample price</span></p>
+              <p class="product-meta">Sizes: S &ndash; XL &middot; Sample photo, not the store&rsquo;s product</p>
+              <button class="btn btn-small btn-outline order-btn" type="button" data-item="Embroidered Three-Piece (sample)">Order this item <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="three-piece" data-name="Georgette three-piece">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample georgette three-piece" loading="lazy">
+              <span class="product-tag">Three-piece</span>
+            </div>
+            <div class="product-body">
+              <h3>Georgette Three-Piece</h3>
+              <p>Light georgette for outings and events — sample style.</p>
+              <p class="product-price"><strong>&#2547;2,450</strong> <span class="sample-label">Sample price</span></p>
+              <p class="product-meta">Sizes: S &ndash; XL &middot; Sample photo, not the store&rsquo;s product</p>
+              <button class="btn btn-small btn-outline order-btn" type="button" data-item="Georgette Three-Piece (sample)">Order this item <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="kurti" data-name="Straight-cut kurti">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample straight-cut kurti" loading="lazy">
+              <span class="product-tag">Kurti</span>
+            </div>
+            <div class="product-body">
+              <h3>Straight-Cut Kurti</h3>
+              <p>A simple straight-cut kurti for daily wear — sample style.</p>
+              <p class="product-price"><strong>&#2547;950</strong> <span class="sample-label">Sample price</span></p>
+              <p class="product-meta">Sizes: S &ndash; XL &middot; Sample photo, not the store&rsquo;s product</p>
+              <button class="btn btn-small btn-outline order-btn" type="button" data-item="Straight-Cut Kurti (sample)">Order this item <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="kurti" data-name="A-line printed kurti">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample A-line printed kurti" loading="lazy">
+              <span class="product-tag">Kurti</span>
+            </div>
+            <div class="product-body">
+              <h3>A-Line Printed Kurti</h3>
+              <p>An A-line cut with a bold print — sample style.</p>
+              <p class="product-price"><strong>&#2547;1,150</strong> <span class="sample-label">Sample price</span></p>
+              <p class="product-meta">Sizes: S &ndash; XL &middot; Sample photo, not the store&rsquo;s product</p>
+              <button class="btn btn-small btn-outline order-btn" type="button" data-item="A-Line Printed Kurti (sample)">Order this item <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="kurti" data-name="Embroidered kurti">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample embroidered kurti" loading="lazy">
+              <span class="product-tag">Kurti</span>
+            </div>
+            <div class="product-body">
+              <h3>Embroidered Kurti</h3>
+              <p>Embroidery at the neckline, in a soft fabric — sample style.</p>
+              <p class="product-price"><strong>&#2547;1,350</strong> <span class="sample-label">Sample price</span></p>
+              <p class="product-meta">Sizes: S &ndash; XL &middot; Sample photo, not the store&rsquo;s product</p>
+              <button class="btn btn-small btn-outline order-btn" type="button" data-item="Embroidered Kurti (sample)">Order this item <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="dress" data-name="Floral summer dress">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample floral summer dress" loading="lazy">
+              <span class="product-tag">Dress</span>
+            </div>
+            <div class="product-body">
+              <h3>Floral Summer Dress</h3>
+              <p>A light floral dress for warm days — sample style.</p>
+              <p class="product-price"><strong>&#2547;1,750</strong> <span class="sample-label">Sample price</span></p>
+              <p class="product-meta">Sizes: S &ndash; XL &middot; Sample photo, not the store&rsquo;s product</p>
+              <button class="btn btn-small btn-outline order-btn" type="button" data-item="Floral Summer Dress (sample)">Order this item <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="dress" data-name="Casual midi dress">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample casual midi dress" loading="lazy">
+              <span class="product-tag">Dress</span>
+            </div>
+            <div class="product-body">
+              <h3>Casual Midi Dress</h3>
+              <p>An easy midi dress for everyday outings — sample style.</p>
+              <p class="product-price"><strong>&#2547;1,550</strong> <span class="sample-label">Sample price</span></p>
+              <p class="product-meta">Sizes: S &ndash; XL &middot; Sample photo, not the store&rsquo;s product</p>
+              <button class="btn btn-small btn-outline order-btn" type="button" data-item="Casual Midi Dress (sample)">Order this item <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="dress" data-name="Evening party dress">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sample evening party dress" loading="lazy">
+              <span class="product-tag">Dress</span>
+            </div>
+            <div class="product-body">
+              <h3>Evening Party Dress</h3>
+              <p>A dressier look for evenings and events — sample style.</p>
+              <p class="product-price"><strong>&#2547;2,850</strong> <span class="sample-label">Sample price</span></p>
+              <p class="product-meta">Sizes: S &ndash; XL &middot; Sample photo, not the store&rsquo;s product</p>
+              <button class="btn btn-small btn-outline order-btn" type="button" data-item="Evening Party Dress (sample)">Order this item <span aria-hidden="true">&rarr;</span></button>
+            </div>
+          </article>
+        </div>
+        <p class="catalogue-empty" id="catalogue-empty" hidden>No sample styles match your search. Try another word, or choose &ldquo;All styles&rdquo;.</p>
+        <p class="note reveal">Photos are free sample photos, not the store&rsquo;s real products. The store&rsquo;s real catalogue, prices and stock are confirmed by the store when you order.</p>
+      </div>
+    </section>
+
+    <!-- How ordering works -->
+    <section class="section section-alt" id="how-it-works">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Simple by design</p>
+          <h2>How ordering works</h2>
+          <p class="section-intro">Today, customers order by messaging the store&rsquo;s Facebook Page. This demo keeps that way — and adds a catalogue and an order form, so nothing gets lost in the inbox.</p>
+        </div>
+        <ol class="steps">
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">1</span>
+            <h3>Browse the catalogue</h3>
+            <p>Search by style or filter by category, and check the size guide before you order.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">2</span>
+            <h3>Send your order</h3>
+            <p>Use the order form below — or message the store&rsquo;s Facebook Page, as before. Choose Messenger or WhatsApp for the reply.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">3</span>
+            <h3>The store confirms</h3>
+            <p>The store contacts you to confirm the price, size, availability and delivery. No payment is taken in this demo form.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Size guide -->
+    <section class="section" id="size-guide">
+      <div class="container size-inner">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Find your fit</p>
+          <h2>Size guide</h2>
+          <p class="section-intro">A general sample guide for kurtis, three-piece sets and dresses. Sarees are free size. Real measurements vary by style — the store confirms the fit for the item you choose.</p>
+        </div>
+        <div class="table-wrap reveal">
+          <table class="size-table">
+            <caption>Sample measurements in inches. This is a general guide only, not the store&rsquo;s official chart.</caption>
+            <thead>
+              <tr><th scope="col">Size</th><th scope="col">Chest</th><th scope="col">Waist</th><th scope="col">Length</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">S</th><td>36&Prime;</td><td>30&Prime;</td><td>42&Prime;</td></tr>
+              <tr><th scope="row">M</th><td>38&Prime;</td><td>32&Prime;</td><td>43&Prime;</td></tr>
+              <tr><th scope="row">L</th><td>40&Prime;</td><td>34&Prime;</td><td>44&Prime;</td></tr>
+              <tr><th scope="row">XL</th><td>42&Prime;</td><td>36&Prime;</td><td>45&Prime;</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note reveal">Between two sizes? The store can advise on the fit when they confirm your order — mention it in the order notes.</p>
+      </div>
+    </section>
+
+    <!-- Order -->
+    <section class="section section-booking" id="order">
+      <div class="container booking-inner">
+        <div class="booking-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Order enquiry</p>
+          <h2>Send an order enquiry</h2>
+          <p class="lead">Fill in the form and the store will contact you to confirm. <strong>This is an enquiry, not a confirmed order.</strong></p>
+          <ul class="booking-points">
+            <li><span class="check" aria-hidden="true">&#10003;</span>No payment is taken here.</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span>Your details are only used for this order enquiry in this demo — nothing is sent to the store from this sample page.</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span>Prefer to message instead? Orders are also taken through the store&rsquo;s Facebook Page, Messenger or WhatsApp.</li>
+          </ul>
+          <p class="note">In the live version, this form would send the enquiry to the store and confirm it by WhatsApp or Messenger.</p>
+        </div>
+
+        <form class="booking-form reveal" id="order-form" novalidate>
+          <p class="form-title">Order enquiry</p>
+          <p class="form-subtitle">Enquiry only — not a confirmed order until the store replies.</p>
+          <div class="form-field">
+            <label for="name">Your name <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Ayesha Rahman" required>
+            <p class="field-error" id="name-error" hidden>Please enter your name.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="e.g. 01XXXXXXXXX" required>
+            <p class="field-error" id="phone-error" hidden>Please enter a valid phone number, e.g. 01XXXXXXXXX.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="item">Item <span aria-hidden="true">*</span></label>
+            <select id="item" name="item" required>
+              <option value="" selected>Choose an item</option>
+              <option value="Floral Print Saree (sample)">Floral Print Saree (sample)</option>
+              <option value="Embroidered Party Saree (sample)">Embroidered Party Saree (sample)</option>
+              <option value="Cotton Handloom Saree (sample)">Cotton Handloom Saree (sample)</option>
+              <option value="Printed Three-Piece (sample)">Printed Three-Piece (sample)</option>
+              <option value="Embroidered Three-Piece (sample)">Embroidered Three-Piece (sample)</option>
+              <option value="Georgette Three-Piece (sample)">Georgette Three-Piece (sample)</option>
+              <option value="Straight-Cut Kurti (sample)">Straight-Cut Kurti (sample)</option>
+              <option value="A-Line Printed Kurti (sample)">A-Line Printed Kurti (sample)</option>
+              <option value="Embroidered Kurti (sample)">Embroidered Kurti (sample)</option>
+              <option value="Floral Summer Dress (sample)">Floral Summer Dress (sample)</option>
+              <option value="Casual Midi Dress (sample)">Casual Midi Dress (sample)</option>
+              <option value="Evening Party Dress (sample)">Evening Party Dress (sample)</option>
+              <option value="Another style — I will send a photo">Another style — I will send a photo</option>
+            </select>
+            <p class="field-error" id="item-error" hidden>Please choose an item.</p>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="size">Size <span aria-hidden="true">*</span></label>
+              <select id="size" name="size" required>
+                <option value="" selected>Choose a size</option>
+                <option value="Free size">Free size (saree)</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="Not sure yet">Not sure yet</option>
+              </select>
+              <p class="field-error" id="size-error" hidden>Please choose a size.</p>
+            </div>
+            <div class="form-field">
+              <label for="quantity">Quantity <span aria-hidden="true">*</span></label>
+              <select id="quantity" name="quantity" required>
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5+</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="area">Delivery area <span aria-hidden="true">*</span></label>
+              <select id="area" name="area" required>
+                <option value="" selected>Choose an area</option>
+                <option value="Inside Chattogram">Inside Chattogram</option>
+                <option value="Outside Chattogram">Outside Chattogram</option>
+              </select>
+              <p class="field-error" id="area-error" hidden>Please choose a delivery area.</p>
+            </div>
+            <div class="form-field">
+              <label for="channel">Reply me on <span aria-hidden="true">*</span></label>
+              <select id="channel" name="channel" required>
+                <option value="" selected>Choose a channel</option>
+                <option value="Messenger">Messenger</option>
+                <option value="WhatsApp">WhatsApp</option>
+                <option value="Phone call">Phone call</option>
+              </select>
+              <p class="field-error" id="channel-error" hidden>Please choose how the store should reply.</p>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="notes">Delivery address or anything to add? <span class="optional">(optional)</span></label>
+            <textarea id="notes" name="notes" rows="3" placeholder="e.g. Your area, or a note about the fit"></textarea>
+          </div>
+
+          <p class="form-disclaimer">By sending this form you are making an order enquiry only. It is <strong>not a confirmed order</strong> until the store contacts you to confirm the price, size, availability and delivery. No payment is taken.</p>
+
+          <button class="btn btn-primary btn-full" type="submit">Send order enquiry <span aria-hidden="true">&rarr;</span></button>
+          <p class="form-success" id="form-success" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container faq-inner">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Good to know</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>How do I order from Kolpotaru?</summary>
+            <p>Use the order form on this page, or message the store&rsquo;s Facebook Page, or order by Messenger / WhatsApp — the way the store already takes orders. The store confirms every order before it is final.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Is my order confirmed as soon as I send the form?</summary>
+            <p>No. Sending the form is an enquiry only. Your order is confirmed only when the store contacts you to confirm the price, size, availability and delivery.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Do I need to pay when I order?</summary>
+            <p>No payment is taken in this order form. Please ask the store directly about payment options when they confirm your order.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>How do I choose the right size?</summary>
+            <p>Check the size guide on this page. If you are between two sizes, mention it in the order notes — the store can advise on the fit for the item you choose.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Where is the store?</summary>
+            <p>Kolpotaru is a clothing store in Khulshi, Chattogram, Bangladesh. The exact address, phone number and opening hours were not verified for this concept demo — please confirm them via the store&rsquo;s Facebook Page before visiting.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit / contact -->
+    <section class="section" id="visit">
+      <div class="container visit-inner">
+        <div class="reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Visit us</p>
+          <h2>Kolpotaru — কল্পতরু</h2>
+          <p class="lead">Khulshi, Chattogram, Bangladesh</p>
+          <p>A clothing and fashion store in Khulshi, Chattogram. Orders are taken through the store&rsquo;s Facebook Page, Messenger or WhatsApp — this concept demo adds a searchable catalogue and an order form.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#order">Send an order enquiry <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-secondary" href="https://www.facebook.com/kolpotarultd" target="_blank" rel="noopener">Store on Facebook</a>
+          </div>
+          <p class="note">Exact address, phone number and opening hours were not verified for this concept demo. Please confirm them via the store&rsquo;s Facebook Page. No phone number is listed here, because none was verified in the public source used for this demo.</p>
+        </div>
+        <div class="visit-card reveal" aria-label="Location summary">
+          <h3>At a glance</h3>
+          <dl>
+            <div><dt>Area</dt><dd>Khulshi, Chattogram</dd></div>
+            <div><dt>Country</dt><dd>Bangladesh</dd></div>
+            <div><dt>Store type</dt><dd>Clothing &amp; fashion store</dd></div>
+            <div><dt>Ordering</dt><dd>Catalogue + order form, or message the Facebook Page</dd></div>
+            <div><dt>Reply</dt><dd>Messenger or WhatsApp</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-demo"><strong>CONCEPT DEMO</strong> — sample by Ahmed AI Studio, not a client project, not affiliated with Kolpotaru</p>
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Kolpotaru — কল্পতরু</p>
+          <p>Khulshi, Chattogram, Bangladesh</p>
+        </div>
+        <p>Kolpotaru — Khulshi, Chattogram, Bangladesh. This is a concept demo only. Order enquiries made here are not sent to the store and are not confirmed orders. For a real order, please contact the store via its Facebook Page, WhatsApp or phone.</p>
+      </div>
+      <p class="footer-credit">Concept demo built by Ahmed AI Studio, Bangladesh — digital services for small businesses.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
